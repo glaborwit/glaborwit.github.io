@@ -32,9 +32,9 @@ a:hover, a:focus {
 }
 
 /* Home page post titles */
-/*h4.card-title a{
-  color: #DD7373;
-}*/
+.card-title {
+  margin-bottom: 0.1rem;
+}
 
 .card-body{
   /*max-height: 200px;*/

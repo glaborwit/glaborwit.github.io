@@ -10,16 +10,16 @@
 body {
   font-family: "Montserrat";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 17px;
   color: #070707;
-  background-color: #EDEDF9;
+  background-color: #FFF;
 }
 
 /* Left to right underline transition*/
 a:not(.navbar-brand){
-    color: #1B065E;
+    color: #614F91;
     text-decoration: none;
-    background-image: linear-gradient(#1B065E, #1B065E);
+    background-image: linear-gradient(#614F91, #614F91);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px; /*Thickness of line*/
@@ -27,7 +27,7 @@ a:not(.navbar-brand){
 }
 
 a:hover, a:focus {
-    color: #1B065E; /*PINK: #DD7373*/
+    color: #614F91;
     background-size: 100% 2px;
 }
 
@@ -39,6 +39,16 @@ a:hover, a:focus {
 .card-body{
   /*max-height: 200px;*/
   overflow:hidden;
+  padding-left:0px;
+  padding-right: 0px;
+}
+
+.card{
+  border: none;
+}
+
+.card-img{
+  border-radius: 10px;
 }
 
 h4{
@@ -52,9 +62,10 @@ h4.section-heading{
 /* section headings in posts */
 h5{
   margin-top: 25px;
+  font-weight: normal;
   margin-bottom: 2px;
   width: 70%;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* sub-section headings in posts */
@@ -67,17 +78,13 @@ h6{
 }
 
 .caption{
-  font-size: 14px;
-}
-
-.bg-dark{
-  background-color: #ffffff!important;
+  font-size: 15px;
 }
 
 /* top nav*/
-nav.bg-dark{
-  background-color: #ffffff!important;
-  border-bottom: 3px solid #1B065E; /*#ecf7fc; /*sky blue*/
+
+.navbar{
+  margin-top: 10px;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover{
@@ -90,7 +97,7 @@ nav.bg-dark{
 
 .navbar-expand-md .navbar-nav .nav-link{
   padding: 0;
-  margin: .5rem;
+  margin: .5rem .5rem .2rem .5rem;
 }
 
 .navbar-brand, .nav-item{
@@ -98,7 +105,7 @@ nav.bg-dark{
 }
 
 .nav-item{
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -107,7 +114,7 @@ nav.bg-dark{
 }
 
 .py-4 .container{
-  border-top: solid 3px #1B065E;
+  border-top: solid 2px #614F91;
   padding: 10px 0px 15px 0px;
 }
 
@@ -120,7 +127,7 @@ p.updates{
 }
 
 hr{
-  margin: 25px 0;
+  margin: 15px 0;
   border: none;
 }
 

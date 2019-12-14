@@ -53,10 +53,13 @@ a:hover, a:focus {
 
 h4{
   font-size: 20px;
+  color: #070707
 }
 
 h4.section-heading{
-  padding-bottom: 5px;
+  font-size: 22px;
+  border-bottom: solid 2px #614F91;
+  width: 40%;
 }
 
 /* section headings in posts */
@@ -106,7 +109,7 @@ h6{
 
 .nav-item{
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .bg-trans{
@@ -114,7 +117,7 @@ h6{
 }
 
 .py-4 .container{
-  border-top: solid 2px #614F91;
+  border-top: solid 1px #070707;
   padding: 10px 0px 15px 0px;
 }
 

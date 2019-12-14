@@ -1,0 +1,154 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Customized by Gabbi LaBorwit
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+/* Link for learning about .col-sm/lg/xl: https://www.geeksforgeeks.org/meaning-of-numbers-in-col-md-4-col-xs-1-col-lg-2-in-bootstrap/ */
+
+body {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 17px;
+  color: #070707;
+  background-color: #FFF;
+}
+
+/* Left to right underline transition*/
+a:not(.navbar-brand){
+    color: #614F91;
+    text-decoration: none;
+    background-image: linear-gradient(#614F91, #614F91);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px; /*Thickness of line*/
+    transition: background-size .4s;
+}
+
+a:hover, a:focus {
+    color: #614F91;
+    background-size: 100% 2px;
+}
+
+/* Home page post titles */
+.card-title {
+  margin-bottom: 0.1rem;
+}
+
+.card-body{
+  /*max-height: 200px;*/
+  overflow:hidden;
+  padding-left:0px;
+  padding-right: 0px;
+}
+
+.card{
+  border: none;
+}
+
+.card-img{
+  border-radius: 10px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h4.section-heading{
+  padding-bottom: 5px;
+}
+
+/* section headings in posts */
+h5{
+  margin-top: 25px;
+  font-weight: normal;
+  margin-bottom: 2px;
+  width: 70%;
+  font-size: 25px;
+}
+
+/* sub-section headings in posts */
+h6{
+  font-style: italic;
+  font-weight: normal;
+  font-size: inherit;
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+.caption{
+  font-size: 15px;
+}
+
+/* top nav*/
+
+.navbar{
+  margin-top: 10px;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover{
+  color: #070707;
+}
+
+.navbar-light .navbar-toggler{
+  border: none;
+}
+
+.navbar-expand-md .navbar-nav .nav-link{
+  padding: 0;
+  margin: .5rem .5rem .2rem .5rem;
+}
+
+.navbar-brand, .nav-item{
+  font-weight: 500;
+}
+
+.nav-item{
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.bg-trans{
+  background-color: transparent;
+}
+
+.py-4 .container{
+  border-top: solid 2px #614F91;
+  padding: 10px 0px 15px 0px;
+}
+
+.py-4 .container a, .py-4 .container a:hover, .py-4 .container a:focus{
+  background-size: 100% 0px;
+}
+
+p.updates{
+  margin-bottom: 1px;
+}
+
+hr{
+  margin: 15px 0;
+  border: none;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.social{
+  float: left;
+}
+
+.copyright{
+  float: right;
+}

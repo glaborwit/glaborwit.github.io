@@ -5,8 +5,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
-/* Link for learning about .col-sm/lg/xl: https://www.geeksforgeeks.org/meaning-of-numbers-in-col-md-4-col-xs-1-col-lg-2-in-bootstrap/ */
-
 body {
   font-family: "Montserrat";
   font-weight: 300;
@@ -97,6 +95,10 @@ h6{
 
 .navbar-light .navbar-toggler{
   border: none;
+}
+
+.info-heading{
+  font-weight: bold;
 }
 
 .navbar-expand-md .navbar-nav .nav-link{

@@ -10,7 +10,7 @@ body {
   font-weight: 300;
   font-size: 17px;
   color: #070707;
-  background-color: #FFF;
+  background-color: #F7F7FF;
 }
 
 /* Left to right underline transition*/
@@ -44,6 +44,7 @@ a:hover, a:focus {
 
 .card{
   border: none;
+  background-color: transparent;
 }
 
 .card-img{

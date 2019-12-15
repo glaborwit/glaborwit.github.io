@@ -34,6 +34,7 @@ a:hover, a:focus {
 /* Home page post titles */
 .card-title {
   margin-bottom: 0.1rem;
+  color: #070707
 }
 
 .card-body{

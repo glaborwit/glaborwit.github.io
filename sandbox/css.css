@@ -31,16 +31,12 @@ a:hover, a:focus {
 /* Home page post titles */
 .card-title a{
   color: #070707;
+  transition: background-size .6s; /* card title hover transition time*/
 }
 
 .card-title{
-  line-height: 27px;
+  line-height: 1.7rem;
   margin-bottom: 0.05rem;
-}
-
-/* card title hover transition time*/
-.card-title a{
-  transition: background-size .6s;
 }
 
 .card-body{
@@ -53,10 +49,6 @@ a:hover, a:focus {
 .card{
   border: none;
   background-color: transparent;
-}
-
-.card-img{
-  border-radius: 10px;
 }
 
 highlight{
@@ -73,10 +65,7 @@ h4{
 
 h4.section-heading{
   font-size: 22px;
-  background-image: linear-gradient(90deg, rgba(255,144,220,0.9) 0%, rgba(180,126,245,0.7) 50%, rgba(189,230,255,0.8) 100%);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 2px; /*Thickness of line*/
+  border-bottom: solid rgba(180,50,245,0.5) 2px;
   width: 40%;
 }
 
@@ -84,10 +73,6 @@ h4.section-heading{
 h5{
   margin-top: 25px;
   margin-bottom: 2px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 02053cad67dec357bce79a0832f79a899832efcc
   font-weight: normal;
   font-size: 25px;
 }

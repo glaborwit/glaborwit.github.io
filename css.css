@@ -8,6 +8,7 @@
 body {
   font-family: "Montserrat";
   font-weight: 300;
+  padding-top: 70px;
   font-size: 17px;
   color: #070707;
 }
@@ -90,10 +91,10 @@ h6{
   font-size: 15px;
 }
 
-/* top nav*/
-
+/* top nav */
 .navbar{
-  margin-top: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover{

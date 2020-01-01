@@ -26,6 +26,10 @@ a:not(.navbar-brand){
     transition: background-size .3s;
 }
 
+.col-xs-12{
+  
+}
+
 a:hover, a:focus {
     color: #5B5F97;
     background-size: 100% 100%;

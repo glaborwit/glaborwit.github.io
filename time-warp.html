@@ -83,40 +83,34 @@
       <div class="col-lg-8">
 
         <p style="font-size: 20px; line-height: 1.2;">
-          Augmented reality is a relatively new technology that will likely be commonplace in the upcoming years. My goal for this project was to utilize that technology to enhance the human senses.
+          Augmented reality (AR) is a relatively new technology that will likely be commonplace in the upcoming years. My goal for this project was to utilize AR technology to enhance the human senses by creating a program that would slow down time.
         </p>
         <img class="img-fluid mb-1" src="photos/weimarvr.jpeg" alt="Demoing my prototype and explaining my poster at WeimARVR">
         <br>
-        <h5>Overview</h5>
-        <p>
-          Augmented reality (AR) is a relatively new technology that will likely be commonplace in the upcoming years. My goal for this project was to utilize that technology to enhance the human senses. In particular, I created an AR program that would slow down time: users could tap their finger and watch reality go into slow-motion.
-        </p>
 
         <h5>Motivation</h5>
         <p>
-          The summer of 2018 I spent two months conducting research in Munich, Germany through the <a href="https://hciunh.org/hci-ubicomp-ires/program-overview/">International Research Experiences for Students</a> (IRES) program funded by the National Science Foundation. Going into the project, my graduate mentor, <a href="https://www.pascalknierim.de/">Pascal Knierim</a>, and I were motivated to build something that would heighten the human senses in a way that was not able to be done with traditional technologies. We decided that time warp would be a great way to amplify sight and was feasible to develop with an AR device such as the Microsoft Hololens.
+          The summer of 2018 I spent two months conducting research in Munich, Germany through the <a href="https://hciunh.org/hci-ubicomp-ires/program-overview/">International Research Experiences for Students</a> (IRES) program funded by the National Science Foundation. Going into the project, my graduate mentor, <a href="https://www.pascalknierim.de/">Pascal Knierim</a>, and I were motivated to build something that would heighten the human senses in a way that was not able to be done with traditional technologies. We decided to amplify sight by building an augmented reality program where users could tap their fingers and watch reality go into slow motion.
         </p>
 
         <h5>Use Cases</h5>
         <p>
-          Humans only perceive motion in one way. Our slow-motion viewing prototype overcomes this limitation by allowing humans to perceive motion in an entirely new manner. In a factory, employees can use the technology to better diagnose machine malfunctions. Dancers can use the technology for expedited choreography learning. In summary, our prototype allows for the <b>derivation of exact information from high-speed situations</b>, making problem-solving, imitation, and skill-building easier.
+          Humans only perceive motion in one way. Our slow-motion viewing prototype overcomes this limitation by allowing humans to perceive motion in an entirely new manner. In a factory, employees can use the technology to better diagnose machine malfunctions. Dancers can use the technology to expedite the process of learning new choreography. In summary, our prototype allows for the <b>derivation of exact information</b> from high-speed situations, making problem-solving, imitation, and skill-building easier.
         </p>
 
         <h5>The Design Process</h5>
-        <h6 style="margin-top:0px">Supplies and Technology</h6>
+        <h6 style="margin-top:0px">Designing Slow Motion</h6>
         <p>
-          I began the project by discussing with my mentor ways in which slow-motion could be achieved with the lab’s available technology. As the application is designed for people who own a Hololens device, we wanted any add-on technology to be minimal and noninvasive. Thus, the Hololens’ built-in camera was the most practical option and was used to feed live video into an overlay on the Hololens display (figure 1).
+          The first step in producing the application was to create the effect of slow motion. I used the Hololens’ built-in camera to stream live video footage into an overlay on the Hololens display (Figure 1).
           <figure>
             <video class="img-fluid square mt-2" controls muted src="photos/time-warp/live_feed_overlay.mp4" type="video/mp4">
                 Your browser does not support this video.
             </video>
             <figcaption class = "caption">Figure 1: Overlaying Hololens camera feed as user's view</figcaption>
           </figure>
-        </p>
 
-        <p>
-          <h6>Designing Slow-Motion</h6>
-          The next step was to create the effect of slow-motion. After storing live video footage in memory, I was able to slowly play parts of it back in the overlay. This step required a significant amount of experimentation with the frame playback rate to make the slow motion appear natural (figure 2).
+          Then, I started storing the footage in memory and slowly played it back in the overlay. This required a significant amount of experimentation with playback rates to make the slow motion appear as natural as possible (Figure 2).
+
           <figure>
             <video class="img-fluid square mt-2" controls muted src="photos/time-warp/slowmotrial1.mp4" type="video/mp4">
                 Your browser does not support this video.
@@ -124,9 +118,10 @@
             <figcaption class="caption">Figure 2: First attempt at creating slow-motion</figcaption>
           </figure>
         </p>
+
         <p>
           <h6>Transition Effects</h6>
-          After several attempts and feedback from my mentor and lab peers, a natural slow-motion effect was achieved. I was then faced with the challenge of choosing appropriate transition effects when toggling between slow-motion and live video, deemed “reality mode”. The shift from reality to slow-motion, was simple: it looked most natural to immediately slow footage down with no transition. The harder problem was designing the shift from slow-motion to reality; the transition had to be subtle but clear. To solve this, I observed the ways that movies and videos that involve slow-motion transition back to real-time footage. It seemed that the most realistic choice would be to play the remaining slow-motion footage at double the normal speed until it caught up to reality (figure 3).
+          After several attempts and feedback from my mentor and lab peers, a natural slow-motion effect was achieved. I was then faced with the challenge of choosing appropriate transition effects when toggling between slow motion and live video, deemed “reality mode”. The shift from reality to slow motion was simple: it looked most natural to immediately slow footage down with no transition. The harder problem was designing the shift from slow motion to reality; this transition had to be subtle but clear. To solve this, I observed movies and videos that involve transitions from slow motion to reality. It seemed that the most realistic choice would be to play the remaining slow-motion footage at double the normal speed until it caught up to reality (Figure 3).
           <figure>
             <img class="img-fluid mt-2 mb-1" src="photos/time-warp/slow_mo_transition_notes.jpg" alt="Notes detailing the slow-motion effect">
             <figcaption class="caption">Figure 3: Designing the transitions between slow-motion and reality</figcaption>
@@ -135,12 +130,12 @@
 
         <p>
         <h6>Indicators</h6>
-        Lastly, I had to find a way to indicate whether a user was in slow-motion or reality mode. Sticking with the theme of time warp, I designed a small clock in the corner with a second hand that ticks at a normal speed when in reality mode, a noticeably slow speed when in slow-motion, and fast when transitioning from slow-motion to reality mode.
+        Lastly, I had to find a way to indicate whether a user was in slow motion or reality mode. Sticking with the theme of time warp, I designed a small clock in the corner with a second hand that ticks at a normal speed when in reality mode, a noticeably slow speed when in slow motion, and fast when transitioning from slow motion to reality mode.
         </p>
 
         <h5>User Study</h5>
         <p>
-          Upon completing the prototype (figure 4), I directed a user study in which participants utilized our program to perform certain tasks. Then, they took a survey about their experience with the program, its features, and use-cases that they see fit for the technology.
+          Upon completing the prototype (Figure 4), I directed a user study in which participants utilized our program to perform certain tasks. Then, they took a survey about their experience with the program, its features, and use cases that they saw fit for the technology.
           <figure>
             <video class="img-fluid square mb-0" poster="photos/time-warp/surfers_poster_tap.jpeg" controls muted src="photos/time-warp/surfers.mp4" type="video/mp4">
                 Your browser does not support this video.
@@ -154,12 +149,12 @@
 
         <h5>Poster Presentation</h5>
         <p>
-          I was able to present a poster and give a small demonstration of the application at Multimodal Interaction in Augmented and Virtual Reality (WeimARVR) in Weimar, Germany towards the end of that July (figure 5).
+          I was able to present a poster and give a small demonstration of the application at Multimodal Interaction in Augmented and Virtual Reality (WeimARVR) in Weimar, Germany towards the end of that July (Figure 5).
           <figure>
             <img class="img-fluid mb-1" src="photos/poster.jpeg" alt="Time Warp in AR poster">
             <figcaption class="caption">Figure 5: My poster at WeimARVR</figcaption>
           </figure>
-      </p>
+        </p>
       </div>
     <!-- /.row -->
   </div>

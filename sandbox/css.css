@@ -18,6 +18,7 @@ a:not(.navbar-brand){
   text-decoration: none;
 }
 
+/* turn off underline on mobile "hover"*/
 @media (max-width: 480px) {
   a:hover, a:focus{
     background: none;

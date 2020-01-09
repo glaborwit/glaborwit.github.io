@@ -20,8 +20,13 @@ a:not(.navbar-brand){
 
 /* turn off underline on mobile "hover"*/
 @media (max-width: 480px) {
+  a{
+    background-color: transparent;
+    background-size: 100% 100%;
+  }
   a:hover, a:focus{
-    background: none;
+    background-size: 100% 100%;
+    background-color: #ddd;
   }
 }
 

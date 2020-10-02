@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  height:40px;
+  border-bottom: solid 1px #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  vertical-align: bottom;
+}
+
+.nav-links ul{
+  margin: 0;
+}
+
+.nav-links li{
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+.social-gallery{
+
+}
+
+.social-gallery img{
+  width: 50px;
+}

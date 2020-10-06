@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" tyle="text/css" href="css/index.css">
   <!-- Scripts -->
-
+  <script src="js/index.js"></script>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
@@ -14,7 +14,7 @@
 
 <body>
   <nav>
-    <div class="logo"><a href="#">Bun Bun Bake Shop</a></div>
+    <div class="logo"><a href="index.html">Bun Bun Bake Shop</a></div>
     <div class="nav-links">
       <ul>
         <li><a class="active" href="#">Home</a></li>
@@ -29,20 +29,20 @@
     <!-- Slideshow- left side -->
     <div class="img-container">
       <!-- slideshow -->
-      <img src="assets/bun-buns/originalcinnamon.jpg" width="100%">
+      <img id="slideshow-pic" src="assets/bun-buns/originalcinnamon.jpg" width="100%">
       <!-- buttons -->
       <div class="dot-container">
-        <span class="dot active"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+        <span onclick="dotNav(this)" class="img1 dot active"></span> <span onclick="dotNav(this)" class="img2 dot"></span> <span onclick="dotNav(this)" class="img3 dot"></span> <span onclick="dotNav(this)" class="img4 dot"></span>
       </div>
 
     </div>
     <!-- Text- right side -->
     <div class="text-container">
       <div class="wrapper">
-        <h2>Original Cinnamon Bun Bun</h2>
-        <span class="tagline">Go back to the basics with our best-selling bun bun!</span>
-        <p class="img-desc">
-          What makes our bun buns better than the rest? Besides the love that goes into each batch, our bun bun recipe has been passed down generation to generation for the past 60 years. Our special recipe is what keeps customers coming back and back again.
+        <h2 id="bun-bun-name">Original Cinnamon Bun Bun</h2>
+        <span id="tagline">Go back to the basics with our best-selling bun bun!</span>
+        <p id="img-desc">
+          What makes our bun buns better than the rest? Besides the love that goes into each batch, our bun bun recipe has been passed down generation to generation for the past 60 years. Our special recipe is what keeps customers coming back and back <em>again</em>.
         </p>
         <a href="shop.html"><button class="enter-btn" type="button">Show me the Buns!</button></a>
       </div>

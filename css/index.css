@@ -24,13 +24,13 @@ h2{
   margin-bottom: 0;
 }
 
-.tagline{
+#tagline{
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
 }
 
-.img-desc{
+#img-desc{
   font-weight: 300;
   font-size: 15px;
   line-height: 160.7%;
@@ -87,6 +87,7 @@ h2{
   border: 1px solid #000000;
   border-radius: 50%;
   display: inline-block;
+  cursor: pointer;
 }
 
 .dot.active{

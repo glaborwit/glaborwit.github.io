@@ -4,15 +4,19 @@
 }
 
 .product-image{
-  flex: 0 0 55%;
+  flex: 0 0 50%;
+  margin-right: auto;
 }
 
 .product-image img{
   width:100%;
+  height: 530px;
+  object-fit: cover;
 }
 
 .txt{
-  flex: 0 0 45%;
+  flex: 0 0 40%;
+  margin: 0 auto;
 }
 
 .options{
@@ -22,17 +26,19 @@
 }
 
 .glaze-option{
-    flex: 0 0 50%;
+    flex: 0 0 47%;
     cursor: pointer;
+    margin: 6px auto;
 }
 
 .quantity{
-  flex: 0 0 25%;
+  flex: 0 0 23%;
+  margin: 0 auto;
   cursor: pointer;
 }
 
 .glaze-option, .quantity{
-  border: 1px solid #000000;
+  border: 1px solid #737373;
   padding: 10px;
   box-sizing: border-box;
 
@@ -59,7 +65,95 @@ h3{
   margin-top:20px;
   padding: 10px;
   width: 100%;
-  cursor: pointer;
+  cursor: inherit;
   font-size: 15px;
   font-family: inherit;
+}
+
+
+/* Responsiveness */
+/* Smallest size */
+@media (max-width: 575px) {
+  .product-image img{
+    height: 290px;
+    width:100%;
+    object-fit:cover;
+  }
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-image{
+    flex: 0 0 100%;
+  }
+
+  .txt{
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .product-image img{
+    max-height: 400px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+  .product-image{
+    flex: 0 0 100%;
+  }
+
+  .txt{
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .product-image img{
+    max-height: none;
+    height: 570px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  #container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-image{
+    flex: 0 0 50%;
+  }
+
+  .txt{
+    flex: 0 0 40%;
+    padding: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .product-image img{
+    height: 590px;
+    width:100%;
+    object-fit:cover;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .product-image img{
+    height: 590px;
+    width:100%;
+    object-fit:cover;
+  }
 }

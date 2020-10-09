@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" tyle="text/css" href="css/index.css">
+  <!-- Scripts -->
+  <script src="js/index.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tab info -->
+  <title>Bun Bun Bake Shop</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo"><a href="index.html">Bun Bun Bake Shop</a></div>
+    <div class="nav-links">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"><img src="assets/sprites/cart.png" height="27px"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="slideshow-text-container">
+    <!-- Slideshow- left side -->
+    <div class="img-container">
+      <!-- slideshow -->
+      <img id="slideshow-pic" src="assets/bun-buns/originalcinnamon.jpg">
+      <!-- buttons -->
+      <div class="dot-container">
+        <span onclick="dotNav(this)" class="img1 dot active"></span> <span onclick="dotNav(this)" class="img2 dot"></span> <span onclick="dotNav(this)" class="img3 dot"></span> <span onclick="dotNav(this)" class="img4 dot"></span>
+      </div>
+
+    </div>
+    <!-- Text- right side -->
+    <div class="text-container">
+      <div class="wrapper">
+        <h2 id="bun-bun-name"><a href="original-cinnamon.html">Original Cinnamon Bun Bun</a></h2>
+        <span id="tagline">Go back to the basics with our best-selling bun bun!</span>
+        <p id="img-desc">
+          What makes our bun buns better than the rest? Besides the love that goes into each batch, our bun bun recipe has been passed down generation to generation for the past 60 years. Our special recipe is what keeps customers coming back and back <em>again</em>.
+        </p>
+        <a href="shop.html"><button class="enter-btn" type="button">Show me the Buns!</button></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="social-container">
+    <h3>See what other customers are munching on:</h3>
+    <div class="social-gallery">
+      <img src="assets/social-imgs/scarybuns.jpg">
+      <img src="assets/social-imgs/eatingdinner.jpg">
+      <img src="assets/social-imgs/bakerypickingbun.jpg">
+      <img src="assets/social-imgs/bunandcoffee.jpg">
+      <img src="assets/social-imgs/dogeating.jpg">
+      <img src="assets/social-imgs/eating.jpg">
+      <img src="assets/social-imgs/brekky.jpg">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span style="padding-right: 15px">&copy; 2020 Bun Bun Bake Shop</span>
+  </footer>
+</body>
+</html>

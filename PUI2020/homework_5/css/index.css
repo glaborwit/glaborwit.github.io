@@ -1,0 +1,222 @@
+/* Slideshow and Affiliated Text */
+#slideshow-text-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.img-container{
+  flex: 0 0 57%;
+  margin: 0;
+  margin-right: auto;
+}
+
+.text-container{
+  flex: 0 0 37%;
+  margin: 0 auto;
+}
+
+.wrapper{
+  width: 80%;
+}
+
+h2, h2 a{
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: underline;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+#tagline{
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#img-desc{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 160.7%;
+  /* or 24px */
+}
+
+/* button to shop now */
+.enter-btn{
+  background-color: #FBF19A;
+  border: 1px solid #737373;
+  box-sizing: border-box;
+
+  height: 46px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+
+/* dots under slide show for navigating through slides */
+.dot-container{
+  margin-top: 5px;
+  text-align: center;
+}
+
+.dot{
+  height: 10px;
+  width: 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active{
+  background-color: #76464C;
+}
+
+
+/* Social Image Gallery */
+#social-container{
+  border-top: 1px solid #737373;
+  margin-top: 25px;
+}
+
+#social-container h3{
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.social-gallery{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+.social-gallery img{
+  height:125px;
+  object-fit: contain;
+  margin: 0 14px;
+}
+
+
+/* Responsiveness */
+/* Smallest size */
+@media (max-width: 575px) {
+  .img-container{
+    flex: 0 0 50%;
+  }
+
+  .text-container{
+    flex: 0 0 45%;
+  }
+
+  .wrapper{
+    width: 100%;
+  }
+
+  #slideshow-pic{
+    height: 290px;
+    width:100%;
+    object-fit:cover;
+  }
+  #img-desc{
+    font-size: 13px;
+    line-height: inherit;
+  }
+
+  h2, h2 a{
+    font-size: 19px;
+  }
+
+  #tagline{
+    font-size: 13px;
+  }
+
+  #img-desc{
+    font-size: 12px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #slideshow-pic{
+    height: 290px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  #img-desc{
+    font-size: 13px;
+    line-height: inherit;
+  }
+
+  h2, h2 a{
+    font-size: 17px;
+  }
+
+  #tagline{
+    font-size: 14px;
+  }
+
+  #img-desc{
+    font-size: 13px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #slideshow-pic{
+    height: 400px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  h2, h2 a{
+    font-size: 22px;
+  }
+
+  #tagline{
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  #img-desc{
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #slideshow-pic{
+    height: 530px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  h2, h2 a{
+    margin-bottom: 6px;
+  }
+
+  #img-desc{
+    margin-top:50px;
+    margin-bottom: 60px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #slideshow-pic{
+    height: 600px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  .wrapper{
+    margin-top: 90px;
+  }
+}

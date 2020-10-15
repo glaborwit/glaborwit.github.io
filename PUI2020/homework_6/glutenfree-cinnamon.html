@@ -1,0 +1,95 @@
+<html>
+<head>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" tyle="text/css" href="css/product-detail.css">
+  <!-- Scripts -->
+  <script src="js/product-detail.js"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tab info -->
+  <title>Gluten-Free Cinnamon | Bun Bun Bake Shop</title>
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <nav>
+    <div class="logo"><a href="index.html">Bun Bun Bake Shop</a></div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"><img src="assets/sprites/cart.png" height="27px"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="container">
+    <div class="product-image">
+      <img src="assets/bun-buns/gf.jpg">
+    </div>
+    <div class="txt">
+      <h1>Gluten-Free Cinnamon Bun Bun</h1>
+      <p>Price per bun: <span style="font-weight:500;">$3.50</span></p>
+      <p class="desc">
+        Gluten-free pastry lovers rejoice! The wheatless version of our best-selling original cinnamon bun bun.
+      </p>
+      <p class="desc">
+        We modified our award-winning bun bun recipe to be wheat-free while maintaining the same delcious taste and texture.
+      </p>
+
+      <p>
+        <span style="font-weight:600;">Pairs well with:</span> Double-chocolate glaze<br>
+        <span style="font-weight:600;">Contains:</span> nuts, milk, egg
+      </p>
+
+      <!-- Glazing -->
+      <h3>Glaze (select one)</h3>
+      <div class="options">
+        <div class="glaze-option" onclick="selectGlaze(this)">
+          Vanilla-Milk
+        </div>
+        <div class="glaze-option" onclick="selectGlaze(this)">
+          Sugar-Milk
+        </div>
+        <div class="glaze-option" onclick="selectGlaze(this)">
+          Double-Chocolate
+        </div>
+        <div class="glaze-option" onclick="selectGlaze(this)">
+          None
+        </div>
+      </div>
+
+      <!-- Quantity -->
+      <h3>Quantity</h3>
+      <div class="options">
+        <div class="quantity" onclick="selectQuantity(this)">
+          1
+        </div>
+        <div class="quantity" onclick="selectQuantity(this)">
+          3
+        </div>
+        <div class="quantity" onclick="selectQuantity(this)">
+          6
+        </div>
+        <div class="quantity" onclick="selectQuantity(this)">
+          12
+        </div>
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button id="addToCart" type="button">Add to Cart</button>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span style="padding-right: 15px">&copy; 2020 Bun Bun Bake Shop</span>
+  </footer>
+</body>
+</html>

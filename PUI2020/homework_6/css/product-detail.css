@@ -1,0 +1,159 @@
+#container{
+  display: flex;
+  flex-direction: row;
+}
+
+.product-image{
+  flex: 0 0 50%;
+  margin-right: auto;
+}
+
+.product-image img{
+  width:100%;
+  height: 530px;
+  object-fit: cover;
+}
+
+.txt{
+  flex: 0 0 40%;
+  margin: 0 auto;
+}
+
+.options{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.glaze-option{
+    flex: 0 0 47%;
+    cursor: pointer;
+    margin: 6px auto;
+}
+
+.quantity{
+  flex: 0 0 23%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.glaze-option, .quantity{
+  border: 1px solid #737373;
+  padding: 10px;
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+/* Heading */
+h1{
+  text-align: left;
+}
+
+h3{
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: inherit;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+#addToCart{
+  background-color: #ccc;
+  border: 1px solid #737373;
+  box-sizing: border-box;
+  margin-top:20px;
+  padding: 10px;
+  width: 100%;
+  cursor: inherit;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+
+/* Responsiveness */
+/* Smallest size */
+@media (max-width: 575px) {
+  .product-image img{
+    height: 290px;
+    width:100%;
+    object-fit:cover;
+  }
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-image{
+    flex: 0 0 100%;
+  }
+
+  .txt{
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .product-image img{
+    max-height: 400px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+  .product-image{
+    flex: 0 0 100%;
+  }
+
+  .txt{
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .product-image img{
+    max-height: none;
+    height: 570px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  #container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-image{
+    flex: 0 0 50%;
+  }
+
+  .txt{
+    flex: 0 0 40%;
+    padding: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .product-image img{
+    height: 590px;
+    width:100%;
+    object-fit:cover;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .product-image img{
+    height: 590px;
+    width:100%;
+    object-fit:cover;
+  }
+}

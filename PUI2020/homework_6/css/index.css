@@ -46,10 +46,10 @@ h2, h2 a{
   background-color: #FBF19A;
   border: 1px solid #737373;
   box-sizing: border-box;
-
   height: 46px;
   width: 100%;
   cursor: pointer;
+  
   font-size: 15px;
   font-family: inherit;
 }

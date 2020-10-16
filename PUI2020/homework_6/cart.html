@@ -2,6 +2,7 @@
 <head>
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/cart.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -25,8 +26,99 @@
     </div>
   </nav>
 
-  <h2 style="margin: 20%; text-align:center;">Shopping Cart Under Construction</h2>
+  <div id="container">
+    <div class="cart">
+      <h1>Your Order</h1>
+      <div class="items-wrapper">
+        item 1
+      </div>
+      <div class="price-wrapper">
+        <div class="price-group">
+          <div class="price-desc">Subtotal</div> <div class="price">$$.$$</div>
+        </div>
 
+        <div class="price-group">
+          <div class="price-desc">Tax</div> <div class="price">$$.$$</div>
+        </div>
+
+        <div class="price-group">
+          <div class="price-desc">Shipping</div> <div class="price">$$.$$</div>
+        </div>
+
+        <div class="price-group">
+          <div class="price-desc">Total</div> <div class="price">$$.$$</div>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+      <h1>Shipping Address</h1>
+      <form id="shipping-info" autocomplete="on">
+        <p>
+          <label for="first-name">First name</label>
+          <input type="text" id="firstname" placeholder="First Name" name="first-name">
+
+          <label for="last-name">Last name</label>
+          <input type="text" id="lastname" placeholder="Last Name" name="last-name">
+        </p>
+
+        <p>
+          <label for="address-st">Street</label>
+          <input type="text" id="address-st" placeholder="Street Address" name="street">
+
+          <label for="address-apt">Apt. #</label>
+          <input type="text" id="address-apt" placeholder="Apt #" name="apt">
+        </p>
+
+        <p>
+          <label for="address-city">City</label>
+          <input type="text" id="address-city" placeholder="City" name="city">
+
+          <label for="address-state">State</label>
+          <input type="text" id="address-state" placeholder="State" name="state">
+        </p>
+
+        <p>
+          <label for="address-zip">Zipcode</label>
+          <input type="text" id="address-zip" placeholder="Zipcode" name="zipcode">
+        </p>
+      </form>
+
+      <h1>Billing Address</h1>
+      <form id="shipping-info" autocomplete="on">
+        <p>
+          <label for="first-name">First name</label>
+          <input type="text" id="firstname" placeholder="First Name" name="first-name">
+
+          <label for="last-name">Last name</label>
+          <input type="text" id="lastname" placeholder="Last Name" name="last-name">
+        </p>
+
+        <p>
+          <label for="address-st">Street</label>
+          <input type="text" id="address-st" placeholder="Street Address" name="street">
+
+          <label for="address-apt">Apt. #</label>
+          <input type="text" id="address-apt" placeholder="Apt #" name="apt">
+        </p>
+
+        <p>
+          <label for="address-city">City</label>
+          <input type="text" id="address-city" placeholder="City" name="city">
+
+          <label for="address-state">State</label>
+          <input type="text" id="address-state" placeholder="State" name="state">
+        </p>
+
+        <p>
+          <label for="address-zip">Zipcode</label>
+          <input type="text" id="address-zip" placeholder="Zipcode" name="zipcode">
+        </p>
+      </form>
+
+      <!-- Place order button -->
+      <center><a href="confirmation.html"><button class="place-order" type="button">Place Order</button></a></center>
+    </div>
+  </div>
   <!-- Footer -->
   <footer>
     <span style="padding-right: 15px">&copy; 2020 Bun Bun Bake Shop</span>

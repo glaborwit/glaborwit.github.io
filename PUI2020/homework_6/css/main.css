@@ -64,6 +64,10 @@ a.active {
   text-decoration: underline;
 }
 
+img.active{
+  border-bottom: 1px solid #000;
+}
+
 /* Headings */
 h1{
   font-size: 22px;

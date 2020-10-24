@@ -38,6 +38,7 @@ nav{
   font-weight: 400;
   list-style-type: none;
   display: inline;
+  text-align: center;
 }
 
 .nav-links li:not(:last-child){

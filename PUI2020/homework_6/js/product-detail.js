@@ -3,7 +3,7 @@ let selectedGlaze;
 let selectedQuantity;
 let addToCart;
 let currQty = 0; //curr qty selected
-let totalQty = 0; // total qty counter
+let totalQty = parseInt(localStorage.getItem("qty")); // total qty counter
 let numItems;
 
 function selectGlaze(curr){
@@ -46,5 +46,6 @@ function triggerAddToCart(){
 
 function addCart(){
   totalQty += currQty;
-  document.getElementById("numItems").innerHTML = totalQty + "<br>";
+  localStorage.setItem("qty", totalQty);
+  document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
 }

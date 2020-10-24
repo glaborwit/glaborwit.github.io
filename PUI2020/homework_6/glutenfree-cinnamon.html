@@ -3,8 +3,10 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" tyle="text/css" href="css/product-detail.css">
+  
   <!-- Scripts -->
   <script src="js/product-detail.js"></script>
+  <script src="js/cart-setter.js"></script> <!-- sets # cart items in navbar-->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -13,7 +15,7 @@
   <title>Gluten-Free Cinnamon | Bun Bun Bake Shop</title>
 </head>
 
-<body>
+<body onload="setCart()">
   <!-- Top Navigation -->
   <nav>
     <div class="logo"><a href="index.html">Bun Bun Bake Shop</a></div>

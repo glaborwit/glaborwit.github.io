@@ -62,20 +62,21 @@ function triggerAddToCart(){
 }
 
 function addCart(){
-  totalQty += parseInt(currQty);
+  // totalQty += parseInt(currQty);
+  totalQty += currQty;
   localStorage.setItem("qty", totalQty);
   document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
 
 }
 
+// Tut on adding to list in localStorage
+//   // Get the existing data
+//   var existing = localStorage.getItem('myFavoriteSandwich');
 
-  // Get the existing data
-  var existing = localStorage.getItem('myFavoriteSandwich');
+//   // If no existing data, use the value by itself
+//   // Otherwise, add the new value to it
+//   var data = existing ? existing + ' and tuna' : 'tuna';
 
-  // If no existing data, use the value by itself
-  // Otherwise, add the new value to it
-  var data = existing ? existing + ' and tuna' : 'tuna';
-
-  // Save back to localStorage
-  localStorage.setItem('myFavoriteSandwich', data);
-  console.log("DATA: ", localStorage.getItem('myFavoriteSandwich'))
+//   // Save back to localStorage
+//   localStorage.setItem('myFavoriteSandwich', data);
+//   console.log("DATA: ", localStorage.getItem('myFavoriteSandwich'))

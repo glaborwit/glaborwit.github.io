@@ -10,6 +10,7 @@
 
   <!-- Scripts -->
   <script src="js/cart-setter.js"></script> <!-- sets # cart items in navbar-->
+  <script src="js/cart.js"></script>
 
   <!-- Tab info -->
   <title>Your Cart | Bun Bun Bake Shop</title>
@@ -35,28 +36,113 @@
 
   <div id="container">
     <div class="cart">
-      <h1>Your Order</h1>
       <div class="items-wrapper">
-        item 1
+        <h1>Your Order</h1>
+        <!-- Item 1 -->
+        <div class="item orig-cinna">
+
+          <span class="first-line">
+            <span class="prod-name">
+              Original Cinnamon Bun Bun
+            </span>
+
+            <span class="qty-ops">
+              Qty: 
+              <select name="quantity" id="quantity" onchange="updateItemPrice(this)">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+              </select>
+            </span>
+
+            <span class="item-price">
+              $2.50
+            </span>
+          </span>
+
+          <span class="second-line">
+            <span class="glaze-ops">
+              Glaze: 
+              <select name="glaze" id="glazing">
+                <option value="none">None</option>
+                <option value="vanillaMilk">Vanilla-Milk</option>
+                <option value="sugarMilk">Sugar-Milk</option>
+                <option value="doubleChocolate">Double-Chocolate</option>
+              </select>
+            </span>
+
+            <span class="remove" onclick="deleteItem(this)">
+              Remove
+            </span>
+          </span>
+
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item">
+
+          <span class="first-line">
+            <span class="prod-name">
+              Pumpkin Spice Bun Bun
+            </span>
+
+            <span class="qty-ops">
+              Qty: 
+              <select name="quantity" id="quantity" onchange="updateItemPrice(this)">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+              </select>
+            </span>
+
+            <span class="item-price">
+              $3.00
+            </span>
+          </span>
+
+          <span class="second-line">
+            <span class="glaze-ops">
+              Glaze: 
+              <select name="glaze" id="glazing">
+                <option value="none">None</option>
+                <option value="vanillaMilk">Vanilla-Milk</option>
+                <option selected value="sugarMilk">Sugar-Milk</option>
+                <option value="doubleChocolate">Double-Chocolate</option>
+              </select>
+            </span>
+
+            <span class="remove" onclick="deleteItem(this)">
+              Remove
+            </span>
+          </span>
+
+        </div>
       </div>
+      
       <div class="price-wrapper">
-        <div class="price-group">
-          <div class="price-desc">Subtotal</div> <div class="price">$$.$$</div>
+        <div class="price-group subtotal">
+          <div class="price-desc">Subtotal</div> <div class="price">$5.50</div>
         </div>
 
-        <div class="price-group">
-          <div class="price-desc">Tax</div> <div class="price">$$.$$</div>
+        <div class="price-group tax">
+          <div class="price-desc">Tax</div> <div class="price">$0.39</div>
         </div>
 
-        <div class="price-group">
-          <div class="price-desc">Shipping</div> <div class="price">$$.$$</div>
+        <div class="price-group shipping">
+          <div class="price-desc">Shipping</div> <div class="price">$5.00</div>
         </div>
 
-        <div class="price-group">
-          <div class="price-desc">Total</div> <div class="price">$$.$$</div>
+        <hr>
+
+        <div class="price-group total">
+          <div class="price-desc">Total</div> <div class="price">$19.45</div>
         </div>
       </div>
     </div>
+
+
     <div class="forms">
       <h1>Shipping Address</h1>
       <form id="shipping-info" autocomplete="on">

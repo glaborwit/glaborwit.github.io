@@ -15,10 +15,10 @@ else if (!Number.isInteger(localStorage.getItem("qty"))){
   totalQty = parseInt(localStorage.getItem("qty")); // total qty counter
 }
 
-// // sets totalQty to qty if already int
-// else if (Number.isInteger(localStorage.getItem("qty"))){
-//   totalQty = localStorage.getItem("qty"); // total qty counter
-// }
+// sets totalQty to qty if already int
+else if (Number.isInteger(localStorage.getItem("qty"))){
+  totalQty = localStorage.getItem("qty"); // total qty counter
+}
 
 let numItems;
 let cartArr = localStorage.getItem("cartItemsArr"); // total qty counter

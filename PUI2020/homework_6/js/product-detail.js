@@ -31,9 +31,155 @@ function selectGlaze(curr){
   curr.style.backgroundColor="#eef8ff";
   selectedGlaze = curr;
 
+  //change image
+  updateImage(curr);
+
   if(selectedQuantity && !addToCart){
     triggerAddToCart();
   }
+}
+
+function updateImage(curr){
+  let glaze = curr.innerHTML.trim();
+  let name = getProdName(curr);
+
+  //original cinnamon
+  if(name == "orig"){
+    switch(glaze) {
+      case "Vanilla-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_vanillamilk.png"
+        break;
+      case "Sugar-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_sugarmilk.png"
+        break;
+      case "Double-Chocolate":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_doublechocolate.png"
+        break;
+      case "None":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/originalcinnamon.jpg"
+        break;
+    }
+  }
+
+  // gluten free
+  if(name == "gf"){
+    switch(glaze) {
+      case "Vanilla-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_vanillamilk.png"
+        break;
+      case "Sugar-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_sugarmilk.png"
+        break;
+      case "Double-Chocolate":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_doublechocolate.png"
+        break;
+      case "None":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf.jpg"
+        break;
+    }
+  }
+
+  // pumpkin spice
+  else if(name == "ps"){
+    switch(glaze) {
+      case "Vanilla-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_vanillamilk.png"
+        break;
+      case "Sugar-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_sugarmilk.png"
+        break;
+      case "Double-Chocolate":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_doublechocolate.png"
+        break;
+      case "None":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/pumpkinspice.jpg"
+        break;
+    }
+  }
+
+  // caramel pecan
+  else if(name == "cp"){
+    switch(glaze) {
+      case "Vanilla-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_vanillamilk.png"
+        break;
+      case "Sugar-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_sugarmilk.png"
+        break;
+      case "Double-Chocolate":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_doublechocolate.png"
+        break;
+      case "None":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/caramelpecan.jpg"
+        break;
+    }
+  }
+
+  // walnut
+  else if(name == "wt"){
+    switch(glaze) {
+      case "Vanilla-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_vanillamilk.png"
+        break;
+      case "Sugar-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_sugarmilk.png"
+        break;
+      case "Double-Chocolate":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_doublechocolate.png"
+        break;
+      case "None":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/walnut.jpg"
+        break;
+    }
+  }
+
+  // blackberry
+  else if(name == "bkb"){
+    switch(glaze) {
+      case "Vanilla-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_vanillamilk.png"
+        break;
+      case "Sugar-Milk":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_sugarmilk.png"
+        break;
+      case "Double-Chocolate":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/gf_doublechocolate.png"
+        break;
+      case "None":
+        document.getElementById("bunbun-photo").src="assets/bun-buns/blackberry.jpg"
+        break;
+    }
+  }
+}
+
+function getProdName(curr){
+  let rawName = curr.parentElement.parentElement.getElementsByTagName("h1")[0].innerHTML.trim();
+  
+  if(rawName.includes("Original")){
+    currName = "orig";
+  }
+
+  else if(rawName.includes("Gluten")){
+    currName = "gf";
+  }
+
+  else if(rawName.includes("Pumpkin")){
+    currName = "ps";
+  }
+
+  else if(rawName.includes("Caramel")){
+    currName = "cp";
+  }
+
+  else if(rawName.includes("Walnut")){
+    currName = "wt";
+  }
+
+  else if(rawName.includes("Blackberry")){
+    currName = "bkb";
+  }
+
+  return currName;
 }
 
 function selectQuantity(curr){

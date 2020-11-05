@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/cart.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
 
   <!-- Scripts -->
   <script src="js/cart-setter.js"></script> <!-- sets # cart items in navbar-->
@@ -27,8 +30,8 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="#">
-          <span id="numItems"></span>
-          <img alt="cart icon" class="active" src="assets/sprites/cart.png" height="27"></a>
+            <span id="numItems"></span>
+            <img alt="cart icon" class="active" src="assets/sprites/cart.png" height="27"></a>
         </li>
       </ul>
     </div>
@@ -36,8 +39,23 @@
 
   <div id="container">
     <div class="cart">
-      <div class="items-wrapper">
+      <div id="items-wrapper">
         <h1>Your Order</h1>
+
+        <!--
+          <div class="item orig-cinna">
+            <span class="first-line">
+              <span class="prod-name"></span>
+              <span class="qty-ops">SELECT ELEMENT</span>
+              <span class="item-price"></span>
+            </span>
+            
+            <span class="second-line">
+              <span class="glaze-ops">SELECT ELEMENT</span>
+              <span class="remove" onclick="deleteItem(this)">Remove</span>
+            </span>
+          </div>
+      -->
         <!-- Item 1 -->
         <div class="item orig-cinna">
 
@@ -47,7 +65,7 @@
             </span>
 
             <span class="qty-ops">
-              Qty: 
+              Qty:
               <select name="quantity" id="quantity" onchange="updateItemPrice(this)">
                 <option value="1">1</option>
                 <option value="3">3</option>
@@ -63,7 +81,7 @@
 
           <span class="second-line">
             <span class="glaze-ops">
-              Glaze: 
+              Glaze:
               <select name="glaze" id="glazing">
                 <option value="none">None</option>
                 <option value="vanillaMilk">Vanilla-Milk</option>
@@ -88,7 +106,7 @@
             </span>
 
             <span class="qty-ops">
-              Qty: 
+              Qty:
               <select name="quantity" id="quantity" onchange="updateItemPrice(this)">
                 <option value="1">1</option>
                 <option value="3">3</option>
@@ -104,7 +122,7 @@
 
           <span class="second-line">
             <span class="glaze-ops">
-              Glaze: 
+              Glaze:
               <select name="glaze" id="glazing">
                 <option value="none">None</option>
                 <option value="vanillaMilk">Vanilla-Milk</option>
@@ -120,24 +138,28 @@
 
         </div>
       </div>
-      
+
       <div class="price-wrapper">
         <div class="price-group subtotal">
-          <div class="price-desc">Subtotal</div> <div class="price">$5.50</div>
+          <div class="price-desc">Subtotal</div>
+          <div class="price">$5.50</div>
         </div>
 
         <div class="price-group tax">
-          <div class="price-desc">Tax</div> <div class="price">$0.39</div>
+          <div class="price-desc">Tax</div>
+          <div class="price">$0.39</div>
         </div>
 
         <div class="price-group shipping">
-          <div class="price-desc">Shipping</div> <div class="price">$5.00</div>
+          <div class="price-desc">Shipping</div>
+          <div class="price">$5.00</div>
         </div>
 
         <hr>
 
         <div class="price-group total">
-          <div class="price-desc">Total</div> <div class="price">$19.45</div>
+          <div class="price-desc">Total</div>
+          <div class="price">$19.45</div>
         </div>
       </div>
     </div>
@@ -218,4 +240,5 @@
   </footer>
 
 </body>
+
 </html>

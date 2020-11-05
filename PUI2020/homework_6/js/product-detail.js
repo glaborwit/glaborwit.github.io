@@ -211,7 +211,6 @@ function addCart(){
   totalQty += currQty;
   localStorage.setItem("qty", totalQty);
   document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
-
 }
 
 // Tut on adding to list in localStorage

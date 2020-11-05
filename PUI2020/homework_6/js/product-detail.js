@@ -1,8 +1,8 @@
 // globals
-let selectedGlaze;
-let selectedQuantity;
+let selectedGlaze; // selected glaze DIV element (not string-- a node)
+let selectedQuantity; // selected quantity DIV element (not int-- a node)
 let addToCart;
-let currQty = 0; //curr qty selected
+let currQty = 0; //curr qty selected (INT)
 let totalQty;
 
 // sets totalQty if nothing currently exists
@@ -39,6 +39,88 @@ function selectGlaze(curr){
   }
 }
 
+function getProdName(curr){
+  let rawName = curr.parentElement.parentElement.getElementsByTagName("h1")[0].innerHTML.trim();
+  
+  if(rawName.includes("Original")){
+    currName = "orig";
+  }
+
+  else if(rawName.includes("Gluten")){
+    currName = "gf";
+  }
+
+  else if(rawName.includes("Pumpkin")){
+    currName = "ps";
+  }
+
+  else if(rawName.includes("Caramel")){
+    currName = "cp";
+  }
+
+  else if(rawName.includes("Walnut")){
+    currName = "wt";
+  }
+
+  else if(rawName.includes("Blackberry")){
+    currName = "bkb";
+  }
+
+  return currName;
+}
+
+function selectQuantity(curr){
+  // if a glaze is already selected, reset background color (deselect it visually)
+  if(selectedQuantity){
+    selectedQuantity.style.backgroundColor="#ffffff";
+  }
+  curr.style.backgroundColor="#eef8ff";
+  selectedQuantity = curr;
+
+  currQty = parseInt(curr.innerHTML);
+
+  if(selectedGlaze && !addToCart){
+    triggerAddToCart();
+  }
+}
+
+function triggerAddToCart(){
+  if (selectedGlaze && selectedQuantity){
+    document.getElementById('addToCart').style.backgroundColor="#FBF19A";
+    document.getElementById('addToCart').style.cursor="pointer";
+    document.getElementById('addToCart').disabled=false;
+
+    addToCart = true;
+  }
+}
+
+function addCart(){
+  totalQty += currQty;
+  localStorage.setItem("qty", totalQty);
+  document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
+  
+  pushToCartArr();
+}
+
+function pushToCartArr(){
+  let currCart; //whats currently in cart before new item added
+  let prodName = document.getElementById("container").getElementsByTagName("h1")[0].innerHTML.trim();
+  let newItem = [prodName, currQty, selectedGlaze.innerHTML.trim()];
+
+  // if a products already array exists
+  if(localStorage.getItem("cart")){
+    currCart = JSON.parse(localStorage.getItem("cart"));
+    currCart.push(newItem);
+    localStorage.setItem("cart", JSON.stringify(currCart));
+  }
+  else{
+    localStorage.setItem("cart", JSON.stringify([newItem]));
+  }
+
+  console.log("After Pushing to Cart: ", JSON.parse(localStorage.getItem("cart")));
+}
+
+// update image when glaze changes
 function updateImage(curr){
   let glaze = curr.innerHTML.trim();
   let name = getProdName(curr);
@@ -150,6 +232,7 @@ function updateImage(curr){
         break;
     }
   }
+<<<<<<< HEAD
 }
 
 function getProdName(curr){
@@ -224,3 +307,6 @@ function addCart(){
 //   // Save back to localStorage
 //   localStorage.setItem('myFavoriteSandwich', data);
 //   console.log("DATA: ", localStorage.getItem('myFavoriteSandwich'))
+=======
+}
+>>>>>>> hw6_a

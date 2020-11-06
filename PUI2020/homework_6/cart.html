@@ -14,12 +14,19 @@
   <!-- Scripts -->
   <script src="js/cart-setter.js"></script> <!-- sets # cart items in navbar-->
   <script src="js/cart.js"></script>
+  <!-- Note: following script inline with HTML file so can easily include multiple functions from diff script srcs in body onload -->
+  <script>
+    function onloadCartPg(){
+      setCart();
+      populateOrdersTab();
+    }
+  </script>
 
   <!-- Tab info -->
   <title>Your Cart | Bun Bun Bake Shop</title>
 </head>
 
-<body onload="setCart()">
+<body onload="onloadCartPg()">
   <!-- Top Navigation -->
   <nav>
     <div class="logo"><a href="index.html">Bun Bun Bake Shop</a></div>
@@ -42,7 +49,6 @@
       <div id="items-wrapper">
         <h1>Your Order</h1>
 
-<<<<<<< HEAD
         <!--
           <div class="item orig-cinna">
             <span class="first-line">
@@ -57,11 +63,8 @@
             </span>
           </div>
       -->
-=======
-        <!-- <span id="local storage dump:" -->
->>>>>>> hw6_a
         <!-- Item 1 -->
-        <div class="item orig-cinna">
+        <!-- <div class="item">
 
           <span class="first-line">
             <span class="prod-name">
@@ -100,8 +103,7 @@
           </span>
 
         </div>
-
-        <!-- Item 2 -->
+        
         <div class="item">
 
           <span class="first-line">
@@ -140,7 +142,7 @@
             </span>
           </span>
 
-        </div>
+        </div> -->
       </div>
 
       <div class="price-wrapper">

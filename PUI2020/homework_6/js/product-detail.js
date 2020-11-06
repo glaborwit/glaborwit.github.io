@@ -98,8 +98,7 @@ function addCart(){
   totalQty += currQty;
   localStorage.setItem("qty", totalQty);
   document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
-  
-  console.log("HI");
+
   pushToCartArr();
 }
 
@@ -233,65 +232,4 @@ function updateImage(curr){
         break;
     }
   }
-}
-
-function getProdName(curr){
-  let rawName = curr.parentElement.parentElement.getElementsByTagName("h1")[0].innerHTML.trim();
-  
-  if(rawName.includes("Original")){
-    currName = "orig";
-  }
-
-  else if(rawName.includes("Gluten")){
-    currName = "gf";
-  }
-
-  else if(rawName.includes("Pumpkin")){
-    currName = "ps";
-  }
-
-  else if(rawName.includes("Caramel")){
-    currName = "cp";
-  }
-
-  else if(rawName.includes("Walnut")){
-    currName = "wt";
-  }
-
-  else if(rawName.includes("Blackberry")){
-    currName = "bkb";
-  }
-
-  return currName;
-}
-
-function selectQuantity(curr){
-  // if a glaze is already selected, reset background color (deselect it visually)
-  if(selectedQuantity){
-    selectedQuantity.style.backgroundColor="#ffffff";
-  }
-  curr.style.backgroundColor="#eef8ff";
-  selectedQuantity = curr;
-
-  currQty = parseInt(curr.innerHTML);
-
-  if(selectedGlaze && !addToCart){
-    triggerAddToCart();
-  }
-}
-
-function triggerAddToCart(){
-  if (selectedGlaze && selectedQuantity){
-    document.getElementById('addToCart').style.backgroundColor="#FBF19A";
-    document.getElementById('addToCart').style.cursor="pointer";
-    document.getElementById('addToCart').disabled=false;
-
-    addToCart = true;
-  }
-}
-
-function addCart(){
-  totalQty += currQty;
-  localStorage.setItem("qty", totalQty);
-  document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
 }

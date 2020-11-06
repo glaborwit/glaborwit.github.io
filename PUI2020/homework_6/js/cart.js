@@ -27,24 +27,54 @@ function setBasePrice(prod) {
     }
 }
 
-function updateItemPrice(curr) {
-    let prodName = getCurrProductName(curr);
-    let basePrice = setBasePrice(prodName);
-    let quantity = curr.value;
+function updateCartGlaze(curr){
+    let newGlaze = curr.value;
 
-    //find span tag for price
-    let spn = null;
-    let par = curr.parentElement.parentElement;
-    for (var i = 0; i < par.childNodes.length; i++) {
-        if (par.childNodes[i].className == "item-price") {
-            spn = par.childNodes[i];
+    // update cart in local storage to match new qty
+    // find index of current item in array
+    let itemsList = document.getElementById('items-wrapper').getElementsByClassName('item')
+    for(var i = 0; i < itemsList.length; i++){
+        if(itemsList[i] == curr.parentElement.parentElement.parentElement){
+            currI = i;
+            break
         }
     }
 
-    spn.innerHTML = "$" + (Math.round(basePrice * quantity * 100) / 100).toFixed(2);
-    calculateTotals();
+    let newCart = currCart;
+    newCart[currI][2] = newGlaze; // change qty in cart for local storage
+    localStorage.setItem("cart", JSON.stringify(newCart));
 }
 
+function updateCartQty(curr) {
+    let quantity = curr.value;
+    
+    // update cart in local storage to match new qty
+    let itemsList = document.getElementById('items-wrapper').getElementsByClassName('item')
+    for(var i = 0; i < itemsList.length; i++){
+        if(itemsList[i] == curr.parentElement.parentElement.parentElement){
+            currI = i;
+            break
+        }
+    }
+    let newCart = currCart;
+    newCart[currI][1] = parseInt(quantity); // change qty in cart for local storage
+    localStorage.setItem("cart", JSON.stringify(newCart));
+
+    // update and set qty in cart icon
+    let newTotalQty = 0;
+    for (var i = 0; i < newCart.length; i++){
+        newTotalQty += newCart[i][1];
+    }
+    // update qty in cart
+    localStorage.setItem("qty", newTotalQty);
+    // set cart qty in icon
+    document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
+
+    populateOrdersTab();
+}
+
+// calculates totals for pricing in second box (subtotal, tax, shipping fee, totals)
+    // note: independant of other functions, can use to populate/update totals box
 function calculateTotals() {
     let subtotal = 0.00;
     let tax = 0.00;
@@ -61,6 +91,7 @@ function calculateTotals() {
     updateTotalsText(subtotal, tax, unroundedTotal);
 }
 
+// helper function for calculateTotals()
 function updateTotalsText(subtotal, tax, total) {
     // Set subtotal
     let subtotalText = document.getElementsByClassName("subtotal")[0].childNodes[3];
@@ -75,45 +106,58 @@ function updateTotalsText(subtotal, tax, total) {
     totalText.innerHTML = "$" + (Math.round(total * 100) / 100).toFixed(2);
 }
 
-function deleteItem(curr) {
-    curr.parentNode.removeChild();
+function deleteItem(curr, cart, i) {
+    let newCartQty = (localStorage.getItem("qty") - cart[i][1]);
+    curr.remove();
+    cart.splice(i, 1);
+
+    // update qty in cart now that item removed
+    localStorage.setItem("qty", newCartQty);
+    // set cart qty in icon
+    document.getElementById("numItems").innerHTML = localStorage.getItem("qty") + "<br>";
+
+    // update cart in local storage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    populateOrdersTab();
+    
 }
 
 function selectedGlazeDropdownGenerator(glaze){
-    if (glaze == "none"){
+    if (glaze == "None"){
         return `Glaze: 
-            <select name="glaze" id="glazing">
-                <option selected value="none">None</option>
-                <option value="vanillaMilk">Vanilla-Milk</option>
-                <option value="sugarMilk">Sugar-Milk</option>
-                <option value="doubleChocolate">Double-Chocolate</option>
+            <select name="glaze" id="glazing" onchange='updateCartGlaze(this)'>
+                <option selected value="None">None</option>
+                <option value="Vanilla-Milk">Vanilla-Milk</option>
+                <option value="Sugar-Milk">Sugar-Milk</option>
+                <option value="Double-Chocolate">Double-Chocolate</option>
             </select>`
     }
     else if (glaze == "Vanilla-Milk"){
         return `Glaze: 
-            <select name="glaze" id="glazing">
-                <option value="none">None</option>
-                <option selected value="vanillaMilk">Vanilla-Milk</option>
-                <option value="sugarMilk">Sugar-Milk</option>
-                <option value="doubleChocolate">Double-Chocolate</option>
+            <select name="glaze" id="glazing" onchange='updateCartGlaze(this)'>
+                <option value="None">None</option>
+                <option selected value="Vanilla-Milk">Vanilla-Milk</option>
+                <option value="Sugar-Milk">Sugar-Milk</option>
+                <option value="Double-Chocolate">Double-Chocolate</option>
             </select>`
     }
     else if (glaze == "Sugar-Milk"){
         return `Glaze: 
-            <select name="glaze" id="glazing">
-                <option value="none">None</option>
-                <option value="vanillaMilk">Vanilla-Milk</option>
-                <option selected value="sugarMilk">Sugar-Milk</option>
-                <option value="doubleChocolate">Double-Chocolate</option>
+            <select name="glaze" id="glazing" onchange='updateCartGlaze(this)'>
+                <option value="None">None</option>
+                <option value="Vanilla-Milk">Vanilla-Milk</option>
+                <option selected value="Sugar-Milk">Sugar-Milk</option>
+                <option value="Double-Chocolate">Double-Chocolate</option>
             </select>`
     }
     else {
         return `Glaze: 
-            <select name="glaze" id="glazing">
-                <option value="none">None</option>
-                <option value="vanillaMilk">Vanilla-Milk</option>
-                <option value="sugarMilk">Sugar-Milk</option>
-                <option selected value="doubleChocolate">Double-Chocolate</option>
+            <select name="glaze" id="glazing" onchange='updateCartGlaze(this)'>
+                <option value="None">None</option>
+                <option value="Vanilla-Milk">Vanilla-Milk</option>
+                <option value="Sugar-Milk">Sugar-Milk</option>
+                <option selected value="Double-Chocolate">Double-Chocolate</option>
             </select>`
     }
 }
@@ -121,7 +165,7 @@ function selectedGlazeDropdownGenerator(glaze){
 function selectedQtyDropdownGenerator(q){
     if (q == 1){
         return `Qty: 
-        <select name='quantity' id='quantity' onchange='updateItemPrice(this)'>
+        <select name='quantity' id='quantity' onchange='updateCartQty(this)'>
           <option selected value='1'>1</option>
           <option value='3'>3</option>
           <option value='6'>6</option>
@@ -131,7 +175,7 @@ function selectedQtyDropdownGenerator(q){
     }
     else if (q == 3){
         return `Qty: 
-        <select name='quantity' id='quantity' onchange='updateItemPrice(this)'>
+        <select name='quantity' id='quantity' onchange='updateCartQty(this)'>
           <option value='1'>1</option>
           <option selected value='3'>3</option>
           <option value='6'>6</option>
@@ -141,7 +185,7 @@ function selectedQtyDropdownGenerator(q){
     }
     else if (q == 6){
         return `Qty: 
-        <select name='quantity' id='quantity' onchange='updateItemPrice(this)'>
+        <select name='quantity' id='quantity' onchange='updateCartQty(this)'>
           <option value='1'>1</option>
           <option value='3'>3</option>
           <option selected value='6'>6</option>
@@ -151,7 +195,7 @@ function selectedQtyDropdownGenerator(q){
     }
     else {
         return `Qty: 
-        <select name='quantity' id='quantity' onchange='updateItemPrice(this)'>
+        <select name='quantity' id='quantity' onchange='updateCartQty(this)'>
           <option value='1'>1</option>
           <option value='3'>3</option>
           <option value='6'>6</option>
@@ -215,6 +259,8 @@ function populateOrdersTab() {
         let spanRemove = document.createElement('SPAN');
         spanRemove.setAttribute('class', 'remove');
         spanRemove.innerHTML = "Remove";
+        spanRemove.onclick = ()=> {deleteItem(indivItemDiv, currCart, i-1)};
+
         // Add inner spans to first line span
         spanSecondLine.appendChild(spanGlaze);
         spanSecondLine.appendChild(spanRemove);
@@ -224,9 +270,8 @@ function populateOrdersTab() {
         // Add both spans to individual item container
         indivItemDiv.appendChild(spanFirstLine);
         indivItemDiv.appendChild(spanSecondLine);
-        // spanRemove.onclick = deleteItem(spanRemove);
         // Add inividual item to items wrapper div
         container.appendChild(indivItemDiv);
     }
-    console.log("Orders: ", container);
+    calculateTotals();
 }

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/cart.css">
@@ -48,101 +50,6 @@
     <div class="cart">
       <div id="items-wrapper">
         <h1>Your Order</h1>
-
-        <!--
-          <div class="item orig-cinna">
-            <span class="first-line">
-              <span class="prod-name"></span>
-              <span class="qty-ops">SELECT ELEMENT</span>
-              <span class="item-price"></span>
-            </span>
-            
-            <span class="second-line">
-              <span class="glaze-ops">SELECT ELEMENT</span>
-              <span class="remove" onclick="deleteItem(this)">Remove</span>
-            </span>
-          </div>
-      -->
-        <!-- Item 1 -->
-        <!-- <div class="item">
-
-          <span class="first-line">
-            <span class="prod-name">
-              Original Cinnamon Bun Bun
-            </span>
-
-            <span class="qty-ops">
-              Qty:
-              <select name="quantity" id="quantity" onchange="updateItemPrice(this)">
-                <option value="1">1</option>
-                <option value="3">3</option>
-                <option value="6">6</option>
-                <option value="12">12</option>
-              </select>
-            </span>
-
-            <span class="item-price">
-              $2.50
-            </span>
-          </span>
-
-          <span class="second-line">
-            <span class="glaze-ops">
-              Glaze:
-              <select name="glaze" id="glazing">
-                <option value="none">None</option>
-                <option value="vanillaMilk">Vanilla-Milk</option>
-                <option value="sugarMilk">Sugar-Milk</option>
-                <option value="doubleChocolate">Double-Chocolate</option>
-              </select>
-            </span>
-
-            <span class="remove" onclick="deleteItem(this)">
-              Remove
-            </span>
-          </span>
-
-        </div>
-        
-        <div class="item">
-
-          <span class="first-line">
-            <span class="prod-name">
-              Pumpkin Spice Bun Bun
-            </span>
-
-            <span class="qty-ops">
-              Qty:
-              <select name="quantity" id="quantity" onchange="updateItemPrice(this)">
-                <option value="1">1</option>
-                <option value="3">3</option>
-                <option value="6">6</option>
-                <option value="12">12</option>
-              </select>
-            </span>
-
-            <span class="item-price">
-              $3.00
-            </span>
-          </span>
-
-          <span class="second-line">
-            <span class="glaze-ops">
-              Glaze:
-              <select name="glaze" id="glazing">
-                <option value="none">None</option>
-                <option value="vanillaMilk">Vanilla-Milk</option>
-                <option selected value="sugarMilk">Sugar-Milk</option>
-                <option value="doubleChocolate">Double-Chocolate</option>
-              </select>
-            </span>
-
-            <span class="remove" onclick="deleteItem(this)">
-              Remove
-            </span>
-          </span>
-
-        </div> -->
       </div>
 
       <div class="price-wrapper">
@@ -175,69 +82,69 @@
       <h1>Shipping Address</h1>
       <form id="shipping-info" autocomplete="on">
         <p>
-          <label for="first-name">First name</label>
-          <input type="text" id="firstname" placeholder="First Name" name="first-name">
+          <label for="firstname-ship">First name</label>
+          <input type="text" id="firstname-ship" placeholder="First Name" name="first-name">
 
-          <label for="last-name">Last name</label>
-          <input type="text" id="lastname" placeholder="Last Name" name="last-name">
+          <label for="lastname-ship">Last name</label>
+          <input type="text" id="lastname-ship" placeholder="Last Name" name="last-name">
         </p>
 
         <p>
-          <label for="address-st">Street</label>
-          <input type="text" id="address-st" placeholder="Street Address" name="street">
+          <label for="address-st-ship">Street</label>
+          <input type="text" id="address-st-ship" placeholder="Street Address" name="street">
 
-          <label for="address-apt">Apt, suite, company, c/o</label>
-          <input type="text" id="address-apt" placeholder="Apt #" name="apt">
+          <label for="address-apt-ship">Apt, suite, company, c/o</label>
+          <input type="text" id="address-apt-ship" placeholder="Apt #" name="apt">
         </p>
 
         <p>
-          <label for="address-city">City</label>
-          <input type="text" id="address-city" placeholder="City" name="city">
+          <label for="address-city-ship">City</label>
+          <input type="text" id="address-city-ship" placeholder="City" name="city">
 
-          <label for="address-state">State</label>
-          <input type="text" id="address-state" placeholder="State" name="state">
+          <label for="address-state-ship">State</label>
+          <input type="text" id="address-state-ship" placeholder="State" name="state">
         </p>
 
         <p>
-          <label for="address-zip">Zipcode</label>
-          <input type="text" id="address-zip" placeholder="Zipcode" name="zipcode">
+          <label for="address-zip-ship">Zipcode</label>
+          <input type="text" id="address-zip-ship" placeholder="Zipcode" name="zipcode">
         </p>
       </form>
 
       <h1>Billing Address</h1>
-      <form id="shipping-info" autocomplete="on">
+      <form id="billing-info" autocomplete="on">
         <p>
-          <label for="first-name">First name</label>
-          <input type="text" id="firstname" placeholder="First Name" name="first-name">
+          <label for="firstname-bill">First name</label>
+          <input type="text" id="firstname-bill" placeholder="First Name" name="first-name">
 
-          <label for="last-name">Last name</label>
-          <input type="text" id="lastname" placeholder="Last Name" name="last-name">
+          <label for="lastname-bill">Last name</label>
+          <input type="text" id="lastname-bill" placeholder="Last Name" name="last-name">
         </p>
 
         <p>
-          <label for="address-st">Street</label>
-          <input type="text" id="address-st" placeholder="Street Address" name="street">
+          <label for="address-st-bill">Street</label>
+          <input type="text" id="address-st-bill" placeholder="Street Address" name="street">
 
-          <label for="address-apt">Apt, suite, company, c/o</label>
-          <input type="text" id="address-apt" placeholder="Apt #" name="apt">
+          <label for="address-apt-bill">Apt, suite, company, c/o</label>
+          <input type="text" id="address-apt-bill" placeholder="Apt #" name="apt">
         </p>
 
         <p>
-          <label for="address-city">City</label>
-          <input type="text" id="address-city" placeholder="City" name="city">
+          <label for="address-city-bill">City</label>
+          <input type="text" id="address-city-bill" placeholder="City" name="city">
 
-          <label for="address-state">State</label>
-          <input type="text" id="address-state" placeholder="State" name="state">
+          <label for="address-state-bill">State</label>
+          <input type="text" id="address-state-bill" placeholder="State" name="state">
         </p>
 
         <p>
-          <label for="address-zip">Zipcode</label>
-          <input type="text" id="address-zip" placeholder="Zipcode" name="zipcode">
+          <label for="address-zip-bill">Zipcode</label>
+          <input type="text" id="address-zip-bill" placeholder="Zipcode" name="zipcode">
         </p>
       </form>
 
       <!-- Place order button -->
-      <center><a href="confirmation.html"><button class="place-order" type="button">Place Order</button></a></center>
+      <a class="place-order-text" href="confirmation.html"><div class="place-order">Place Order</div></a>
     </div>
   </div>
   <!-- Footer -->

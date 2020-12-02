@@ -15,53 +15,53 @@ function AddCurryModal(props) {
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Modal.Body className="container">
-                <h2>New Curry Entry</h2>
-                <div className="row">
-                    <div className="col-8">
-                        <Form.Label class="mb-1">Restaurant</Form.Label><br />
-                        <Form.Control size="sm" type="text" placeholder="Name of Restaurant" />
-                        <br />
+            <Form onSubmit={props.currySetter}>
+                <Modal.Body className="container">
+                    <h2>New Curry Entry</h2>
+                    <div className="row">
+                        <div className="col-8">
+                            <Form.Label className="mb-1">Restaurant</Form.Label><br />
+                            <Form.Control size="sm" type="text" placeholder="Name of Restaurant" />
+                            <br />
 
-                        <Form.Label class="mb-1">Full Address of Restaurant</Form.Label>
-                        <Form.Control size="sm" type="text" placeholder='e.g. "123 Thai St, Pittsburgh, PA"' />
-                        <br />
+                            <Form.Label className="mb-1">Full Address of Restaurant</Form.Label>
+                            <Form.Control size="sm" type="text" placeholder='e.g. "123 Thai St, Pittsburgh, PA"' />
+                            <br />
 
-                        <div className="container p-0">
-                            <div className="row">
-                                <div className="col-8">
-                                    <Form.Label className="mb-0">Curry Name</Form.Label>
-                                    <br /><span className="sublabel">Include "curry" in name</span>
-                                    <Form.Control size="sm" type="text" placeholder='e.g. "Red Curry"' />
-                                </div>
-                                <div className="col-4">
-                                    <Form.Label className="mb-0">Rating</Form.Label>
-                                    <br /><span className="sublabel">1=worst, 5=best</span>
-                                    <Form.Control size="sm" type="text" placeholder="1-5" />
+                            <div className="container p-0">
+                                <div className="row">
+                                    <div className="col-8">
+                                        <Form.Label className="mb-0">Curry Name</Form.Label>
+                                        <br /><span className="sublabel">Include "curry" in name</span>
+                                        <Form.Control size="sm" type="text" placeholder='e.g. "Red Curry"' />
+                                    </div>
+                                    <div className="col-4">
+                                        <Form.Label className="mb-0">Rating</Form.Label>
+                                        <br /><span className="sublabel">1=worst, 5=best</span>
+                                        <Form.Control size="sm" type="text" placeholder="1-5" />
+                                    </div>
                                 </div>
                             </div>
+
+                            <br />
+                            <Form.Label className="mb-1">Taste Notes</Form.Label>
+                            <Form.Control as="textarea" placeholder="Taste description of curry" rows={3} />
+
                         </div>
 
-                        <br />
-                        <Form.Label class="mb-1">Taste Notes</Form.Label>
-                        <Form.Control as="textarea" placeholder="Taste description of curry" rows={3} />
-                        
+                        <div className="col-4">
+                            <Form.Group>
+                                <Form.Label className="mb-1">Add a Photo</Form.Label>
+                                <Form.File id="exampleFormControlFile1" />
+                            </Form.Group>
+                        </div>
                     </div>
-
-                    <div className="col-4">
-                    <Form>
-                        <Form.Group>
-                            <Form.Label class="mb-1">Add a Photo</Form.Label>
-                            <Form.File id="exampleFormControlFile1" />
-                        </Form.Group>
-                    </Form>
-                    </div>
-                </div>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button variant="outline-secondary" size="sm" onClick={props.onHide}>Close</Button>
-                <Button variant="primary" size="sm">Save</Button>
-            </Modal.Footer>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-secondary" size="sm" onClick={props.onHide}>Close</Button>
+                    <Button variant="primary" type="submit" size="sm">Save</Button>
+                </Modal.Footer>
+            </Form>
         </Modal>
     );
 }
@@ -119,11 +119,18 @@ class CurryIndex extends React.Component {
 
 class Home extends React.Component {
     state = {
-        modalShow: false
+        modalShow: false,
+        currArr: {},
     }
 
     setModalShow(bool) {
         this.setState({ modalShow: bool });
+    }
+
+    addNewCurry(e) {
+        // pass as setter into modal component as prop
+        // use set state to add a new obj to set
+        console.log("arr: ", e.target.elements);
     }
 
     render() {
@@ -155,6 +162,7 @@ class Home extends React.Component {
                 <AddCurryModal
                     show={this.state.modalShow}
                     onHide={() => this.setModalShow(false)}
+                    currySetter={this.addNewCurry}
                 />
 
             </div>

@@ -30,6 +30,10 @@ h3 {
     font-weight: 500 !important;
 }
 
+#bootstrap-overrides h2.curry-card-title {
+    line-height: 25px;
+}
+
 /* Logo styling */
 #bootstrap-overrides .navbar-brand {
     font-family: "Avenir";
@@ -50,36 +54,9 @@ a.nav-link.active {
     font-weight: 800;
 }
 
-.square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-}
-
-.square:focus {
-    outline: none;
-}
-
-.kbd-navigation .square:focus {
-    background: #ddd;
-}
-
-.game {
-    display: flex;
-    flex-direction: row;
-}
-
-.game-info {
-    margin-left: 20px;
+.delete-btn{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 label{

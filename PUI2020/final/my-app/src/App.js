@@ -4,45 +4,34 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
+import noodleheadRed from './noodlehead-red.jpg';
+
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route,
+//     Link
+// } from "react-router-dom";
+// import Map from "./Map";
 
 // CSS
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-function throwError(inputName){
+function throwError(inputName) {
     console.log(inputName, " is required.")
-}
-
-function submitForm(e, func) {
-    // Error checker: make sure all input values are filled (except excluded inputs if any)
-
-    // console.log(func(e))
-    let excludedInputs = "curryPhoto tastingNotes";
-    let error = false;
-    
-    // Go through each input field and make sure it's not empty
-    for (var i = 0; i < e.target.elements.length - 2; i++) {
-        if(e.target[i].value === "" && !excludedInputs.includes(e.target[i].name)){
-            throwError(e.target[i].name);
-            error = true;
-        }
-    }
-    if (error === true){
-        return null
-    }
-    
-    func(e);
 }
 
 function AddCurryModal(props) {
     return (
         <Modal id="bootstrap-overrides"
-            {...props}
-            size="md"
+            // {...props}
+            show={props.show}
+            size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Form onSubmit={(e) => submitForm(e, props.currySetter)}>
+            <Form onSubmit={props.currySetter}>
                 <Modal.Body className="container">
                     <h2>New Curry Entry</h2>
                     <div className="row">
@@ -111,14 +100,15 @@ let loaded_curryList = load();
 class Curry extends React.Component {
     render() {
         return (
-            <div className="col-sm-6 mb-4">
+            <div className="col-sm-12 col-md-6 mb-4">
                 <div className="container mt-4 mt-sm-auto">
                     <div className="row">
-                        <div className="col-sm-4">
-                            <Image alt="curry" src={"noodlehead-red.jpg"} />
+                        <div className="col-12 col-md-7 col-lg-6 pl-0">
+                            {/* <Image alt="curry" src={require("./noodlehead-red.jpg")} /> */}
+                            <Image alt="curry" src={noodleheadRed} className="card-images" />
                         </div>
-                        <div className="col-sm-8">
-                            <h2 className="mb-0 curry-card-title">{this.props.restaurant}</h2>
+                        <div className="col-12 col-md-5 col-lg-6 px-0 pl-md-3">
+                            <h2 className="mb-0 mt-2 mt-md-0 curry-card-title">{this.props.restaurant}</h2>
                             <h3>{this.props.curry}</h3>
                             <p>
                                 Taste notes: {this.props.tastingNotes}
@@ -146,20 +136,39 @@ class App extends Component {
     };
 
     renderCurryItem(restaurant, curryType, tastingNotes, rating, i) {
-        return <Curry restaurant={restaurant} curry={curryType} tastingNotes={tastingNotes} rating={rating} i={i} deleteItem={this.deleteItem} />;
+        return <Curry restaurant={restaurant} curry={curryType} tastingNotes={tastingNotes} rating={rating} i={i} key={i} deleteItem={this.deleteItem} />;
     }
 
     addItem = (e) => {
+        e.preventDefault();
+        // Error checker: make sure all input values are filled (except excluded inputs if any)
+        let excludedInputs = "curryPhoto tastingNotes";
+
+        let error = false;
+        // Go through each input field and make sure it's not empty
+        for (var i = 0; i < e.target.elements.length - 2; i++) {
+            if (e.target[i].value === "" && !excludedInputs.includes(e.target[i].name)) {
+                throwError(e.target[i].name);
+                error = true;
+            }
+        }
+        if (error === true) {
+            return null
+        }
+
         let currCurryList = this.state.curryList;
 
         let newCurry = {};
-        for (var i = 0; i < e.target.elements.length - 2; i++) {
+        for (i = 0; i < e.target.elements.length - 2; i++) {
             newCurry[e.target.elements[i].name] = e.target[i].value;
         }
-        console.log("New curry: ", newCurry)
+
         currCurryList.push(newCurry)
         this.setState({ curryList: currCurryList });
         store(currCurryList)
+
+        // close modal
+        this.setModalShow(false);
     };
 
     deleteItem = (event, i) => {
@@ -189,7 +198,6 @@ class App extends Component {
                         i
                     )
                 );
-                // console.log(curry); // Debug
             }
         }
 
@@ -197,20 +205,21 @@ class App extends Component {
             <div id="bootstrap-overrides">
 
                 {/* Navbar */}
-                <nav className="navbar mb-5">
+                {/* <nav className="navbar mb-5">
                     <span className="navbar-brand">Custom Curry Index</span>
+                    
 
-                    <div id="navbarNav">
+                <div id="navbarNav">
                         <div className="navbar-nav flex-row">
                             <a href="#curryindex" className="nav-item nav-link active px-1 mr-2">Curry Index</a>
                             <a href="#map" className="nav-item nav-link px-1 mx-2">Map</a>
                         </div>
                     </div>
-                </nav>
+                </nav> */}
 
-                {/* Curry Index: List of curries */}
+                {/* Curry Index: List of curries */ }
                 <div className="container">
-                    <div className="header pb-3">
+                    <div className="header pb-0 pb-md-3 px-3">
                         <h1 className="mb-0">Saved Curries</h1>
                         <a href="#add" onClick={() => this.setModalShow(true)}>
                             <u>+ Add New Curry</u>
@@ -225,29 +234,9 @@ class App extends Component {
                 <AddCurryModal
                     show={this.state.modalShow}
                     onHide={() => this.setModalShow(false)}
-                    currySetter={() => this.addItem.bind(this)}
+                    currySetter={this.addItem}
                 />
-            </div>
-
-
-            //     <div className="App">
-            //         <div className="Header">
-            //             <h2>Simple To Do</h2>
-            //             <input
-            //                 type="text"
-            //                 value={this.state.newCurryContent}
-            //                 onChange={(evt) => {
-            //                     console.log(evt.target.value);
-            //                     this.setState({ newCurryContent: evt.target.value });
-            //                 }}
-            //                 placeholder="new to do...."
-            //             />
-            //             <span onClick={() => this.addItem()} className="AddNewToDoButton">
-            //                 Add
-            //   </span>
-            //         </div>
-            //         <ul>{curriesInIndex}</ul>
-            //     </div>
+            </div >
         );
     }
 }

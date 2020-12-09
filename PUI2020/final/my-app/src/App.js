@@ -1,3 +1,8 @@
+// Questions
+// Making images work in react by src link without import?
+//    - need this to add custom images
+// Make maps update without manual refresh?
+
 // Modules
 import React, { Component } from "react";
 import Modal from 'react-bootstrap/Modal';
@@ -82,10 +87,10 @@ function AddCurryModal(props) {
     );
 }
 
-// // Store curry list in local storage
-// function store(lizt) {
-//     localStorage.setItem('curryList', JSON.stringify(lizt))
-// }
+// Store curry list in local storage
+function store(lizt) {
+    localStorage.setItem('curryList', JSON.stringify(lizt))
+}
 
 // Load from storage
 function load() {
@@ -166,12 +171,9 @@ class App extends Component {
             newCurry[e.target.elements[i].name] = e.target[i].value;
         }
 
-        currCurryList.push(newCurry);
+        currCurryList.push(newCurry)
         this.setState({ curryList: currCurryList });
-        // store(currCurryList);
-
-        // update global curry list in parent component
-        this.props.globalSetter(currCurryList);
+        store(currCurryList)
 
         // close modal
         this.setModalShow(false);
@@ -182,10 +184,7 @@ class App extends Component {
         let currCurryList = this.state.curryList;
         currCurryList.splice(i, 1);
         this.setState({ curryList: currCurryList });
-        // store(currCurryList);
-
-        // update global curry list in parent component
-        this.props.globalSetter(currCurryList)
+        store(currCurryList);
     };
 
     setModalShow(bool) {
@@ -214,9 +213,9 @@ class App extends Component {
                 {/* Curry Index: List of curries */ }
                 <div className="header pb-0 pb-md-3">
                     <h1 className="mb-0">Saved Curries</h1>
-                    <a onClick={() => this.setModalShow(true)}>
+                    <span className="link-like-span" onClick={() => this.setModalShow(true)}>
                         <u>+ Add New Curry</u>
-                    </a>
+                    </span>
                 </div>
 
                 <div className="row">

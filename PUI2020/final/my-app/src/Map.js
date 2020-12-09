@@ -16,13 +16,13 @@ const mapStyles = {
     height: '60%',
 };
 
-function loadCurryList() {
-    let unparsedCurryList = localStorage.getItem('curryList')
-    //Using && to condition on unparsedCurryList else null
-    return (unparsedCurryList && JSON.parse(unparsedCurryList))
-}
+// function loadCurryList() {
+//     let unparsedCurryList = localStorage.getItem('curryList')
+//     //Using && to condition on unparsedCurryList else null
+//     return (unparsedCurryList && JSON.parse(unparsedCurryList))
+// }
 
-function loadMarkerInfo(){
+function loadMarkerInfo(loaded_curryList){
     let markersList = [];
         for (let i = 0; i < loaded_curryList.length; i++) {
             let curry = loaded_curryList[i];
@@ -44,16 +44,16 @@ function loadMarkerInfo(){
 }
 
 // Globals
-let loaded_curryList = loadCurryList();
-let loaded_markerInfo = loadMarkerInfo();
+// let loaded_curryList = loadCurryList();
+// let loaded_markerInfo = loadMarkerInfo();
 
 class MapContainer extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            curryList: loaded_curryList || [],
-            restaurants: loaded_markerInfo || []
+            curryList: this.props.curries || [],
+            restaurants: loadMarkerInfo(this.props.curries) || []
         }
     }
 

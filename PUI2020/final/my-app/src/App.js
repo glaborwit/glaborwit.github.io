@@ -25,9 +25,9 @@ function throwError(inputName) {
 function AddCurryModal(props) {
     return (
         <Modal id="bootstrap-overrides"
-            // {...props}
             show={props.show}
-            size="lg"
+            size="md"
+            className="modal-add-curry"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
@@ -82,10 +82,10 @@ function AddCurryModal(props) {
     );
 }
 
-// Store curry list in local storage
-function store(lizt) {
-    localStorage.setItem('curryList', JSON.stringify(lizt))
-}
+// // Store curry list in local storage
+// function store(lizt) {
+//     localStorage.setItem('curryList', JSON.stringify(lizt))
+// }
 
 // Load from storage
 function load() {
@@ -128,12 +128,15 @@ class Curry extends React.Component {
 }
 
 class App extends Component {
-    state = {
-        //Using || for backup assignment if no curryList in storage
-        curryList: loaded_curryList || [],
-        newCurryContent: "",
-        modalShow: false
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            //Using || for backup assignment if no curryList in storage
+            curryList: loaded_curryList || [],
+            newCurryContent: "",
+            modalShow: false
+        };
+    }
 
     renderCurryItem(restaurant, curryType, tastingNotes, rating, i) {
         return <Curry restaurant={restaurant} curry={curryType} tastingNotes={tastingNotes} rating={rating} i={i} key={i} deleteItem={this.deleteItem} />;
@@ -163,9 +166,12 @@ class App extends Component {
             newCurry[e.target.elements[i].name] = e.target[i].value;
         }
 
-        currCurryList.push(newCurry)
+        currCurryList.push(newCurry);
         this.setState({ curryList: currCurryList });
-        store(currCurryList)
+        // store(currCurryList);
+
+        // update global curry list in parent component
+        this.props.globalSetter(currCurryList);
 
         // close modal
         this.setModalShow(false);
@@ -176,7 +182,10 @@ class App extends Component {
         let currCurryList = this.state.curryList;
         currCurryList.splice(i, 1);
         this.setState({ curryList: currCurryList });
-        store(currCurryList);
+        // store(currCurryList);
+
+        // update global curry list in parent component
+        this.props.globalSetter(currCurryList)
     };
 
     setModalShow(bool) {
@@ -205,7 +214,7 @@ class App extends Component {
                 {/* Curry Index: List of curries */ }
                 <div className="header pb-0 pb-md-3">
                     <h1 className="mb-0">Saved Curries</h1>
-                    <a href="#add" onClick={() => this.setModalShow(true)}>
+                    <a onClick={() => this.setModalShow(true)}>
                         <u>+ Add New Curry</u>
                     </a>
                 </div>

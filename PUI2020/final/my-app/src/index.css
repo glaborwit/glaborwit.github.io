@@ -4,14 +4,12 @@ body {
 }
 
 /* a links */
-
 #bootstrap-overrides a {
     text-decoration: underline;
     color: #000000;
 }
 
 /* Headings */
-
 h1 {
     font-size: 26px !important;
     font-style: normal !important;
@@ -32,6 +30,10 @@ h3 {
 
 #bootstrap-overrides h2.curry-card-title {
     line-height: 25px;
+}
+
+.modal-add-curry{
+    overflow: hidden;
 }
 
 .delete-btn{
@@ -65,6 +67,5 @@ input::placeholder, textarea::placeholder{
 
 .card-images{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }

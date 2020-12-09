@@ -2,31 +2,91 @@
 
 // Modules
 import React, { Component } from "react";
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import Geocode from "react-geocode";
 
 // CSS
-import './index.css';
+import './Map.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
+Geocode.setApiKey('AIzaSyAYZ0l37RYVyu6rfb-K6WEP1tbFrPfJmKM');
+
 const mapStyles = {
-    width: '100%',
-    height: '100%',
+    width: '80%',
+    height: '60%',
 };
 
-class Map extends Component {
+function loadCurryList() {
+    let unparsedCurryList = localStorage.getItem('curryList')
+    //Using && to condition on unparsedCurryList else null
+    return (unparsedCurryList && JSON.parse(unparsedCurryList))
+}
+
+function loadMarkerInfo(){
+    let markersList = [];
+        for (let i = 0; i < loaded_curryList.length; i++) {
+            let curry = loaded_curryList[i];
+
+            Geocode.fromAddress(curry.restaurantAddress).then(
+                response => {
+                    const { lat, lng } = response.results[0].geometry.location;
+                    //   console.log("address: ", curry.restaurantAddress, " ", lat, lng);
+                    markersList.push(
+                        { latitude: lat, longitude: lng, name: curry.restaurantName }
+                    );
+                },
+                error => {
+                    console.error(error);
+                }
+            );
+        }
+        return markersList;
+}
+
+// Globals
+let loaded_curryList = loadCurryList();
+let loaded_markerInfo = loadMarkerInfo();
+
+class MapContainer extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            curryList: loaded_curryList || [],
+            restaurants: loaded_markerInfo || []
+        }
+    }
+
+    displayMarkers = () => {
+        return this.state.restaurants.map((rest, index) => {
+            return <Marker key={rest.name + "_" + index} id={index} position={{
+                lat: rest.latitude,
+                lng: rest.longitude
+            }}
+                onClick={() => this.markerClicked(rest)} />
+        })
+    }
+
+    markerClicked(restInfo){
+        document.getElementById("rest-name").innerHTML=restInfo.name;
+    }
+    
     render() {
         return (
             <div id="bootstrap-overrides">
+                <div id="selected-restaurant">Selected restaurant: <span id="rest-name"><i>None selected</i></span></div>
                 <Map
                     google={this.props.google}
-                    zoom={8}
+                    zoom={13}
                     style={mapStyles}
-                    initialCenter={{ lat: 47.444, lng: -122.176 }}
-                />
+                    initialCenter={{ lat: 40.4406, lng: -79.9959 }}
+                >
+                    {this.displayMarkers()}
+                </Map>
+
             </div>
         )
     }
 }
 
-export default Map;
-export default GoogleApiWrapper({ apiKey: 'TOKEN HERE' })(MapContainer);
+export default GoogleApiWrapper({ apiKey: 'AIzaSyAYZ0l37RYVyu6rfb-K6WEP1tbFrPfJmKM' })(MapContainer);

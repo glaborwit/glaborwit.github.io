@@ -101,13 +101,13 @@ class Curry extends React.Component {
     render() {
         return (
             <div className="col-sm-12 col-md-6 mb-4">
-                <div className="container mt-4 mt-sm-auto">
+                <div className="mt-4 mt-sm-auto">
                     <div className="row">
-                        <div className="col-12 col-md-7 col-lg-6 pl-0">
+                        <div className="col-12 col-md-7 col-lg-6">
                             {/* <Image alt="curry" src={require("./noodlehead-red.jpg")} /> */}
                             <Image alt="curry" src={noodleheadRed} className="card-images" />
                         </div>
-                        <div className="col-12 col-md-5 col-lg-6 px-0 pl-md-3">
+                        <div className="col-12 col-md-5 col-lg-6">
                             <h2 className="mb-0 mt-2 mt-md-0 curry-card-title">{this.props.restaurant}</h2>
                             <h3>{this.props.curry}</h3>
                             <p>
@@ -184,7 +184,6 @@ class App extends Component {
     }
 
     render() {
-        // console.log("rerender");
         let curriesInIndex = [];
         if (this.state.curryList != null) {
             for (let i = 0; i < this.state.curryList.length; i++) {
@@ -203,33 +202,16 @@ class App extends Component {
 
         return (
             <div id="bootstrap-overrides">
-
-                {/* Navbar */}
-                {/* <nav className="navbar mb-5">
-                    <span className="navbar-brand">Custom Curry Index</span>
-                    
-
-                <div id="navbarNav">
-                        <div className="navbar-nav flex-row">
-                            <a href="#curryindex" className="nav-item nav-link active px-1 mr-2">Curry Index</a>
-                            <a href="#map" className="nav-item nav-link px-1 mx-2">Map</a>
-                        </div>
-                    </div>
-                </nav> */}
-
                 {/* Curry Index: List of curries */ }
-                <div className="container">
-                    <div className="header pb-0 pb-md-3 px-3">
-                        <h1 className="mb-0">Saved Curries</h1>
-                        <a href="#add" onClick={() => this.setModalShow(true)}>
-                            <u>+ Add New Curry</u>
-                        </a>
-                    </div>
-                    <div className="container">
-                        <div className="row">
-                            {curriesInIndex}
-                        </div>
-                    </div>
+                <div className="header pb-0 pb-md-3">
+                    <h1 className="mb-0">Saved Curries</h1>
+                    <a href="#add" onClick={() => this.setModalShow(true)}>
+                        <u>+ Add New Curry</u>
+                    </a>
+                </div>
+
+                <div className="row">
+                    {curriesInIndex}
                 </div>
                 <AddCurryModal
                     show={this.state.modalShow}

@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "https://glaborwit.github.io/PUI2020/Final/my-app",
+  "homepage": "https://glaborwit.github.io/PUI2020/Final/my-app/here",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,6 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
     "bootstrap": "^4.5.3",
-    "gh-pages": "^3.1.0",
     "google-map-react": "^2.1.9",
     "google-maps-react": "^2.0.6",
     "react": "^17.0.1",
@@ -49,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

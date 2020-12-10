@@ -11,10 +11,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 Geocode.setApiKey('AIzaSyAYZ0l37RYVyu6rfb-K6WEP1tbFrPfJmKM');
 
-const mapStyles = {
-    width: '80%',
-    height: '60%',
-};
+// const mapStyles = {
+//     width: '80%',
+//     height: '60%',
+// };
 
 function loadCurryList() {
     let unparsedCurryList = localStorage.getItem('curryList')
@@ -74,15 +74,19 @@ class MapContainer extends Component {
     render() {
         return (
             <div id="bootstrap-overrides">
-                <div id="selected-restaurant">Selected restaurant: <span id="rest-name"><i>None selected</i></span></div>
-                <Map
-                    google={this.props.google}
-                    zoom={13}
-                    style={mapStyles}
-                    initialCenter={{ lat: 40.4456, lng: -79.9647 }}
-                >
-                    {this.displayMarkers()}
-                </Map>
+                <div id="selected-restaurant">
+                    Selected restaurant: <span id="rest-name"><i>None selected</i></span>
+                </div>
+                <div className="map">
+                    <Map
+                        google={this.props.google}
+                        zoom={13}
+                        // style={mapStyles}
+                        initialCenter={{ lat: 40.4456, lng: -79.9647 }}
+                    >
+                        {this.displayMarkers()}
+                    </Map>
+                </div>
 
             </div>
         )

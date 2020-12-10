@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/PUI2020/Final/my-app/here/static/css/main.1500b7d3.chunk.css",
-    "main.js": "/PUI2020/Final/my-app/here/static/js/main.61907e30.chunk.js",
-    "main.js.map": "/PUI2020/Final/my-app/here/static/js/main.61907e30.chunk.js.map",
-    "runtime-main.js": "/PUI2020/Final/my-app/here/static/js/runtime-main.ca30645e.js",
-    "runtime-main.js.map": "/PUI2020/Final/my-app/here/static/js/runtime-main.ca30645e.js.map",
-    "static/css/2.43b2b750.chunk.css": "/PUI2020/Final/my-app/here/static/css/2.43b2b750.chunk.css",
-    "static/js/2.86b4c8d5.chunk.js": "/PUI2020/Final/my-app/here/static/js/2.86b4c8d5.chunk.js",
-    "static/js/2.86b4c8d5.chunk.js.map": "/PUI2020/Final/my-app/here/static/js/2.86b4c8d5.chunk.js.map",
-    "index.html": "/PUI2020/Final/my-app/here/index.html",
-    "static/css/2.43b2b750.chunk.css.map": "/PUI2020/Final/my-app/here/static/css/2.43b2b750.chunk.css.map",
-    "static/css/main.1500b7d3.chunk.css.map": "/PUI2020/Final/my-app/here/static/css/main.1500b7d3.chunk.css.map",
-    "static/js/2.86b4c8d5.chunk.js.LICENSE.txt": "/PUI2020/Final/my-app/here/static/js/2.86b4c8d5.chunk.js.LICENSE.txt",
-    "static/media/noodlehead-red.9cb1acaf.jpg": "/PUI2020/Final/my-app/here/static/media/noodlehead-red.9cb1acaf.jpg"
+    "main.css": "/PUI2020/final/my-app/static/css/main.87b8a8d3.chunk.css",
+    "main.js": "/PUI2020/final/my-app/static/js/main.83401bfe.chunk.js",
+    "main.js.map": "/PUI2020/final/my-app/static/js/main.83401bfe.chunk.js.map",
+    "runtime-main.js": "/PUI2020/final/my-app/static/js/runtime-main.9a108a2d.js",
+    "runtime-main.js.map": "/PUI2020/final/my-app/static/js/runtime-main.9a108a2d.js.map",
+    "static/css/2.95f25948.chunk.css": "/PUI2020/final/my-app/static/css/2.95f25948.chunk.css",
+    "static/js/2.16d6c3e1.chunk.js": "/PUI2020/final/my-app/static/js/2.16d6c3e1.chunk.js",
+    "static/js/2.16d6c3e1.chunk.js.map": "/PUI2020/final/my-app/static/js/2.16d6c3e1.chunk.js.map",
+    "index.html": "/PUI2020/final/my-app/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/PUI2020/final/my-app/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.87b8a8d3.chunk.css.map": "/PUI2020/final/my-app/static/css/main.87b8a8d3.chunk.css.map",
+    "static/js/2.16d6c3e1.chunk.js.LICENSE.txt": "/PUI2020/final/my-app/static/js/2.16d6c3e1.chunk.js.LICENSE.txt",
+    "static/media/noodlehead-red.9cb1acaf.jpg": "/PUI2020/final/my-app/static/media/noodlehead-red.9cb1acaf.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ca30645e.js",
-    "static/css/2.43b2b750.chunk.css",
-    "static/js/2.86b4c8d5.chunk.js",
-    "static/css/main.1500b7d3.chunk.css",
-    "static/js/main.61907e30.chunk.js"
+    "static/js/runtime-main.9a108a2d.js",
+    "static/css/2.95f25948.chunk.css",
+    "static/js/2.16d6c3e1.chunk.js",
+    "static/css/main.87b8a8d3.chunk.css",
+    "static/js/main.83401bfe.chunk.js"
   ]
 }

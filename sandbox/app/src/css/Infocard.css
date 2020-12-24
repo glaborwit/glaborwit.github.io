@@ -1,0 +1,64 @@
+hr {
+    margin-left: 0;
+    border-top: 2px solid #070707;
+    width: 30%;
+}
+
+.card{
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.coming-soon{
+    background-color: #d0d0d0;
+    color: #222222;
+    opacity: 0.5;
+}
+
+.card-img {
+    object-fit: cover;
+    max-height: 300px;
+    transition: transform 0.2s ease-in-out; /* zoom in */
+    cursor: pointer;
+}
+
+.card-img:hover{
+    transform: translate3D(0,-1px,0) scale(1.02); /* move up slightly and zoom in */
+    /* box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04); */
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.affiliation{
+    font-weight: 400;
+}
+
+/* Buttons */
+.btn{
+    border-radius: 15px;
+    border: 1px solid #acacac;
+    font-size: inherit;
+}
+
+.btn:hover{
+    border-color: #9087A8;
+    background-color: #C9C4D4;
+}
+
+/* Md devices and lower */
+@media (max-width: 767.98px) {
+    .card{
+        padding: 20px 20px 0px 20px;
+    }
+}
+
+/* Only md devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card{
+        padding: 30px 50px 0px 50px;
+    }
+}

@@ -136,7 +136,7 @@ function TimeWarp() {
                                 <source src={FinalPrototype} />
                             </Player>
                         </div>
-                        <div className="col-12 col-md-5">
+                        <div className="mt-4 mt-md-0 col-12 col-md-5">
                             <h5>User Study</h5>
                             <p>
                                 Upon completing the prototype, I directed a user study in which participants utilized our program to perform certain tasks. Then, they took a survey about their experience with the program, its features, and use cases that they saw fit for the technology.

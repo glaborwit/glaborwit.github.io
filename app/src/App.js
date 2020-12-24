@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Infocard from './components/Infocard';
 
 // CSS
@@ -12,6 +12,11 @@ import DashDesign from './assets/images/dashupdate.gif';
 import BreakingtheIceCover from './assets/images/UCRE/BreakingtheIceCover.png';
 
 function App() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="App">
       <div className="container big-margin-top">

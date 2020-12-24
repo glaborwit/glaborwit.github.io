@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Player } from 'video-react';
 
@@ -20,7 +20,12 @@ import Poster from '../assets/images/time-warp/poster.jpeg';
 import SlowmoTrial1 from '../assets/images/time-warp/slowmotrial1.mp4';
 import FinalPrototype from '../assets/images/time-warp/surfers.mp4';
 
-function TimeWarp(props) {
+function TimeWarp() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="TimeWarp">
             <div className="container mt-2 mt-md-5">

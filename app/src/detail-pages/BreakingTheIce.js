@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 
 // Components
@@ -26,6 +26,10 @@ import StickiesHighlighted from '../assets/StickyNotesHighlighted.svg';
 function BreakingtheIce() {
     const [isShown, setIsShown] = useState(false);
     const [modalShow, setModalShow] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className="BreakingtheIce">

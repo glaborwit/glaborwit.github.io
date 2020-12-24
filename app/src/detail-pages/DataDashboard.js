@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import DetailsHeading from '../components/DetailsHeading'
@@ -12,7 +12,12 @@ import '../css/DetailsPage.css'; // global styles
 import DashDesign from '../assets/images/dashdesign.jpg';
 // import DashUpdate from '../assets/images/dashupdate.gif';
 
-function DataDashboard(props) {
+function DataDashboard() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="DataDashboard">
             <div className="container mt-2 mt-md-5">

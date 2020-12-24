@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 
 // CSS
@@ -10,6 +10,11 @@ import './css/Main.css';
 import Me from './assets/images/me.jpeg';
 
 function About() {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="About">
             <div className="container mt-2 mt-md-5">

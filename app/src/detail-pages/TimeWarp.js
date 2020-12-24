@@ -9,6 +9,7 @@ import DetailsHeading from '../components/DetailsHeading'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/Main.css'; // global styles
 import '../css/DetailsPage.css'; // global styles
+import "../../node_modules/video-react/dist/video-react.css";
 
 // Images
 import WarpedTime from '../assets/images/time-warp/timewarpclock.png';

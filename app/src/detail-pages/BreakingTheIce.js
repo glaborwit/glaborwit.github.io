@@ -59,15 +59,15 @@ function BreakingtheIce() {
                                 Meo Zhang, Wenqing Yin, Jenny Xin
                             </p>
 
-                            <h5>Methods</h5>
+                            <h5>Research Methods</h5>
                             <p>
-                                Semi-Structured Interviews, Contextual Inquiry, Think Aloud Protocols, Speed Dating, Experience Prototypes
+                                Semi-Structured Interviews, Contextual Inquiry, Think Aloud Protocols, Speed Dating, Experience Prototypes, Storyboarding
                         </p>
                         </div>
 
                         <hr className="my-3 ml-3 ml-md-0 my-md-0 d-md-none" />
 
-                        <div className="col-md-8 mt-3">
+                        <div className="col-md-8 mt-3 mt-md-0">
                             <h5 className="d-none d-md-block">Summary</h5>
                             <p>
                                 The COVID-19 pandemic has affected both people and businesses in numerous ways. <b>For theater venues in particular, the pandemic has made it increasingly difficult to connect with their local communities.</b> Places like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, are no exception.

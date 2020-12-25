@@ -11,7 +11,7 @@ import NavHam from './components/NavHam';
 import App from './App';
 import About from './About';
 import TimeWarp from "./detail-pages/TimeWarp";
-import DataDashboard from "./detail-pages/DataDashboard";
+import BudgetBuddy from "./detail-pages/BudgetBuddy";
 import BreakingTheIce from "./detail-pages/BreakingTheIce";
 import Footer from './components/Footer';
 
@@ -35,8 +35,8 @@ ReactDOM.render(
             <TimeWarp />
           </Route>
 
-          <Route exactly path="/data-dashboard">
-            <DataDashboard />
+          <Route exactly path="/budget-buddy">
+            <BudgetBuddy />
           </Route>
 
           <Route exactly path="/breaking-the-ice">

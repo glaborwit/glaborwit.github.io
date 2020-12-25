@@ -7,8 +7,8 @@ import './css/App.css';
 import './css/Main.css';
 
 // Images
-import TimeWarp from './assets/images/time-warp/timewarpclock.png';
-import DashDesign from './assets/images/dashupdate.gif';
+import TimeWarp from './assets/images/time-warp/transparenttimewarpcoverfull.png';
+import BudgetBuddyCover from './assets/images/budgetbuddy/mobileandwatchapps.png';
 import BreakingtheIceCover from './assets/images/UCRE/BreakingtheIceCover.png';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
 
         <div className="big-margin-top row justify-content-center">
           <h2 className="col-12 col-md-10 text-center" style={{fontWeight:"400", fontStyle:"italic"}}>Coming Soon</h2>
-          <Infocard title="Adidas Data Dashboard" affiliation="Carnegie Mellon University" tagline="Designing for quantative data" pic={DashDesign} link="data-dashboard" comingSoon={true} />
+          <Infocard title="Budget Buddy" affiliation="Carnegie Mellon University" tagline="The grocery budget assistant for money-conscious shoppers" pic={BudgetBuddyCover} link="budget-buddy" comingSoon={true} />
         </div>
       </div>
     </div>

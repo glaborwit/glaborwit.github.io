@@ -12,7 +12,8 @@ import '../css/DetailsPage.css'; // global styles
 import "../../node_modules/video-react/dist/video-react.css";
 
 // Images
-import WarpedTime from '../assets/images/time-warp/timewarpclock.png';
+// import WarpedTime from '../assets/images/time-warp/timewarpcover.png';
+import WarpedTime from '../assets/images/time-warp/timewarp-flipped.png';
 import SlowmoTransitionNotes from '../assets/images/time-warp/slow_mo_transition_notes.jpg';
 import Poster from '../assets/images/time-warp/poster.jpeg';
 
@@ -54,7 +55,7 @@ function TimeWarp() {
                                 Pascal Knierim (Project Supervisor), Dr. Albrecht Schmidt (Lab Supervisor)
                             </p>
 
-                            <h5>Methods</h5>
+                            <h5>Research Methods</h5>
                             <p>
                                 Experience Prototype
                             </p>
@@ -67,7 +68,7 @@ function TimeWarp() {
 
                         <hr className="my-3 ml-3 ml-md-0 my-md-0 d-md-none" />
 
-                        <div className="col-md-8 mt-3">
+                        <div className="col-md-8 mt-3 mt-md-0">
                             <h5 className="d-none d-md-block">Summary</h5>
                             <p>
                                 Augmented reality (AR) is a relatively new technology that will likely be commonplace in the upcoming years. My goal for this project was to utilize AR technology to enhance the human senses by creating a program that would slow down time.

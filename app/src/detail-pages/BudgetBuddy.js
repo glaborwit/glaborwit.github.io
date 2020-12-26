@@ -134,7 +134,7 @@ function BudgetBuddy() {
                 {/* Demos */}
                 <section>
                     <h3 className="mb-3">App Demo (Smartwatch)</h3>
-                    <ReactPlayer width="100%" url="https://www.youtube.com/watch?v=KqspdTtGBcI" />
+                    <ReactPlayer width="100%" controls={true} url="https://www.youtube.com/watch?v=KqspdTtGBcI" />
                 </section>
 
             </div>

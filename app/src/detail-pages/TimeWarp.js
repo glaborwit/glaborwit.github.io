@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
-import { Player } from 'video-react';
+import ReactPlayer from 'react-player';
 
 // Components
 import DetailsHeading from '../components/DetailsHeading'
@@ -12,7 +12,6 @@ import '../css/DetailsPage.css'; // global styles
 import "../../node_modules/video-react/dist/video-react.css";
 
 // Images
-// import WarpedTime from '../assets/images/time-warp/timewarpcover.png';
 import WarpedTime from '../assets/images/time-warp/transparenttimewarpcoverfull.png';
 import SlowmoTransitionNotes from '../assets/images/time-warp/slow_mo_transition_notes.jpg';
 import Poster from '../assets/images/time-warp/poster.jpeg';
@@ -99,12 +98,9 @@ function TimeWarp() {
                             </p>
                         </div>
                         <div className="col-12 col-md-5 col-xl-4 mx-auto">
-                            <Player>
-                                <source src={SlowmoTrial1} />
-                            </Player>
+                            <ReactPlayer width="100%" height="auto" controls={true} url={SlowmoTrial1} />
                         </div>
                     </div>
-
 
                     <div className="row mt-5 mt-md-4 align-items-center">
                         <div className="col-12 col-md-7">
@@ -133,9 +129,7 @@ function TimeWarp() {
                     <div className="row">
                         <div className="col-12 col-md-7">
                             <h5>Final Prototype</h5>
-                            <Player muted={true}>
-                                <source src={FinalPrototype} />
-                            </Player>
+                            <ReactPlayer width="100%" height="auto" controls={true} url={FinalPrototype} />
                         </div>
                         <div className="mt-4 mt-md-0 col-12 col-md-5">
                             <h5>User Study</h5>

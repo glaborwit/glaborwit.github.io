@@ -13,7 +13,7 @@ import "../../node_modules/video-react/dist/video-react.css";
 
 // Images
 // import WarpedTime from '../assets/images/time-warp/timewarpcover.png';
-import WarpedTime from '../assets/images/time-warp/timewarp-flipped.png';
+import WarpedTime from '../assets/images/time-warp/transparenttimewarpcoverfull.png';
 import SlowmoTransitionNotes from '../assets/images/time-warp/slow_mo_transition_notes.jpg';
 import Poster from '../assets/images/time-warp/poster.jpeg';
 

@@ -6,10 +6,6 @@ h5:first-child {
   margin-top: 0px;
 }
 
-p {
-  margin-bottom: .6rem;
-}
-
 p.speech-bubble {
   position: relative;
   width: 100%;

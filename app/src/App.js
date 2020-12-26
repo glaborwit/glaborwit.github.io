@@ -23,15 +23,16 @@ function App() {
         <h1 className="name text-center">GABRIELLE LABORWIT</h1>
         <h2 className="purple text-center">UX Researcher</h2>
         <div className="big-margin-top row justify-content-center">
-          <Infocard title="Breaking the Ice" affiliation="Carnegie Mellon University" tagline="A virtual theater community experience" pic={BreakingtheIceCover} link="breaking-the-ice"/>
+          <Infocard title="Breaking the Ice" affiliation="Carnegie Mellon University" tagline="A virtual theater community experience" pic={BreakingtheIceCover} link="breaking-the-ice" />
 
-          <Infocard title="Time Warp in AR" affiliation="Ludwig-Maximilian University of Munich, Human-Centered Ubiquitous Media Lab" tagline="Slowing down time in augmented reality" pic={TimeWarp} link="time-warp"/>
+          <Infocard title="Budget Buddy" affiliation="Carnegie Mellon University" tagline="The grocery budget assistant for money-conscious shoppers" pic={BudgetBuddyCover} link="budget-buddy" comingSoon={false} />
+
+          <Infocard title="Time Warp in AR" affiliation="Ludwig-Maximilian University of Munich, Human-Centered Ubiquitous Media Lab" tagline="Slowing down time in augmented reality" pic={TimeWarp} link="time-warp" />
         </div>
 
-        <div className="big-margin-top row justify-content-center">
+        {/* <div className="big-margin-top row justify-content-center">
           <h2 className="col-12 col-md-10 text-center" style={{fontWeight:"400", fontStyle:"italic"}}>Coming Soon</h2>
-          <Infocard title="Budget Buddy" affiliation="Carnegie Mellon University" tagline="The grocery budget assistant for money-conscious shoppers" pic={BudgetBuddyCover} link="budget-buddy" comingSoon={true} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

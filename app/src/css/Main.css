@@ -52,10 +52,6 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
     color: #9087A8;
 }
 
-p{
-    margin-bottom: 0.6rem;
-}
-
 .big-margin-top {
     margin-top: 81px;
 }

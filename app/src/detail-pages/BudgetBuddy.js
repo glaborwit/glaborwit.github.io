@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
-import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player';
 
 // Components
 import DetailsHeading from '../components/DetailsHeading'
@@ -9,7 +9,6 @@ import DetailsHeading from '../components/DetailsHeading'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/Main.css'; // global styles
 import '../css/DetailsPage.css'; // global styles
-import "../../node_modules/video-react/dist/video-react.css";
 
 // Images
 import BudgetBuddyCover from '../assets/images/budgetbuddy/mobileandwatchapps.png';
@@ -133,8 +132,17 @@ function BudgetBuddy() {
 
                 {/* Demos */}
                 <section>
-                    <h3 className="mb-3">App Demo (Smartwatch)</h3>
-                    <ReactPlayer width="100%" controls={true} url="https://www.youtube.com/watch?v=KqspdTtGBcI" />
+                    <h3 className="mb-3">DEMOS</h3>
+                    <div className="row">
+                        <div className="col-12 col-lg-6">
+                            <h5 className="mb-2 text-center">Mobile App Demo</h5>
+                            <ReactPlayer width="100%" controls={true} url="https://www.youtube.com/watch?v=70wwDN58Udg" />
+                        </div>
+                        <div className="col-12 col-lg-6 mt-5 mt-lg-0">
+                            <h5 className="mb-2 text-center">Smartwatch App Demo</h5>
+                            <ReactPlayer width="100%" controls={true} url="https://vimeo.com/494724695" />
+                        </div>
+                    </div>
                 </section>
 
             </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
+  BrowserRouter as Router,
   Switch,
-  Route,
-  HashRouter
+  Route
 } from "react-router-dom";
 
 // Components
@@ -22,7 +22,7 @@ import './css/Main.css';
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <HashRouter basename='/'>
+      <Router basename='/'>
 
         <NavHam />
 
@@ -47,7 +47,7 @@ ReactDOM.render(
             <App />
           </Route>
         </Switch>
-      </HashRouter>
+      </Router>
 
       <Footer />
     </div>

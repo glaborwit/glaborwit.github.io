@@ -27,8 +27,9 @@ class FourOhFour extends Component {
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-11 col-sm-10 mb-2 mb-sm-4">
-                        <h1 className="mt-3">404 Error</h1>
+                        <h1 className="mt-3">Yikes!</h1>
                         <h3 className="pb-4">Sorry, the page you're searching for can't be found.</h3>
+                        
                         <Link className="btn btn-fourohfour py-3 px-4" to="/">Go back home</Link>
                     </div>
                 </div>

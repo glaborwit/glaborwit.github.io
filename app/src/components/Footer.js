@@ -28,7 +28,6 @@ function Footer() {
                 <a target="_blank" className="social-link" rel="noopener noreferrer" href="https://twitter.com/laborwitg">
                     <img height="12px" src={TwitterIcon} alt="Twitter" />
                 </a>
-
             </div>
             <div>Created with React by Gabrielle LaBorwit 2020</div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import ReactPlayer from 'react-player';
+import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 
 // Components
 import DetailsHeading from '../components/DetailsHeading'
@@ -24,6 +25,9 @@ function BudgetBuddy() {
 
     return (
         <div className="BudgetBuddy">
+            <Helmet>
+                <title>Gabrielle LaBorwit | Budget Buddy</title>
+            </Helmet>
             <div className="container mt-2 mt-md-5">
                 <DetailsHeading title="Budget Buddy" tagline="The grocery budget assistant app" image={BudgetBuddyCover} />
 

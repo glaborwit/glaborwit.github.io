@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import ReactPlayer from 'react-player';
+import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 
 // Components
 import DetailsHeading from '../components/DetailsHeading'
@@ -27,6 +28,9 @@ function TimeWarp() {
 
     return (
         <div className="TimeWarp">
+            <Helmet>
+                <title>Gabrielle LaBorwit | Time Warp</title>
+            </Helmet>
             <div className="container mt-2 mt-md-5">
                 <DetailsHeading title="Time Warp" image={WarpedTime} tagline="Slowing Down Time in Augmented Reality" />
 

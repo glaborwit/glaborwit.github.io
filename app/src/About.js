@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
+import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
@@ -17,6 +18,10 @@ function About() {
 
     return (
         <div className="About">
+            <Helmet>
+                <title>Gabrielle LaBorwit | About</title>
+            </Helmet>
+
             <div className="container mt-2 mt-md-5">
                 <div className="row justify-content-center mt-5">
                     <div className="col-12 col-md-6">

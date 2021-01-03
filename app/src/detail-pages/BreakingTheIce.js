@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
+import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 
 // Components
 import DetailsHeading from '../components/DetailsHeading';
@@ -33,6 +34,9 @@ function BreakingtheIce() {
 
     return (
         <div className="BreakingtheIce">
+            <Helmet>
+                <title>Gabrielle LaBorwit | Breaking the Ice</title>
+            </Helmet>
             <div className="container mt-2 mt-md-5">
                 <DetailsHeading title="Breaking the Ice" tagline="A Virtual Theater Community Experience" image={BreakingtheIceCover} />
 

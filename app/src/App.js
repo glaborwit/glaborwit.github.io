@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Infocard from './components/Infocard';
+import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,6 +20,9 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Gabrielle LaBorwit</title>
+      </Helmet>
       <div className="container big-margin-top">
         <h1 className="name text-center">GABRIELLE LABORWIT</h1>
         <h2 className="purple text-center">UX Researcher</h2>

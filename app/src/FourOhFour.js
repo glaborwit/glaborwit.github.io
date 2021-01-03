@@ -22,13 +22,14 @@ class FourOhFour extends Component {
                 </Helmet>
                 <div className="row justify-content-center">
                     <div className="col-9 col-md-7 col-lg-5">
-                        <Image src={FlushedEmoji} width="100%" />
+                        <Image draggable="false" src={FlushedEmoji} width="100%" />
                     </div>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-11 col-sm-10 mb-2 mb-sm-4">
                         <h1 className="mt-3">Yikes!</h1>
-                        <h3 className="pb-4">Sorry, we can't seem to find the page you're searching for.</h3>
+                        <h3 className="pb-1">We can't seem to find the page you're searching for.</h3>
+                        <h5 className="pb-4">[404 Error: The requested URL was not found on this server]</h5>
                         
                         <Link className="btn btn-fourohfour py-3 px-4" to="/">Go back home</Link>
                     </div>

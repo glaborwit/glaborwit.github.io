@@ -17,7 +17,7 @@ function About() {
     }, [])
 
     return (
-        <div className="About">
+        <div className="About pb-2 pb-sm-5">
             <Helmet>
                 <title>Gabrielle LaBorwit | About</title>
             </Helmet>

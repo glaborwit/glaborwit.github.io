@@ -14,6 +14,7 @@ import TimeWarp from "./detail-pages/TimeWarp";
 import BudgetBuddy from "./detail-pages/BudgetBuddy";
 import BreakingTheIce from "./detail-pages/BreakingTheIce";
 import Footer from './components/Footer';
+import FourOhFour from './FourOhFour'; // 404 pages
 
 // CSS
 import './css/index.css';
@@ -43,9 +44,14 @@ ReactDOM.render(
             <BreakingTheIce />
           </Route>
 
+          <Route path="/404">
+            <FourOhFour />
+          </Route>
+
           <Route exactly path="/">
             <App />
           </Route>
+
         </Switch>
       </HashRouter>
 

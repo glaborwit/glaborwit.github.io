@@ -12,7 +12,7 @@ import TwitterIcon from "../assets/logos/twitter_black.png";
 
 function Footer() {
     return (
-        <div className="footer mb-3 mb-sm-2 mx-2 mx-sm-4 mt-3 d-flex justify-content-around justify-content-sm-between">
+        <div className="footer mb-3 mb-sm-2 mx-2 mx-sm-4 mt-3 d-flex justify-content-between">
             <div>
                 {/* LinkedIn Social Icon */}
                 <a target="_blank" className="social-link" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit-357783142/">

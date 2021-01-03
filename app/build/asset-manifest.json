@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.20d86d81.chunk.css",
-    "main.js": "/static/js/main.dee06e25.chunk.js",
-    "main.js.map": "/static/js/main.dee06e25.chunk.js.map",
+    "main.css": "/static/css/main.182aa094.chunk.css",
+    "main.js": "/static/js/main.c052c78d.chunk.js",
+    "main.js.map": "/static/js/main.c052c78d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dd450042.js",
     "runtime-main.js.map": "/static/js/runtime-main.dd450042.js.map",
     "static/css/2.95f25948.chunk.css": "/static/css/2.95f25948.chunk.css",
-    "static/js/2.e4259762.chunk.js": "/static/js/2.e4259762.chunk.js",
-    "static/js/2.e4259762.chunk.js.map": "/static/js/2.e4259762.chunk.js.map",
+    "static/js/2.d0e935b9.chunk.js": "/static/js/2.d0e935b9.chunk.js",
+    "static/js/2.d0e935b9.chunk.js.map": "/static/js/2.d0e935b9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.95f25948.chunk.css.map": "/static/css/2.95f25948.chunk.css.map",
-    "static/css/main.20d86d81.chunk.css.map": "/static/css/main.20d86d81.chunk.css.map",
-    "static/js/2.e4259762.chunk.js.LICENSE.txt": "/static/js/2.e4259762.chunk.js.LICENSE.txt",
+    "static/css/main.182aa094.chunk.css.map": "/static/css/main.182aa094.chunk.css.map",
+    "static/js/2.d0e935b9.chunk.js.LICENSE.txt": "/static/js/2.d0e935b9.chunk.js.LICENSE.txt",
     "static/media/BreakingtheIceCover.ae3dbafb.png": "/static/media/BreakingtheIceCover.ae3dbafb.png",
     "static/media/EvidenceSpeechBubbles.e32d5f8e.svg": "/static/media/EvidenceSpeechBubbles.e32d5f8e.svg",
     "static/media/GabrielleLaBorwit_Resume.7d16b25d.pdf": "/static/media/GabrielleLaBorwit_Resume.7d16b25d.pdf",
@@ -21,6 +21,7 @@
     "static/media/StickyNotes.60040acd.svg": "/static/media/StickyNotes.60040acd.svg",
     "static/media/StickyNotesHighlighted.4ab495b0.svg": "/static/media/StickyNotesHighlighted.4ab495b0.svg",
     "static/media/Watch-Cart-DecideLater.fcab2b55.gif": "/static/media/Watch-Cart-DecideLater.fcab2b55.gif",
+    "static/media/cowboy-flushed-emoji.71cf72c4.jpg": "/static/media/cowboy-flushed-emoji.71cf72c4.jpg",
     "static/media/linkedin_black.87e1ea2a.png": "/static/media/linkedin_black.87e1ea2a.png",
     "static/media/me.a8671b74.jpeg": "/static/media/me.a8671b74.jpeg",
     "static/media/medium_icon_black.1c62ec78.svg": "/static/media/medium_icon_black.1c62ec78.svg",
@@ -37,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.dd450042.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.e4259762.chunk.js",
-    "static/css/main.20d86d81.chunk.css",
-    "static/js/main.dee06e25.chunk.js"
+    "static/js/2.d0e935b9.chunk.js",
+    "static/css/main.182aa094.chunk.css",
+    "static/js/main.c052c78d.chunk.js"
   ]
 }

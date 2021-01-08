@@ -11,6 +11,7 @@ import NavHam from './components/NavHam';
 import App from './App';
 import About from './About';
 import TimeWarp from "./detail-pages/TimeWarp";
+import Picnic from "./detail-pages/Picnic";
 import BudgetBuddy from "./detail-pages/BudgetBuddy";
 import BreakingTheIce from "./detail-pages/BreakingTheIce";
 import Footer from './components/Footer';
@@ -30,6 +31,10 @@ ReactDOM.render(
         <Switch>
           <Route exactly path="/about">
             <About />
+          </Route>
+
+          <Route exactly path="/picnic">
+            <Picnic />
           </Route>
 
           <Route exactly path="/time-warp">

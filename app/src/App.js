@@ -11,6 +11,7 @@ import './css/Main.css';
 import TimeWarp from './assets/images/time-warp/transparenttimewarpcoverfull.png';
 import BudgetBuddyCover from './assets/images/budgetbuddy/mobileandwatchapps.png';
 import BreakingtheIceCover from './assets/images/UCRE/BreakingtheIceCover.png';
+import PicnicCover from './assets/images/picnic/PicnicCover.png';
 
 function App() {
   
@@ -34,9 +35,11 @@ function App() {
           <Infocard title="Time Warp in AR" affiliation="Ludwig-Maximilian University of Munich, Human-Centered Ubiquitous Media Lab" tagline="Slowing down time in augmented reality" pic={TimeWarp} link="time-warp" />
         </div>
 
-        {/* <div className="big-margin-top row justify-content-center">
+        <div className="big-margin-top row justify-content-center">
           <h2 className="col-12 col-md-10 text-center" style={{fontWeight:"400", fontStyle:"italic"}}>Coming Soon</h2>
-        </div> */}
+
+          <Infocard title="Picnic" affiliation="Carnegie Mellon University" tagline="Strengthening the boundary between work and life for remote working professionals and students" pic={PicnicCover} link="picnic" comingSoon={true} />
+        </div>
       </div>
     </div>
   );

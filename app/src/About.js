@@ -4,11 +4,10 @@ import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab t
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
-import './css/About.css';
 import './css/Main.css';
 
 // Images
-import Me from './assets/images/me.jpeg';
+import Me from './assets/images/me.jpg';
 
 function About() {
     

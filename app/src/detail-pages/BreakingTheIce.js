@@ -19,8 +19,8 @@ import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
 import EvidenceSpeechBubbles from '../assets/images/UCRE/EvidenceSpeechBubbles.svg';
 import Solution from '../assets/images/UCRE/solution.png';
 
-import Stickies from '../assets/StickyNotes.svg';
-import StickiesHighlighted from '../assets/StickyNotesHighlighted.svg';
+import Stickies from '../assets/images/StickyNotes.svg';
+import StickiesHighlighted from '../assets/images/StickyNotesHighlighted.svg';
 
 
 

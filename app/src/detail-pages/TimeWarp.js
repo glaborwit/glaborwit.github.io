@@ -66,6 +66,11 @@ function TimeWarp() {
                             <p>
                                 Microsoft Hololens, Unity, C#, Visual Studio
                             </p>
+
+                            <h5>Publication</h5>
+                            <p>
+                                <a href="https://dl.acm.org/doi/10.1145/3384657.3384659" target="_blank" rel="noopener noreferrer">Altering the Speed of Reality?: Exploring Visual Slow-Motion to Amplify Human Perception using Augmented Reality</a>
+                            </p>
                         </div>
 
                         <hr className="my-3 ml-3 ml-md-0 my-md-0 d-md-none" />

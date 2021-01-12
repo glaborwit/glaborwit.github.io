@@ -32,7 +32,7 @@ function TimeWarp() {
                 <title>Gabrielle LaBorwit | Time Warp</title>
             </Helmet>
             <div className="container mt-2 mt-md-5">
-                <DetailsHeading title="Time Warp" image={WarpedTime} tagline="Slowing Down Time in Augmented Reality" />
+                <DetailsHeading title="Time Warp" image={WarpedTime} tagline="Slowing Down Time in Augmented Reality" alt="person wearing an augmented reality device and watching a bee slow down in front of them by using the time warp program" />
 
                 {/* Overview */}
                 <section>

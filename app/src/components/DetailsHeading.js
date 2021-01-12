@@ -15,7 +15,7 @@ function DetailsHeading(props) {
                     <h2 className="lighter purple mb-4 text-center text-md-left">{props.tagline}</h2>
                 </div>
                 <div className="col-md-7">
-                    <Image width="100%" src={props.image} draggable={false} />
+                    <Image width="100%" src={props.image} alt={props.alt} draggable={false} />
                 </div>
             </div>
         </div>

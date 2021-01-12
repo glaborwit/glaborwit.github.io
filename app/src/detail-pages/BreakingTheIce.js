@@ -38,7 +38,7 @@ function BreakingtheIce() {
                 <title>Gabrielle LaBorwit | Breaking the Ice</title>
             </Helmet>
             <div className="container mt-2 mt-md-5">
-                <DetailsHeading title="Breaking the Ice" tagline="A Virtual Theater Community Experience" image={BreakingtheIceCover} />
+                <DetailsHeading title="Breaking the Ice" tagline="A Virtual Theater Community Experience" image={BreakingtheIceCover} alt="Guidelines for a great theater community experience online" />
 
                 {/* Overview */}
                 <section>

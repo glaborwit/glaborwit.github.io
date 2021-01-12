@@ -29,7 +29,7 @@ function BudgetBuddy() {
                 <title>Gabrielle LaBorwit | Budget Buddy</title>
             </Helmet>
             <div className="container mt-2 mt-md-5">
-                <DetailsHeading title="Budget Buddy" tagline="The grocery budget assistant app" image={BudgetBuddyCover} />
+                <DetailsHeading title="Budget Buddy" tagline="The grocery budget assistant app" image={BudgetBuddyCover} alt="Budget Buddy app mobile device add product screen and smartwatch device screen" />
 
                 {/* Overview */}
                 <section>

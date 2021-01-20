@@ -29,7 +29,7 @@ function Footer() {
                     <img height="12px" src={TwitterIcon} alt="Twitter" />
                 </a>
             </div>
-            <div>Created with React by Gabrielle LaBorwit 2020</div>
+            <div>Created with React by Gabrielle LaBorwit 2021</div>
         </div>
     )
 };

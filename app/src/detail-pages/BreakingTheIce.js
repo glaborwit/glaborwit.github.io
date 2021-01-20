@@ -106,14 +106,12 @@ function BreakingtheIce() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-12 col-lg-7 col-xl-8">
                             <h3 className="mb-3">SOLUTION
-                                <span className="stickies" onClick={() => setModalShow(true)}>
-                                    {!isShown && (
-                                        <Image className="ml-4 mouse-pointer" src={Stickies} width="77.6" onMouseEnter={() => setIsShown(true)} />
-                                    )}
-
-                                    {isShown && (
-                                        <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" onMouseLeave={() => setIsShown(false)} />
-                                    )}
+                                <span className="stickies" onClick={() => setModalShow(true)} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                                    {isShown ?
+                                        <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" />
+                                        :
+                                        <Image className="ml-4 mouse-pointer" src={Stickies} width="77.6" />
+                                    }
                                 </span>
                             </h3>
                             <p>

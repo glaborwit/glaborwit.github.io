@@ -33,7 +33,7 @@ function UCRESolutionModal(props) {
           <Image width="100%" className="mt-3" src={StakeholderMap} alt="Stakeholder Map" />
 
           <h5>Prototype Ideation</h5>
-          Before starting our speeddating research, our generated prototype ideas to test. We then discussed each idea, sorted them into categories (<i>affinity diagramming</i>), and voted on the ones we liked most.
+          Before starting our speeddating research, we generated prototype ideas to test. We then discussed each idea, sorted them into categories, and voted on the ones we liked most.
           <Image width="100%" className="mt-3" src={SpeedDatingStoryboardIdeas} alt="Speeddating prototype ideas to test" />
         </Modal.Body>
       </Modal>

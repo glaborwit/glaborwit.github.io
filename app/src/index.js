@@ -5,6 +5,7 @@ import {
   Route,
   HashRouter
 } from "react-router-dom";
+import SimpleReactLightbox from 'simple-react-lightbox';
 
 // Components
 import NavHam from './components/NavHam';
@@ -34,19 +35,27 @@ ReactDOM.render(
           </Route>
 
           <Route exactly path="/picnic">
-            <Picnic />
+            <SimpleReactLightbox>
+              <Picnic />
+            </SimpleReactLightbox>
           </Route>
 
           <Route exactly path="/time-warp">
-            <TimeWarp />
+            <SimpleReactLightbox>
+              <TimeWarp />
+            </SimpleReactLightbox>
           </Route>
 
           <Route exactly path="/budget-buddy">
-            <BudgetBuddy />
+            <SimpleReactLightbox>
+              <BudgetBuddy />
+            </SimpleReactLightbox>
           </Route>
 
           <Route exactly path="/breaking-the-ice">
-            <BreakingTheIce />
+            <SimpleReactLightbox>
+              <BreakingTheIce />
+            </SimpleReactLightbox>
           </Route>
 
           <Route path="/404">

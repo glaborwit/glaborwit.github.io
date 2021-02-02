@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import ReactPlayer from 'react-player';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
+import { SRLWrapper } from 'simple-react-lightbox';
 
 // Components
 import DetailsHeading from '../components/DetailsHeading'
@@ -10,6 +11,9 @@ import DetailsHeading from '../components/DetailsHeading'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/Main.css'; // global styles
 import '../css/DetailsPage.css'; // global styles
+
+// Constant variables
+import { lightboxOptions } from '../SpecificComponents/Constants' // image lightbox styles
 
 // Images
 import WarpedTime from '../assets/images/time-warp/transparenttimewarpcoverfull.png';
@@ -118,7 +122,9 @@ function TimeWarp() {
                             </p>
                         </div>
                         <div className="col-12 col-md-5 col-xl-4 mx-auto">
-                            <Image width="100%" src={SlowmoTransitionNotes} alt="Slow motion transition notes" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" width="100%" src={SlowmoTransitionNotes} alt="Slow motion transition notes" />
+                            </SRLWrapper>
                         </div>
                     </div>
 
@@ -160,7 +166,9 @@ function TimeWarp() {
                     </div>
                     <div className="row">
                         <div className="col-12 col-md-7 col-lg-6 col-xl-5">
-                            <Image width="100%" src={Poster} alt="Poster about application" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" width="100%" src={Poster} alt="Poster about application" />
+                            </SRLWrapper>
                         </div>
                     </div>
                 </section>

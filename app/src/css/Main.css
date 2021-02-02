@@ -59,3 +59,7 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
 .mouse-pointer{
     cursor: pointer;
 }
+
+.img-zoom{
+    cursor: zoom-in;
+}

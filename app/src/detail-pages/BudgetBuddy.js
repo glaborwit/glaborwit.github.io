@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import ReactPlayer from 'react-player';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
+import { SRLWrapper } from "simple-react-lightbox";
 
 // Components
 import DetailsHeading from '../components/DetailsHeading'
@@ -11,11 +12,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../css/Main.css'; // global styles
 import '../css/DetailsPage.css'; // global styles
 
+// Constant variables
+import { lightboxOptions } from '../SpecificComponents/Constants' // image lightbox styles
+
 // Images
 import BudgetBuddyCover from '../assets/images/budgetbuddy/mobileandwatchapps.png';
 import JourneyMap from '../assets/images/budgetbuddy/model-journey-map.jpg';
 import MobileLists from '../assets/images/budgetbuddy/MobileAllLists.png';
 import WatchDecideLaterCartListsGif from '../assets/images/budgetbuddy/Watch-Cart-DecideLater.gif';
+
+
 
 function BudgetBuddy() {
 
@@ -93,7 +99,9 @@ function BudgetBuddy() {
                             </ol>
                         </div>
                         <div className="col-12 col-lg-7 mt-2 mt-md-3 mt-lg-0">
-                            <Image src={JourneyMap} width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={JourneyMap} width="100%" />
+                            </SRLWrapper>
                         </div>
                     </div>
 
@@ -125,10 +133,14 @@ function BudgetBuddy() {
                             </p>
                         </div>
                         <div className="col-5 col-md-4 col-lg-3">
-                            <Image src={MobileLists} width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={MobileLists} width="100%" />
+                            </SRLWrapper>
                         </div>
                         <div className="col-5 col-md-4 col-lg-3">
-                            <Image src={WatchDecideLaterCartListsGif} width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={WatchDecideLaterCartListsGif} width="100%" />
+                            </SRLWrapper>
                         </div>
                     </div>
                 </section>

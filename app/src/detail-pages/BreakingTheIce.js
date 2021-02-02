@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
+import { SRLWrapper } from "simple-react-lightbox";
 
 // Components
 import DetailsHeading from '../components/DetailsHeading';
@@ -11,11 +12,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../css/Main.css'; // global styles
 import '../css/DetailsPage.css'; // global styles
 
+// Constant variables
+import { lightboxOptions } from '../SpecificComponents/Constants' // image lightbox styles
+
 // Images
 import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
-// import UCREPoster from '../assets/images/UCRE/poster.png';
-// import SpeedDatingStoryboard1 from '../assets/images/UCRE/Storyboard_SpeeddatingCropped.jpg';
-// import Uft1 from '../assets/images/UCRE/UFT-TooFocused.png';
 import EvidenceSpeechBubbles from '../assets/images/UCRE/EvidenceSpeechBubbles.svg';
 import Solution from '../assets/images/UCRE/solution.png';
 
@@ -55,7 +56,7 @@ function BreakingtheIce() {
                             <p>
                                 Research Lead
                                 <br />
-                                <i>Lead user research efforts: help create interview guides, conduct interviews and test prototypes, analyze research data</i>
+                                <i>Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data</i>
                             </p>
 
                             <h5>Teammates</h5>
@@ -77,7 +78,7 @@ function BreakingtheIce() {
                                 The COVID-19 pandemic has affected both people and businesses in numerous ways. <b>For theater venues in particular, the pandemic has made it increasingly difficult to connect with their local communities.</b> Places like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, are no exception.
                         </p>
                             <p>
-                                With this in mind, our team spent two months researching ways to recreate the meaningful interactions that were once only experienced through in-person theater activities. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing. Our guidelines are highly customizable so theaters like the Kelly Strayhorn can host events that fit their ever-changing needs and budgets.
+                                With this in mind, our team spent two months <b>researching ways to recreate the meaningful interactions</b> that were once only experienced through in-person theater activities. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing. Our guidelines are highly customizable so theaters like the Kelly Strayhorn can host events that fit their ever-changing needs and budgets.
                         </p>
                         </div>
                     </div>
@@ -87,8 +88,16 @@ function BreakingtheIce() {
                 {/* Insights and Evidence */}
                 <section>
                     <div className="row justify-content-center align-items-center">
+                        <div className="col-12">
+                            <h3 className="mb-3">RESEARCH, INSIGHTS, AND EVIDENCE</h3>
+                            <p>
+                                Early in our process, we gained a better understanding of people’s needs and the ways in which they engage with virtual events through <b>Semi-Structured Interviews</b> and <b>Think Aloud Protocols</b>. Next, we used <b>Contextual Inquiry</b> to learn more about people’s experiences and expectations when interacting with others at virtual events. <b>Speed Dating</b> further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. Lastly, testing our <b>experience prototypes</b> with groups helped us iterate on our ideas and eventually confirm the success of our final product.
+                            </p>
+                        </div>
                         <div className="col-12 col-lg-7">
-                            <h3 className="mb-3">INSIGHTS AND EVIDENCE</h3>
+                            <p>
+                                From our reseach, we uncovered four key insights:
+                            </p>
                             <ol>
                                 <li>People like structured activities</li>
                                 <li>People are motivated to get to know others on a more personal level</li>
@@ -97,7 +106,9 @@ function BreakingtheIce() {
                             </ol>
                         </div>
                         <div className="col-9 col-md-7 col-lg-5">
-                            <Image src={EvidenceSpeechBubbles} width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={EvidenceSpeechBubbles} width="100%" />
+                            </SRLWrapper>
                         </div>
                     </div>
                 </section>
@@ -133,7 +144,9 @@ function BreakingtheIce() {
                             </p>
                         </div>
                         <div className="col-sm-10 col-md-7 col-lg-5 col-xl-4">
-                            <Image src={Solution} width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={Solution} width="100%" />
+                            </SRLWrapper>
                         </div>
                     </div>
                     {/* <Image src={UCREPoster} className="col-lg-7 mt-5" width="100%" /> */}

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
+import { SRLWrapper } from "simple-react-lightbox";
 
 // Components
 import DetailsHeading from '../components/DetailsHeading';
@@ -9,6 +10,9 @@ import DetailsHeading from '../components/DetailsHeading';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/Main.css'; // global styles
 import '../css/DetailsPage.css'; // global styles
+
+// Constant variables
+import { lightboxOptions } from '../SpecificComponents/Constants' // image lightbox styles
 
 // Images
 import PicnicCover from '../assets/images/picnic/PicnicCover.png';
@@ -90,7 +94,9 @@ function Picnic() {
                             </ol>
                         </div>
                         <div className="col-12 col-lg-7">
-                            <Image src={AffinityDiagramPicnic} width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={AffinityDiagramPicnic} width="100%" />
+                            </SRLWrapper>
                         </div>
                     </div>
                 </section>
@@ -106,7 +112,9 @@ function Picnic() {
                         </div>
 
                         <div className="col-12">
-                            <Image src={ActivityProcesss} alt="walkthrough images of Picnic app home screen, two example activities, and post-activity reflection screen." width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={ActivityProcesss} alt="walkthrough images of Picnic app home screen, two example activities, and post-activity reflection screen." width="100%" />
+                            </SRLWrapper>
                         </div>
 
                         <div className="col-12 mt-3">
@@ -121,7 +129,9 @@ function Picnic() {
                             </p>
                         </div>
                         <div className="col-12">
-                            <Image src={BettyStoryboard} alt="Storyboard showing Betty stressed over work during post-work hours in frame 1, using the Picnic app in frame 2, and feeling more relaxed with her mind off work after completing a Picnic (i.e. in-app activity) in frame 3" width="100%" />
+                            <SRLWrapper options={lightboxOptions}>
+                                <Image className="img-zoom" src={BettyStoryboard} alt="Storyboard showing Betty stressed over work during post-work hours in frame 1, using the Picnic app in frame 2, and feeling more relaxed with her mind off work after completing a Picnic (i.e. in-app activity) in frame 3" width="100%" />
+                            </SRLWrapper>
                         </div>
                     </div>
                 </section>

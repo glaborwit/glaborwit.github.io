@@ -129,7 +129,11 @@ function BudgetBuddy() {
                                 After many design iterations, our team created Budget Buddy, an app to help manage shoppers’ budgets while not constraining them to a pre-planned grocery list. We designed our app for both smartphones and smartwatches so that customers could easily keep track of their budgets while choosing not to touch their phone or other belongings.
                             </p>
                             <p>
-                                On the app, users register grocery items via voice dictation or phone-camera scanning technology. They then choose whether to add the item to their list of items currently in their cart or to the list of items they want to buy, but will decide on later depending on their leftover budget. Our app also suggests cheaper alternatives to items and where to find them. This design gives users the freedom to shop for items they need while maintaining a sense of free-will for buying “nice-to-have” or “extra” items.
+                                On the app, users register grocery items via voice dictation or phone-camera scanning technology. They then choose whether to add the item to their list of items currently in their cart or to the list of items they want to buy, but will decide on later depending on their leftover budget. Our app also suggests cheaper alternatives to items and where to find them. This design <b>gives users the freedom to shop for items they need while maintaining a sense of free-will</b> for buying “nice-to-have” or “extra” items.
+                            </p>
+
+                            <p>
+                                Our app also <b>brings value to the grocery stores</b> in which our users shop. The “Decide Later” list reminds users about potentially forgotten items, giving these items a second chance at being sold. Suggesting alternatives allows stores to promote older or surplus products, decreasing waste and financial loss due to unsold expired products. Lastly, making customers more confident about the items in their cart reduces the need for associates to put back unwanted items at checkout. This descreases extra handling of items and makes the store a safer environment for both shoppers and associates.
                             </p>
                         </div>
                         <div className="col-5 col-md-4 col-lg-3">

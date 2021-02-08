@@ -89,12 +89,25 @@ function BreakingtheIce() {
                 <section>
                     <div className="row justify-content-center align-items-center">
                         <div className="col-12">
-                            <h3 className="mb-3">RESEARCH, INSIGHTS, AND EVIDENCE</h3>
+                            <h3 className="mb-3">RESEARCH</h3>
                             <p>
-                                Early in our process, we gained a better understanding of people’s needs and the ways in which they engage with virtual events through <b>Semi-Structured Interviews</b> and <b>Think Aloud Protocols</b>. Next, we used <b>Contextual Inquiry</b> to learn more about people’s experiences and expectations when interacting with others at virtual events. <b>Speed Dating</b> further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. Lastly, testing our <b>experience prototypes</b> with groups helped us iterate on our ideas and eventually confirm the success of our final product.
+                                Early in our process, we gained a better understanding of people’s needs and the ways in which they engage with virtual events through <b>Semi-Structured Interviews</b> and <b>Think Aloud Protocols</b>.
+                            </p>
+                            <p>
+                                Next, we used <b>Contextual Inquiry</b> to learn more about people’s experiences and expectations when interacting with others at community events. Since we couldn’t conduct these interviews in-person due to pandemic restrictions, we created our own context by hosting a virtual happy hour. To make sure participants felt comfortable and acted as they naturally would, we kept the happy hour as separate from the study as possible (i.e. no researchers observing or recording the sessions). We conducted individual retrospective contextual inquiries immediately after the event, such that participants would have the experience fresh in their minds.
+                            </p>
+                            <p>
+                                <b>Speed Dating</b> further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. Lastly, testing our <b>experience prototypes</b> with groups helped us iterate on our ideas and eventually confirm the success of our final product.
                             </p>
                         </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div className="row justify-content-center align-items-center">
                         <div className="col-12 col-lg-7">
+                            <h3 className="mb-3">INSIGHTS AND EVIDENCE</h3>
                             <p>
                                 From our reseach, we uncovered four key insights:
                             </p>

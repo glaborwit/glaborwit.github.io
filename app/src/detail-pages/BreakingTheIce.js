@@ -139,7 +139,7 @@ function BreakingtheIce() {
                                 </span>
                             </h3>
                             <p>
-                                Using the data from our research, we know individual workshops are most successful when set up with the following structure:
+                                Using the data we collected, we know individual workshops are most successful when set up with the following structure:
                             </p>
                             <ol>
                                 <li>

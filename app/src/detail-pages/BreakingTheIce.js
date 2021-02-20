@@ -56,7 +56,7 @@ function BreakingtheIce() {
                             <p>
                                 Research Lead
                                 <br />
-                                <i>Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data</i>
+                                <em>Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data</em>
                             </p>
 
                             <h5>Teammates</h5>
@@ -75,10 +75,10 @@ function BreakingtheIce() {
                         <div className="col-md-8 mt-3 mt-md-0">
                             <h5 className="d-none d-md-block">Summary</h5>
                             <p>
-                                The COVID-19 pandemic has affected both people and businesses in numerous ways. <b>For theater venues in particular, the pandemic has made it increasingly difficult to connect with their local communities.</b> Places like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, are no exception.
+                                The COVID-19 pandemic has affected both people and businesses in numerous ways. <strong>For theater venues in particular, the pandemic has made it increasingly difficult to connect with their local communities.</strong> Places like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, are no exception.
                         </p>
                             <p>
-                                With this in mind, our team spent two months <b>researching ways to recreate the meaningful interactions</b> that were once only experienced through in-person theater activities. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing. Our guidelines are highly customizable so theaters like the Kelly Strayhorn can host events that fit their ever-changing needs and budgets.
+                                With this in mind, our team spent two months <strong>researching ways to recreate the meaningful interactions</strong> that were once only experienced through in-person theater activities. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing. Our guidelines are highly customizable so theaters like the Kelly Strayhorn can host events that fit their ever-changing needs and budgets.
                         </p>
                         </div>
                     </div>
@@ -92,20 +92,20 @@ function BreakingtheIce() {
                             <h3 className="mb-3">RESEARCH 
                                 <span className="stickies" onClick={() => setModalShow(true)} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                                     {isShown ?
-                                        <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" />
+                                        <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" alt="Sticky notes" />
                                         :
-                                        <Image className="ml-4 mouse-pointer" src={Stickies} width="77.6" />
+                                        <Image className="ml-4 mouse-pointer" src={Stickies} width="77.6" alt="Glowing sticky notes"/>
                                     }
                                 </span>
                             </h3>
                             <p>
-                                Early in our process, we gained a better understanding of people’s needs and the ways in which they engage with virtual events through <b>Semi-Structured Interviews</b> and <b>Think Aloud Protocols</b>.
+                                Early in our process, we gained a better understanding of people’s needs and the ways in which they engage with virtual events through <strong>Semi-Structured Interviews</strong> and <strong>Think Aloud Protocols</strong>.
                             </p>
                             <p>
-                                Next, we used <b>Contextual Inquiry</b> to learn more about people’s experiences and expectations when interacting with others at community events. Since we couldn’t conduct these interviews in-person due to pandemic restrictions, we created our own context by hosting a virtual happy hour. To make sure participants felt comfortable and acted as they naturally would, we kept the happy hour as separate from the study as possible (i.e. no researchers observing or recording the sessions). We conducted individual retrospective contextual inquiries immediately after the event, such that participants would have the experience fresh in their minds.
+                                Next, we used <strong>Contextual Inquiry</strong> to learn more about people’s experiences and expectations when interacting with others at community events. Since we couldn’t conduct these interviews in-person due to pandemic restrictions, we created our own context by hosting a virtual happy hour. To make sure participants felt comfortable and acted as they naturally would, we kept the happy hour as separate from the study as possible (i.e. no researchers observing or recording the sessions). We conducted individual retrospective contextual inquiries immediately after the event, such that participants would have the experience fresh in their minds.
                             </p>
                             <p>
-                                <b>Speed Dating</b> further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. Lastly, testing our <b>experience prototypes</b> with groups helped us iterate on our ideas and eventually confirm the success of our final product.
+                                <strong>Speed Dating</strong> further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. Lastly, testing our <strong>experience prototypes</strong> with groups helped us iterate on our ideas and eventually confirm the success of our final product.
                             </p>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ function BreakingtheIce() {
                         </div>
                         <div className="col-9 col-md-7 col-lg-5">
                             <SRLWrapper options={lightboxOptions}>
-                                <Image className="img-zoom" src={EvidenceSpeechBubbles} width="100%" />
+                                <Image className="img-zoom" src={EvidenceSpeechBubbles} width="100%" alt="Quotes from interviews" />
                             </SRLWrapper>
                         </div>
                     </div>
@@ -158,7 +158,7 @@ function BreakingtheIce() {
                         </div>
                         <div className="col-sm-10 col-md-7 col-lg-5 col-xl-4">
                             <SRLWrapper options={lightboxOptions}>
-                                <Image className="img-zoom" src={Solution} width="100%" />
+                                <Image className="img-zoom" src={Solution} width="100%" alt="The guidelines for a successful theater-hosted community event" />
                             </SRLWrapper>
                         </div>
                     </div>

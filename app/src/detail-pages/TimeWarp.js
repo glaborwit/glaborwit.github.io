@@ -53,7 +53,7 @@ function TimeWarp() {
                             <p>
                                 Design Engineer, Software Engineer, Lead Researcher
                                 <br />
-                                <i>Designed interface, programmed application, wrote interview guides and conducted user research with prototype</i>
+                                <em>Designed interface, programmed application, wrote interview guides and conducted user research with prototype</em>
                             </p>
 
                             <h5>Teammates</h5>
@@ -85,7 +85,7 @@ function TimeWarp() {
                                 Augmented reality (AR) is a relatively new technology that will likely be commonplace in the upcoming years. My goal for this project was to utilize AR technology to enhance the human senses by creating a program that would slow down time.
                             </p>
                             <p>
-                                Humans only perceive motion in one way. Our slow-motion viewing prototype overcomes this limitation by allowing humans to perceive motion in an entirely new manner. In a factory, employees can use the technology to better diagnose machine malfunctions. Dancers can use the technology to expedite the process of learning new choreography. In summary, our prototype allows for the <b>derivation of exact information</b> from high-speed situations, making problem-solving, imitation, and skill-building easier.
+                                Humans only perceive motion in one way. Our slow-motion viewing prototype overcomes this limitation by allowing humans to perceive motion in an entirely new manner. In a factory, employees can use the technology to better diagnose machine malfunctions. Dancers can use the technology to expedite the process of learning new choreography. In summary, our prototype allows for the <strong>derivation of exact information</strong> from high-speed situations, making problem-solving, imitation, and skill-building easier.
                             </p>
                             <p>
                                 <br />

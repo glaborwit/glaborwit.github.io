@@ -49,7 +49,7 @@ function Picnic() {
                             <p>
                                 UX Researcher
                                 <br />
-                                <i>Worked with team to write interview guides, conducted user research and prototype tests</i>
+                                <em>Worked with team to write interview guides, conducted user research and prototype tests</em>
                             </p>
 
                             <h5>Teammates</h5>
@@ -120,7 +120,7 @@ function Picnic() {
                         <div className="col-12 mt-3">
                             <h5>The Psychology</h5>
                             <p>
-                                At its core, our prototype utilizes <b>embedded design</b>. By intermixing relevant and irrelevant activities, this psychological method is used to promote subtle but deliberate change in users’ attitudes and mindsets. Picnic uses this technique by framing each mindfulness exercise as a quick and fun activity to complete at the end of the day.
+                                At its core, our prototype utilizes <strong>embedded design</strong>. By intermixing relevant and irrelevant activities, this psychological method is used to promote subtle but deliberate change in users’ attitudes and mindsets. Picnic uses this technique by framing each mindfulness exercise as a quick and fun activity to complete at the end of the day.
                             </p>
                             
                             <h5>Results</h5>

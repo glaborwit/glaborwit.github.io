@@ -24,7 +24,7 @@ function About() {
             <div className="container mt-2 mt-md-5">
                 <div className="row justify-content-center mt-5">
                     <div className="col-12 col-md-6">
-                        <Image src={Me} width="100%" />
+                        <Image src={Me} width="100%" alt="me" />
                     </div>
                     <div className="col-12 col-md-6 mt-3 mt-md-0">
                     <h3 className="text-left mb-0">Gabrielle LaBorwit</h3>
@@ -42,7 +42,7 @@ function About() {
                         </p>
 
                         <p>
-                            <b>Want to say hi? Let’s connect!</b>
+                            <strong>Want to say hi? Let’s connect!</strong>
                             <br />
                             Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
                             <br />

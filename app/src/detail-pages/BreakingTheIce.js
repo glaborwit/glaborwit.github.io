@@ -89,7 +89,15 @@ function BreakingtheIce() {
                 <section>
                     <div className="row justify-content-center align-items-center">
                         <div className="col-12">
-                            <h3 className="mb-3">RESEARCH</h3>
+                            <h3 className="mb-3">RESEARCH 
+                                <span className="stickies" onClick={() => setModalShow(true)} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                                    {isShown ?
+                                        <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" />
+                                        :
+                                        <Image className="ml-4 mouse-pointer" src={Stickies} width="77.6" />
+                                    }
+                                </span>
+                            </h3>
                             <p>
                                 Early in our process, we gained a better understanding of people’s needs and the ways in which they engage with virtual events through <b>Semi-Structured Interviews</b> and <b>Think Aloud Protocols</b>.
                             </p>
@@ -129,15 +137,7 @@ function BreakingtheIce() {
                 <section>
                     <div className="row align-items-center justify-content-center">
                         <div className="col-12 col-lg-7 col-xl-8">
-                            <h3 className="mb-3">SOLUTION
-                                <span className="stickies" onClick={() => setModalShow(true)} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-                                    {isShown ?
-                                        <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" />
-                                        :
-                                        <Image className="ml-4 mouse-pointer" src={Stickies} width="77.6" />
-                                    }
-                                </span>
-                            </h3>
+                            <h3 className="mb-3">SOLUTION</h3>
                             <p>
                                 Using the data we collected, we know individual workshops are most successful when set up with the following structure:
                             </p>

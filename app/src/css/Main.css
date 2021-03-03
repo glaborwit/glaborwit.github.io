@@ -52,6 +52,24 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
     color: #9087A8;
 }
 
+.blockquote {
+    background: #f4f2f9;
+    border-left: 10px solid #9087A8;
+    margin: 1.5em 10px;
+    font-style: italic;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+.blockquote:before {
+    color: #666;
+    content: open-quote;
+    font-size: 3.2em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+}
+
 .big-margin-top {
     margin-top: 81px;
 }
@@ -62,4 +80,29 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
 
 .img-zoom{
     cursor: zoom-in;
+}
+
+.carousel .carousel-indicators li {
+    background-color: #aaa;
+    margin-bottom: -.8em;
+}
+
+.carousel .carousel-indicators .active {
+    background-color: rgb(89, 89, 89);
+}
+
+.carousel .carousel-control-prev-icon {
+    background-color: #000;
+    border-radius: 15%;
+    margin-right: 70px;
+}
+
+.carousel .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 15%;
+    margin-left: 70px;
+}
+
+.carousel img {
+    padding-bottom: 17px;
 }

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 import { SRLWrapper } from "simple-react-lightbox";
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
+import ScrollIntoView from 'react-scroll-into-view';
 
 // Components
 import DetailsHeading from '../components/DetailsHeading';
@@ -14,7 +15,7 @@ import '../css/Main.css'; // global styles
 import '../css/DetailsPage.css'; // global styles
 
 // Constant variables
-import { lightboxOptions } from '../SpecificComponents/Constants' // image lightbox styles
+import { lightboxOptions } from '../SpecificComponents/Constants'; // image lightbox styles
 
 // Images
 import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
@@ -23,9 +24,9 @@ import Solution from '../assets/images/UCRE/solution.png';
 import ReverseAssumptions from '../assets/images/UCRE/reverse-assumptions.jpg';
 import IcebreakerDemo from '../assets/images/UCRE/Icebreaker-Demo-pic.jpg';
 //speed dating images
-import SpeedDatingBoard1 from '../assets/images/UCRE/speeddatingphotos/Set1_Board1.png';
 import SpeedDatingBoard2 from '../assets/images/UCRE/speeddatingphotos/Set1_Board2.png';
 import SpeedDatingBoard3 from '../assets/images/UCRE/speeddatingphotos/Set1_Board3.png';
+import SpeedDatingBoard1 from '../assets/images/UCRE/speeddatingphotos/Set1_Board1.png';
 import SpeedDatingBoard4 from '../assets/images/UCRE/speeddatingphotos/Set2_Board1.png';
 import SpeedDatingBoard5 from '../assets/images/UCRE/speeddatingphotos/Set2_Board2.png';
 import SpeedDatingBoard6 from '../assets/images/UCRE/speeddatingphotos/Set2_Board3.png';
@@ -58,14 +59,19 @@ function BreakingtheIce() {
             <div className="container mt-2 mt-md-5">
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-9">
-                        <DetailsHeading title="Breaking the Ice" tagline="A Virtual Theater Community Experience" image={BreakingtheIceCover} alt="Guidelines for a great theater community experience online" />
+
+                        <div className="row justify-content-center">
+                            <div class="col-12">
+                                <DetailsHeading title="Breaking the Ice" tagline="A Virtual Theater Community Experience" image={BreakingtheIceCover} alt="Guidelines for a great theater community experience online" />
+                            </div>
+                        </div>
 
                         {/* Overview */}
                         <section>
-                            <h3 className="mb-3">OVERVIEW</h3>
-                            <div className="row">
-                                <div className="col-md-12 mt-3 mt-md-0">
-                                    <h5 className="d-none d-md-block">Summary</h5>
+                            <div className="row justify-content-center">
+                                <div className="col-12 col-md-10 mt-3 mt-md-0">
+                                    <h3 className="mb-3" id="projectoverview">OVERVIEW</h3>
+                                    <h4 className="d-none d-md-block">Summary</h4>
                                     <p>
                                         The COVID-19 pandemic has affected both people and businesses in numerous ways. <strong>For theater venues in particular, the pandemic has made it increasingly difficult to connect with their local communities.</strong> Places like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, are no exception.
                                     </p>
@@ -76,15 +82,15 @@ function BreakingtheIce() {
                             </div>
 
                             <div className="row mt-3 mt-md-5">
-                                <div className="col-md-6">
-                                    <h5>Timeline</h5>
+                                <div className="col-md-3">
+                                    <h4>Timeline</h4>
                                     <p>
                                         Oct–Dec 2020, 2 months
                             </p>
                                 </div>
 
-                                <div className="col-md-6">
-                                    <h5>Role</h5>
+                                <div className="col-md-3">
+                                    <h4>Role</h4>
                                     <p>
                                         Research Lead
                                 <br />
@@ -92,18 +98,18 @@ function BreakingtheIce() {
                                     </p>
                                 </div>
 
-                                <div className="col-md-6">
-                                    <h5>Teammates</h5>
+                                <div className="col-md-3">
+                                    <h4>Teammates</h4>
                                     <p>
                                         Meo Zhang, Wenqing Yin, Jenny Xin
                             </p>
                                 </div>
 
-                                <div className="col-md-6">
-                                    <h5>Research Methods</h5>
+                                <div className="col-md-3">
+                                    <h4>Research Methods</h4>
                                     <p>
                                         Semi-Structured Interviews, Contextual Inquiry, Think Aloud Protocols, Speed Dating, Experience Prototypes, Storyboarding
-                            </p>
+                                    </p>
                                 </div>
                             </div>
                         </section>
@@ -111,37 +117,42 @@ function BreakingtheIce() {
 
                         {/* The Problem Space */}
                         <section>
-                            <h3 className="mb-3">Defining the Problem Space</h3>
-                            <div className="row">
-                                <div className="col-12">
+                            <div className="row justify-content-center">
+                                <div className="col-12 col-md-10">
+                                    <h3 className="mb-3" id="problemspace">Defining the Problem Space</h3>
                                     <p>
                                         In order to define our problem space, our team employed the <strong>Reverse Assumptions</strong> strategy. We wrote down all of our assumptions encompassing theater and the COVID-19 pandemic, then reversed them. This empowered us to <strong>challenge conventional thinking patterns</strong>, forcing us to re-evaluate current situations surrounding theater and COVID-19 from a completely new perspective.
                                     </p>
 
                                     <p>
                                         Upon completion, we discovered several opportunities to break the existing rules of interaction between actors and audience members. For instance, promoting the usage of electronics for engagement during a show, actors treating the audience as fellow actors, etc.
-                            </p>
+                                    </p>
+                                </div>
 
-                                    <div className="row justify-content-center align-items-center">
-                                        {/* <p className="col-12 col-sm-10 col-md-8 d-inline-block d-lg-none pb-3 pb-sm-5"> */}
-                                        <p className="col-12 col-sm-9 col-lg-8 pb-3 pb-sm-5">
-                                            <SRLWrapper options={lightboxOptions}>
-                                                <Image className="img-zoom" src={ReverseAssumptions} width="100%" alt="Reverse assumptions organized on sticky notes" />
-                                            </SRLWrapper>
-                                        </p>
+                                <div className="col-12">
+                                    <div className="row justify-content-center align-items-center my-4">
+                                        <SRLWrapper options={lightboxOptions}>
+                                            <Image className="img-zoom" src={ReverseAssumptions} width="100%" alt="Reverse assumptions organized on sticky notes" />
+                                        </SRLWrapper>
                                     </div>
+                                </div>
 
+                                <div className="col-12 col-md-10">
                                     <p>
                                         This activity led us to <strong>reframe</strong> the space we were working in by posing a simple, yet intricate question:
-                            </p>
+                                    </p>
+                                </div>
 
+                                <div className="col-12 px-0">
                                     <p className="blockquote">
                                         How might we make people feel connected to the theatre amidst the COVID-19 pandemic without the traditional in-person venue/experience?
-                            </p>
+                                    </p>
+                                </div>
 
+                                <div className="col-12 col-md-10">
                                     <p>
                                         Additional questions noted were how might we create a sense of community once only felt during a show? How might we foster and strengthen audience engagement that’s not in-person? Lastly, how might we redefine the “stage”?
-                            </p>
+                                    </p>
                                 </div>
                                 {/* <div className="col-12 col-lg-5 d-none d-lg-block">
                                     <SRLWrapper options={lightboxOptions}>
@@ -153,9 +164,9 @@ function BreakingtheIce() {
 
                         {/* Insights and Evidence */}
                         <section>
-                            <div className="row align-items-center">
-                                <div className="col-12">
-                                    <h3 className="mb-3">RESEARCH
+                            <div className="row justify-content-center align-items-center">
+                                <div className="col-12 col-md-10">
+                                    <h3 className="mb-3" id="research">RESEARCH
                                     {/* <span className="stickies" onClick={() => setModalShow(true)} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                                         {isShown ?
                                             <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" alt="Sticky notes" />
@@ -167,22 +178,22 @@ function BreakingtheIce() {
                                     <p>
                                         Early in our process, we gained a better understanding of people’s needs and the ways in which they engage with virtual events through <strong>Semi-Structured Interviews</strong> and <strong>Think Aloud Protocols</strong>.
                                     </p>
-                                </div>
 
-                                <div className="col-12">
-                                    <h4 className="mt-5">Contextual Inquiry</h4>
+                                    <h4 className="mt-5" id="contextual-inquiry">
+                                        Contextual Inquiry
+                                    </h4>
                                     <p>
                                         Next, we used <strong>Contextual Inquiry</strong> to learn more about people’s experiences and expectations when interacting with others at community events. Since we couldn’t conduct these interviews in-person due to pandemic restrictions, we created our own context by hosting a virtual happy hour. To make sure participants felt comfortable and acted as they naturally would, we kept the happy hour as separate from the study as possible (i.e. no researchers observing or recording the sessions). We conducted individual retrospective contextual inquiries immediately after the event, such that participants would have the experience fresh in their minds.
                                         </p>
                                 </div>
 
-                                <div className="col-12 mt-3 mb-4">
+                                <div className="col-12 mt-5 mb-5">
                                     <SRLWrapper options={lightboxOptions}>
-                                        <Image className="img-zoom" style={{ boxShadow: "0px 0px 8px #cdcdcd" }} src={IcebreakerDemo} width="100%" alt="Icebreaker Demo" />
+                                        <Image className="img-zoom" style={{ boxShadow: "0px 0px 8px #cdcdcd" }} src={IcebreakerDemo} width="100%" alt="Icebreaker Demo of woman laughing at card prompt 'What's the first theater performance you ever saw?'" />
                                     </SRLWrapper>
                                 </div>
 
-                                <div className="col-12">
+                                <div className="col-12 col-md-10">
                                     <p>
                                         The <strong>main insights</strong> we drew from our contextual inquiry were:
                                     </p>
@@ -195,23 +206,22 @@ function BreakingtheIce() {
 
                                         <li>Activities should facilitate meaningful conversation rather than being a distraction that generates superficial interaction</li>
                                     </ul>
-                                </div>
 
 
-                                <div className="col-12">
-                                    <h4 className="mt-5">Speed Dating</h4>
+                                    <h4 className="mt-5" id="speed-dating">Speed Dating</h4>
                                     <p>
                                         Based on our earlier findings, we designed four sets of three storyboards, with each board increasing in risk and each set focused on different aspects of theater-related virtual events. In particular, we decided to address users’ needs for <strong>gamified experiences, community engagement, theater-specific engagement</strong>, and the need for <strong>the physical world to be replicated in an online setting</strong>. These boards were used in our Speed Dating research, the method in which users are shown quickly shown with storyboards and probed about their interest in the ideas demonstrated. Our storyboards can be found below.
                                     </p>
                                 </div>
 
-                                <div className="col-12 mt-4 mb-5">
+                                <div className="col-12 my-5">
                                     <Carousel className="pb-2" style={{ boxShadow: "0px 0px 5px #cdcdcd" }} interval={null}>
                                         <Carousel.Item>
                                             <Image
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard1}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -220,6 +230,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard2}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -228,6 +239,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard3}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -236,6 +248,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard4}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -244,6 +257,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard5}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -252,6 +266,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard6}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -260,6 +275,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard7}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -268,6 +284,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard8}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -276,6 +293,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard9}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -284,6 +302,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard10}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -292,6 +311,7 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard11}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
 
@@ -300,13 +320,14 @@ function BreakingtheIce() {
                                                 className="d-block w-100"
                                                 src={SpeedDatingBoard12}
                                                 alt="Speed dating storyboard"
+                                                draggable={false}
                                             />
                                         </Carousel.Item>
                                     </Carousel>
 
                                 </div>
 
-                                <div className="col-12">
+                                <div className="col-12 col-md-10">
                                     <p>
                                         Speed Dating further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. We learned:
                                 </p>
@@ -317,14 +338,14 @@ function BreakingtheIce() {
                                         <li>People are incentivized to partake in an event if they enjoy the others in attendance or if they are interested in the performer hosting.</li>
                                     </ul>
                                 </div>
-                                <div className="col-12 col-md-9 mx-auto">
+                                <div className="col-12 col-md-12 col-lg-9 mx-auto my-5">
                                     <SRLWrapper options={lightboxOptions}>
                                         <Image className="img-zoom" src={EvidenceSpeechBubbles} width="100%" alt="Quotes from interviews" />
                                     </SRLWrapper>
                                 </div>
 
-                                <div className="col-12">
-                                    <h4 className="mt-5">Final Tests</h4>
+                                <div className="col-12 col-md-10">
+                                    <h4 className="mt-5" id="final-tests">Final Tests</h4>
                                     <p>
                                         Lastly, testing our <strong>experience prototypes</strong> with groups helped us iterate on our ideas and eventually confirm the success of our final product.
                                     </p>
@@ -334,8 +355,8 @@ function BreakingtheIce() {
 
                         <section>
                             <div className="row align-items-center justify-content-center">
-                                <div className="col-12">
-                                    <h3 className="mb-3">SOLUTION</h3>
+                                <div className="col-12 col-md-10">
+                                    <h3 className="mb-3" id="solution">SOLUTION</h3>
                                     <p>
                                         Using the data we collected, we know individual workshops are most successful when set up with the following structure:
                             </p>
@@ -354,7 +375,7 @@ function BreakingtheIce() {
                                         Together, these guidelines can help focus events on creating meaningful interactions rather than completing the actual activity, allowing communities to stay connected both during and after the COVID-19 pandemic.
                             </p>
                                 </div>
-                                <div className="col-sm-10 col-md-10 col-lg-8">
+                                <div className="col-sm-10 col-md-10 col-lg-8 mt-4">
                                     <SRLWrapper options={lightboxOptions}>
                                         <Image className="img-zoom" src={Solution} width="100%" alt="The guidelines for a successful theater-hosted community event" />
                                     </SRLWrapper>
@@ -366,6 +387,42 @@ function BreakingtheIce() {
                             modalShowBool={modalShow}
                             modalHide={() => setModalShow(false)}
                         />
+                    </div>
+
+                    <div className="col-3 d-none d-md-block">
+                        <div className="sidecar sticky-top ml-3 ml-lg-5">
+                            <ul>
+                                <ScrollIntoView selector="#projectoverview">
+                                    <li>Project Overview</li>
+                                </ScrollIntoView>
+
+                                <ScrollIntoView selector="#problemspace">
+                                    <li>Problem Space</li>
+                                </ScrollIntoView>
+
+                                <ScrollIntoView selector="#research">
+                                    <li>Research</li>
+                                </ScrollIntoView>
+
+                                <ul>
+                                    <ScrollIntoView selector="#contextual-inquiry">
+                                        <li>Contextual Inquiry</li>
+                                    </ScrollIntoView>
+
+                                    <ScrollIntoView selector="#speed-dating">
+                                        <li>Speed Dating</li>
+                                    </ScrollIntoView>
+
+                                    <ScrollIntoView selector="#final-tests">
+                                        <li>Final Tests</li>
+                                    </ScrollIntoView>
+                                </ul>
+
+                                <ScrollIntoView selector="#solution">
+                                    <li>Solution</li>
+                                </ScrollIntoView>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

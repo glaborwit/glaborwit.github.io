@@ -98,27 +98,18 @@ function BudgetBuddy() {
                         <section>
                             <div className="row justify-content-center">
                                 <div className="col-12 col-md-10">
-                                    <h3 className="mb-3">RESEARCH INSIGHTS</h3>
+                                    <h3 className="mb-3" id="research">RESEARCH INSIGHTS</h3>
                                     <p>
                                         Before ideating on possible solutions, our team conducted 12 user interviews through directed storytelling with participants between the ages of 20-30. We created journey maps chronicling each participant’s most recent grocery shopping experience, then used those to create one consolidated map modeling our overall target user’s experience.
                                     </p>
-                                    <p className="d-none d-lg-block pt-3">
-                                        After further analysis, we uncovered three key insights:
-                                    </p>
-                                    <ol>
-                                        <li>Participants enjoy the experience of grocery shopping in-store</li>
-                                        <li>Money-conscious shoppers are conflicted with how to stay within budget while also still buying the “nice-to-have” items that they randomly discovered during the trip</li>
-                                        <li>Shoppers try not to touch their phone, belongings, and objects as much as possible for safety precautions</li>
-                                    </ol>
                                 </div>
+                                
                                 <div className="col-12 mt-2 mt-md-4">
                                     <SRLWrapper options={lightboxOptions}>
                                         <Image className="img-zoom" src={JourneyMap} width="100%" alt="Customer journey map: grocery shopper" />
                                     </SRLWrapper>
                                 </div>
-                            </div>
 
-                            <div className="row justify-content-center mt-4 d-lg-none">
                                 <div className="col-12 col-md-10">
                                     <p>
                                         After further analysis, we uncovered three key insights:
@@ -137,7 +128,7 @@ function BudgetBuddy() {
                         <section>
                             <div className="row justify-content-center align-items-center">
                                 <div className="col-12 col-md-10 mb-sm-3">
-                                    <h3 className="mb-3">SOLUTION</h3>
+                                    <h3 className="mb-3" id="solution">SOLUTION</h3>
                                     <p>
                                         After many design iterations, our team created Budget Buddy, an app to help manage shoppers’ budgets while not constraining them to a pre-planned grocery list. We designed our app for both smartphones and smartwatches so that customers could easily keep track of their budgets while choosing not to touch their phone or other belongings.
                                     </p>
@@ -169,52 +160,39 @@ function BudgetBuddy() {
 
                         {/* Demos */}
                         <section>
-                            <h3 className="mb-3">DEMOS</h3>
+                            <h3 className="mb-3" id="demos">DEMOS</h3>
                             <div className="row">
                                 <div className="col-12 col-lg-6">
-                                    <h5 className="mb-2 text-center">Mobile App Demo</h5>
+                                    <h4 className="mb-2 text-center">Mobile App Demo</h4>
                                     <ReactPlayer width="100%" controls={true} url="https://www.youtube.com/watch?v=70wwDN58Udg" />
                                 </div>
                                 <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-                                    <h5 className="mb-2 text-center">Smartwatch App Demo</h5>
+                                    <h4 className="mb-2 text-center">Smartwatch App Demo</h4>
                                     <ReactPlayer width="100%" controls={true} url="https://vimeo.com/494724695" />
                                 </div>
                             </div>
                         </section>
-                        <div className="col-3 d-none d-md-block">
-                            <div className="sidecar sticky-top ml-3 ml-lg-5">
-                                <ul>
-                                    <ScrollIntoView selector="#projectoverview">
-                                        <li>Project Overview</li>
-                                    </ScrollIntoView>
 
-                                    <ScrollIntoView selector="#problemspace">
-                                        <li>Problem Space</li>
-                                    </ScrollIntoView>
+                    </div>
+                    <div className="col-3 d-none d-md-block">
+                        <div className="sidecar sticky-top ml-3 ml-lg-5">
+                            <ul>
+                                <ScrollIntoView selector="#projectoverview">
+                                    <li>Overview</li>
+                                </ScrollIntoView>
 
-                                    <ScrollIntoView selector="#research">
-                                        <li>Research</li>
-                                    </ScrollIntoView>
+                                <ScrollIntoView selector="#research">
+                                    <li>Research</li>
+                                </ScrollIntoView>
 
-                                    <ul>
-                                        <ScrollIntoView selector="#contextual-inquiry">
-                                            <li>Contextual Inquiry</li>
-                                        </ScrollIntoView>
+                                <ScrollIntoView selector="#solution">
+                                    <li>Solution</li>
+                                </ScrollIntoView>
 
-                                        <ScrollIntoView selector="#speed-dating">
-                                            <li>Speed Dating</li>
-                                        </ScrollIntoView>
-
-                                        <ScrollIntoView selector="#final-tests">
-                                            <li>Final Tests</li>
-                                        </ScrollIntoView>
-                                    </ul>
-
-                                    <ScrollIntoView selector="#solution">
-                                        <li>Solution</li>
-                                    </ScrollIntoView>
-                                </ul>
-                            </div>
+                                <ScrollIntoView selector="#demos">
+                                    <li>Demos</li>
+                                </ScrollIntoView>
+                            </ul>
                         </div>
                     </div>
                 </div>

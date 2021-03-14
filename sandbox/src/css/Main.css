@@ -116,6 +116,7 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
     border-left: solid #CDC9D8 4px;
     padding-left: 15px;
     z-index: 9;
+    bottom: 3rem;
 }
 
 .sidecar ul {
@@ -123,6 +124,7 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
     margin: 0;
     padding: 0;
     line-height: 1.2em;
+    text-transform: uppercase;
 }
 
 .sidecar ul li {
@@ -134,7 +136,7 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
 .sidecar ul li {
     margin: .5em 0rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .sidecar ul li:first-child{
@@ -149,7 +151,8 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
 /* Nested links */
 .sidecar ul > ul li {
     margin-left: 10px;
-    font-weight: 400;
+    font-weight: 300;
+    text-transform: capitalize;
 }
 
 /* .sidecar ul > ul li:before {

@@ -484,7 +484,7 @@ function BreakingtheIce() {
                     </div>
 
                     <div className="col-3 d-none d-md-block">
-                        <div className="sidecar sticky-top ml-3 ml-lg-5">
+                        <div className="sidecar position-fixed ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
                                     <li>Overview</li>

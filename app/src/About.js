@@ -8,6 +8,7 @@ import './css/Main.css';
 
 // Images
 import Me from './assets/images/me.jpg';
+import signature from './assets/logos/names/signature3.png'
 
 function About() {
     
@@ -40,14 +41,18 @@ function About() {
                         <p>
                             When I am not studying, I enjoy taking photographs, browsing through <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@gabbi">Medium</a> articles, and cooking.
                         </p>
-
-                        <p>
+                        Signed,<br />
+                        <Image src={signature} height="40" className="mt-2" draggable={false} />
+                        
+                        <p className="mt-4">
                             <strong>Want to say hi? Let’s connect!</strong>
                             <br />
                             Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
                             <br />
                             Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
                         </p>
+
+                        
                     </div>
                 </div>
             </div>

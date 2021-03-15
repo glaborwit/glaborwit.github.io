@@ -181,7 +181,7 @@ function TimeWarp() {
                                     </p>
                                 </div>
 
-                                <div className="col-12 my-3">
+                                <div className="col-12 col-lg-10 my-3">
                                     <SRLWrapper options={lightboxOptions}>
                                         <Image className="img-zoom" width="100%" src={Poster} alt="Poster about application" />
                                     </SRLWrapper>

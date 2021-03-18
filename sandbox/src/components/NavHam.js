@@ -3,7 +3,6 @@ import {
     NavLink,
     Link
 } from "react-router-dom";
-import Image from 'react-bootstrap/Image';
 import Navbar from 'react-bootstrap/navbar';
 import Nav from 'react-bootstrap/nav';
 
@@ -12,18 +11,11 @@ import '../css/Main.css';
 import '../css/Nav.css';
 import Resume from '../assets/GabrielleLaBorwit_Resume.pdf'
 
-// Images
-import logo from '../assets/logos/names/signature3.png'
-
-
 class NavHam extends Component {
     render() {
         return (
             <Navbar expand="sm" id="overrides" className="mx-sm-4">
-                <Link className="navbar-brand py-2" to="/">
-                    <Image height="45" draggable={false} src={logo} />
-                </Link>
-                {/* <Link className="navbar-brand py-2" to="/">GABRIELLE LABORWIT</Link> */}
+                <Link className="navbar-brand py-2" to="/">GABRIELLE LABORWIT</Link>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

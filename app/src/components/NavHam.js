@@ -3,7 +3,6 @@ import {
     NavLink,
     Link
 } from "react-router-dom";
-import Image from 'react-bootstrap/Image';
 import Navbar from 'react-bootstrap/navbar';
 import Nav from 'react-bootstrap/nav';
 

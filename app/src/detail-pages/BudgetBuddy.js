@@ -64,7 +64,8 @@ function BudgetBuddy() {
                                 <div className="col-md-3">
                                     <h4>Timeline</h4>
                                     <p>
-                                        Nov-Dec 2020, 1 month
+                                        Nov-Dec 2020
+                                        <br />4 weeks
                                     </p>
                                 </div>
 
@@ -80,14 +81,18 @@ function BudgetBuddy() {
                                 <div className="col-md-3">
                                     <h4>Teammates</h4>
                                     <p>
-                                        Janelle Wen, Yuwen Lu, Shai Bhardwaj
+                                        Janelle Wen
+                                        <br />Yuwen Lu
+                                        <br />Shai Bhardwaj
                                     </p>
                                 </div>
 
                                 <div className="col-md-3">
                                     <h4>Research Methods</h4>
                                     <p>
-                                        Pop-Up Research, Directed Storytelling, Customer Journey Mapping
+                                        Pop-Up Research
+                                        <br />Directed Storytelling
+                                        <br />Customer Journey Mapping
                                     </p>
                                 </div>
                             </div>
@@ -104,7 +109,7 @@ function BudgetBuddy() {
                                     </p>
                                 </div>
                                 
-                                <div className="col-12 mt-2 mt-md-4">
+                                <div className="col-12 my-4">
                                     <SRLWrapper options={lightboxOptions}>
                                         <Image className="img-zoom" src={JourneyMap} width="100%" alt="Customer journey map: grocery shopper" />
                                     </SRLWrapper>
@@ -175,7 +180,7 @@ function BudgetBuddy() {
 
                     </div>
                     <div className="col-3 d-none d-md-block">
-                        <div className="sidecar position-fixed ml-3 ml-lg-5">
+                        <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
                                     <li>Overview</li>

@@ -62,7 +62,8 @@ function Picnic() {
                                 <div className="col-md-3">
                                     <h4>Timeline</h4>
                                     <p>
-                                        Sept–Dec 2020, 4 months
+                                        Sept–Dec 2020
+                                        <br />4 months
                                     </p>
                                 </div>
 
@@ -78,14 +79,21 @@ function Picnic() {
                                 <div className="col-md-3">
                                     <h4>Teammates</h4>
                                     <p>
-                                        Cam Davison, Nitya Devireddy, Sarah Hand, Lauren Hung, Anna Yuan
+                                        Cam Davison
+                                        <br />Nitya Devireddy
+                                        <br />Sarah Hand
+                                        <br />Lauren Hung
+                                        <br />Anna Yuan
                                     </p>
                                 </div>
 
                                 <div className="col-md-3">
                                     <h4>Research Methods</h4>
                                     <p>
-                                        Think Aloud Protocol, Storyboarding, Wizard of Oz Testing, Focus Groups
+                                        Think Aloud Protocol
+                                        <br />Storyboarding
+                                        <br />Wizard of Oz Testing
+                                        <br />Focus Groups
                                     </p>
                                 </div>
                             </div>
@@ -153,7 +161,7 @@ function Picnic() {
                     </div>
 
                     <div className="col-3 d-none d-md-block">
-                        <div className="sidecar position-fixed ml-3 ml-lg-5">
+                        <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
                                     <li>Overview</li>

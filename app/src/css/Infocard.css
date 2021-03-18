@@ -33,7 +33,7 @@ hr {
     font-weight: 800;
 }
 
-.affiliation{
+.appType{
     font-weight: 400;
 }
 
@@ -42,11 +42,13 @@ hr {
     border-radius: 15px;
     border: 1px solid #acacac;
     font-size: inherit;
+    transition: .2s ease-in-out; /* zoom in */
 }
 
 .btn:hover{
     border-color: #9087A8;
-    background-color: #C9C4D4;
+    box-shadow: 0 0 3px #C9C4D4;;
+    /* background-color: #C9C4D4; */
 }
 
 /* Md devices and lower */

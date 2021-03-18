@@ -18,7 +18,8 @@ import '../css/DetailsPage.css'; // global styles
 import { lightboxOptions } from '../SpecificComponents/Constants'; // image lightbox styles
 
 // Images
-import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
+// import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
+import BreakingtheIceCover from '../assets/images/UCRE/SolutionCover.jpg';
 import EvidenceSpeechBubbles from '../assets/images/UCRE/EvidenceSpeechBubbles.svg';
 import Solution from '../assets/images/UCRE/solution.png';
 import ReverseAssumptions from '../assets/images/UCRE/reverse-assumptions.jpg';
@@ -93,7 +94,8 @@ function BreakingtheIce() {
                                 <div className="col-md-3">
                                     <h4>Timeline</h4>
                                     <p>
-                                        Oct–Dec 2020, 2 months
+                                        Oct–Dec 2020
+                                        <br />2 months
                             </p>
                                 </div>
 
@@ -109,14 +111,21 @@ function BreakingtheIce() {
                                 <div className="col-md-3">
                                     <h4>Teammates</h4>
                                     <p>
-                                        Meo Zhang, Wenqing Yin, Jenny Xin
+                                        Meo Zhang
+                                        <br />Wenqing Yin
+                                        <br />Jenny Xin
                                 </p>
                                 </div>
 
                                 <div className="col-md-3">
                                     <h4>Research Methods</h4>
                                     <p>
-                                        Semi-Structured Interviews, Contextual Inquiry, Think Aloud Protocols, Speed Dating, Experience Prototypes, Storyboarding
+                                        Semi-Structured Interviews
+                                        <br />Contextual Inquiry
+                                        <br />Think Aloud Protocols
+                                        <br />Speed Dating
+                                        <br />Experience Prototypes
+                                        <br />Storyboarding
                                     </p>
                                 </div>
                             </div>
@@ -127,7 +136,7 @@ function BreakingtheIce() {
                         <section>
                             <div className="row justify-content-center">
                                 <div className="col-12 col-md-10">
-                                    <h3 className="mb-3" id="problemspace">Defining the Problem Space</h3>
+                                    <h3 className="mb-3" id="problemspace">DEFINING THE PROBLEM SPACE</h3>
                                     <p>
                                         In order to define our problem space, our team employed the <strong>Reverse Assumptions</strong> strategy. We wrote down all of our assumptions encompassing theater and the COVID-19 pandemic, then reversed them. This empowered us to <strong>challenge conventional thinking patterns</strong>, forcing us to re-evaluate current situations surrounding theater and COVID-19 from a completely new perspective.
                                     </p>
@@ -484,7 +493,7 @@ function BreakingtheIce() {
                     </div>
 
                     <div className="col-3 d-none d-md-block">
-                        <div className="sidecar position-fixed ml-3 ml-lg-5">
+                        <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
                                     <li>Overview</li>

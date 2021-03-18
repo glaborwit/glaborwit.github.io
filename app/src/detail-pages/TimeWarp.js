@@ -78,7 +78,8 @@ function TimeWarp() {
                                 <div className="col-md-3">
                                     <h4>Timeline</h4>
                                     <p>
-                                        Jun-Jul 2018, 2 months
+                                        Jun-Jul 2018
+                                        <br />2 months
                                     </p>
                                 </div>
 
@@ -94,14 +95,18 @@ function TimeWarp() {
                                 <div className="col-md-3">
                                     <h4>Teammates</h4>
                                     <p>
-                                        Pascal Knierim (Project Supervisor), Dr. Albrecht Schmidt (Lab Supervisor)
+                                        Pascal Knierim (Project Supervisor)
+                                        <br />Dr. Albrecht Schmidt (Lab Supervisor)
                                     </p>
                                 </div>
 
                                 <div className="col-md-3">
                                     <h4>Technologies</h4>
                                     <p>
-                                        Microsoft Hololens, Unity, C#, Visual Studio
+                                        Microsoft Hololens
+                                        <br />Unity
+                                        <br />C#
+                                        <br />Visual Studio
                                     </p>
                                 </div>
                             </div>
@@ -191,7 +196,7 @@ function TimeWarp() {
                     </div>
 
                     <div className="col-3 d-none d-md-block">
-                        <div className="sidecar position-fixed ml-3 ml-lg-5">
+                        <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
                                     <li>Overview</li>

@@ -24,7 +24,7 @@ function Infocard(props) {
                     </div>
                     <div className="col-12 col-lg-7 card-body text-center text-lg-left">
                         <h3 className="card-title mb-1 mb-lg-2">{props.title}</h3>
-                        <p className="card-text affiliation mb-2">{props.affiliation}</p>
+                        <p className="card-text appType mb-2">{props.appType}</p>
                         <p className="card-text">{props.tagline}</p>
                         <Link className={`btn ${props.comingSoon ? "disabled" : ""}`} to={"/" + props.link}>See More</Link>
                     </div>

@@ -18,7 +18,7 @@ h2 {
 
 h3 {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 0em;
 }
 
@@ -125,12 +125,6 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
     padding: 0;
     line-height: 1.2em;
     text-transform: uppercase;
-}
-
-.sidecar ul li {
-    margin: .5em 0rem;
-    cursor: pointer;
-    font-weight: 600;
 }
 
 .sidecar ul li {

@@ -19,7 +19,7 @@ import { lightboxOptions } from '../SpecificComponents/Constants'; // image ligh
 
 // Images
 // import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
-import BreakingtheIceCover from '../assets/images/UCRE/SolutionCover.jpg';
+import BreakingtheIceCover from '../assets/images/UCRE/SolutionCoverBorder.jpg';
 import EvidenceSpeechBubbles from '../assets/images/UCRE/EvidenceSpeechBubbles.svg';
 import Solution from '../assets/images/UCRE/solution.png';
 import ReverseAssumptions from '../assets/images/UCRE/reverse-assumptions.jpg';

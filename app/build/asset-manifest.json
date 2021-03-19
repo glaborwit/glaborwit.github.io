@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d96ead3.chunk.css",
-    "main.js": "/static/js/main.429c8b8e.chunk.js",
-    "main.js.map": "/static/js/main.429c8b8e.chunk.js.map",
+    "main.css": "/static/css/main.0043d5bf.chunk.css",
+    "main.js": "/static/js/main.128000cb.chunk.js",
+    "main.js.map": "/static/js/main.128000cb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.02b0d242.js",
     "runtime-main.js.map": "/static/js/runtime-main.02b0d242.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
@@ -10,10 +10,9 @@
     "static/js/2.1e64cb02.chunk.js.map": "/static/js/2.1e64cb02.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/static/css/2.ef9168ec.chunk.css.map",
-    "static/css/main.2d96ead3.chunk.css.map": "/static/css/main.2d96ead3.chunk.css.map",
+    "static/css/main.0043d5bf.chunk.css.map": "/static/css/main.0043d5bf.chunk.css.map",
     "static/js/2.1e64cb02.chunk.js.LICENSE.txt": "/static/js/2.1e64cb02.chunk.js.LICENSE.txt",
     "static/media/AffinityDiagramPicnic.6e02892b.jpg": "/static/media/AffinityDiagramPicnic.6e02892b.jpg",
-    "static/media/BreakingtheIceCover.7c8573e5.png": "/static/media/BreakingtheIceCover.7c8573e5.png",
     "static/media/EvidenceSpeechBubbles.da1ac847.svg": "/static/media/EvidenceSpeechBubbles.da1ac847.svg",
     "static/media/GabrielleLaBorwit_Resume.4f926d15.pdf": "/static/media/GabrielleLaBorwit_Resume.4f926d15.pdf",
     "static/media/Icebreaker-Demo-pic.eeaa1f18.jpg": "/static/media/Icebreaker-Demo-pic.eeaa1f18.jpg",
@@ -31,6 +30,7 @@
     "static/media/Set4_Board1.cd6af61b.png": "/static/media/Set4_Board1.cd6af61b.png",
     "static/media/Set4_Board2.be96c359.png": "/static/media/Set4_Board2.be96c359.png",
     "static/media/Set4_Board3.0b5e2af4.png": "/static/media/Set4_Board3.0b5e2af4.png",
+    "static/media/SolutionCoverBorder.b154e9b1.jpg": "/static/media/SolutionCoverBorder.b154e9b1.jpg",
     "static/media/SpeedDating_Ideas.63572b15.png": "/static/media/SpeedDating_Ideas.63572b15.png",
     "static/media/Stakeholder_Map_JennyXin.f833b10b.jpg": "/static/media/Stakeholder_Map_JennyXin.f833b10b.jpg",
     "static/media/UFT1.67b4257f.jpg": "/static/media/UFT1.67b4257f.jpg",
@@ -62,7 +62,7 @@
     "static/js/runtime-main.02b0d242.js",
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.1e64cb02.chunk.js",
-    "static/css/main.2d96ead3.chunk.css",
-    "static/js/main.429c8b8e.chunk.js"
+    "static/css/main.0043d5bf.chunk.css",
+    "static/js/main.128000cb.chunk.js"
   ]
 }

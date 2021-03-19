@@ -9,7 +9,7 @@ import './css/Main.css';
 
 // Images
 // import BreakingtheIceCover from './assets/images/UCRE/BreakingtheIceCover.png';
-import BreakingtheIceCover from './assets/images/UCRE/SolutionCover.jpg';
+import BreakingtheIceCover from './assets/images/UCRE/SolutionCoverBorder.jpg';
 import BudgetBuddyCover from './assets/images/budgetbuddy/mobileandwatchapps.png';
 import PicnicCover from './assets/images/picnic/PicnicCover.png';
 import TimeWarp from './assets/images/time-warp/transparenttimewarpcoverfull.png';

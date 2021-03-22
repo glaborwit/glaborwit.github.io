@@ -56,45 +56,48 @@ function Picnic() {
                                         Our app, Picnic, combats this problem by helping better-define users’ boundaries between their work and home space, in addition to reframing the perception of productivity. In particular, our app strengthens users’ boundaries and feelings of productivity through subtle mindfulness activities called Picnics.
                                     </p>
                                 </div>
-                            </div>
                                     
-                            <div className="row mt-3 mt-md-5">
-                                <div className="col-md-3">
-                                    <h4>Timeline</h4>
-                                    <p>
-                                        Sept–Dec 2020
-                                        <br />4 months
-                                    </p>
-                                </div>
+                                <div className="col-12 col-md-10">
+                                    <div className="row mt-3 mt-md-5 project-overview-details">
+                                        <div className="col-md-3">
+                                            <h4>Timeline</h4>
+                                            <ul>
+                                                <li>Sept–Dec 2020</li>
+                                                <li>4 months</li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Role</h4>
-                                    <p>
-                                        UX Researcher
-                                        <br />
-                                        <em>Worked with team to write interview guides, conducted user research and prototype tests</em>
-                                    </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Role</h4>
+                                            <p>
+                                                UX Researcher
+                                                <br />
+                                                <em>Worked with team to write interview guides, conducted user research and prototype tests</em>
+                                            </p>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Teammates</h4>
-                                    <p>
-                                        Cam Davison
-                                        <br />Nitya Devireddy
-                                        <br />Sarah Hand
-                                        <br />Lauren Hung
-                                        <br />Anna Yuan
-                                    </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Teammates</h4>
+                                            <ul>
+                                                <li>Cam Davison</li>
+                                                <li>Nitya Devireddy</li>
+                                                <li>Sarah Hand</li>
+                                                <li>Lauren Hung</li>
+                                                <li>Anna Yuan</li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Research Methods</h4>
-                                    <p>
-                                        Think Aloud Protocol
-                                        <br />Storyboarding
-                                        <br />Wizard of Oz Testing
-                                        <br />Focus Groups
-                                    </p>
+                                        <div className="col-md-3">
+                                            <h4>Research Methods</h4>
+                                            <ul>
+                                                <li>Think Aloud Protocol</li>
+                                                <li>Storyboarding</li>
+                                                <li>Wizard of Oz Testing</li>
+                                                <li>Focus Groups</li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </section>

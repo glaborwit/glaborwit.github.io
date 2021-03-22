@@ -35,6 +35,10 @@ h5 {
     margin-bottom: 3px;
 }
 
+li {
+    margin-bottom: .2rem;
+}
+
 strong {
     font-weight: 400;
 }
@@ -111,91 +115,3 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
 .carousel .carousel-control-prev, .carousel .carousel-control-next {
     width: auto;
 }
-
-.sidecar {
-    border-left: solid #CDC9D8 4px;
-    padding-left: 15px;
-    z-index: 9;
-    bottom: 3rem;
-}
-
-.sidecar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2em;
-    text-transform: uppercase;
-}
-
-.sidecar ul li {
-    margin: .5em 0rem;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.sidecar ul li:first-child {
-    margin-top: 0px;
-}
-
-.sidecar ul li:hover {
-    color: #9087A8;
-    text-decoration: underline;
-}
-
-/* Nested links */
-
-.sidecar ul>ul li {
-    margin-left: 10px;
-    font-weight: 300;
-    text-transform: capitalize;
-}
-
-/* .sidecar ul > ul li:before {
-    content: "\00BB \0020";
-} */
-
-.sidecar.sticky-top {
-    top: 5em;
-}
-
-/*
-.sidecar {
-    border-left: solid #9087A8 5px;
-    margin-top: 10%;
-    padding-left: 15px;
-    position: fixed;
-    right: 1.1rem;
-    z-index: 9;
-}
-
-.sidecar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.sidecar ul li {
-    margin: .3rem 0rem;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.sidecar ul li:first-child{
-    margin-top: 0px;
-}
-
-.sidecar ul li:hover{
-    color: #9087A8;
-    text-decoration: underline;
-}
-
-/* Nested links */
-
-/* .sidecar ul > ul li {
-    margin-left: 10px;
-    font-weight: 400;
-}
-
-.sidecar ul > ul li:before {
-    content: "\00BB \0020";
-} */

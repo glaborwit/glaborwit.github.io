@@ -41,7 +41,12 @@ function BudgetBuddy() {
 
                         <div className="row justify-content-center">
                             <div class="col-12">
-                                <DetailsHeading title="Budget Buddy" tagline="The grocery budget assistant app" image={BudgetBuddyCover} alt="Budget Buddy app mobile device add product screen and smartwatch device screen" />
+                                <DetailsHeading
+                                    title="Budget Buddy"
+                                    tagline="The grocery budget assistant app"
+                                    image={BudgetBuddyCover}
+                                    alt="Budget Buddy app mobile device add product screen and smartwatch device screen"
+                                />
                             </div>
                         </div>
 
@@ -58,42 +63,44 @@ function BudgetBuddy() {
                                         Thus, we created Budget Buddy, an app for smartphones and smartwatches. Budget Buddy helps users stay within their grocery budgets while still giving them a sense of much-appreciated freedom in what they buy. In addition, the app was carefully designed to benefit grocery shoppers and the stores in which they shop.
                                     </p>
                                 </div>
-                            </div>
 
-                            <div className="row mt-3 mt-md-5">
-                                <div className="col-md-3">
-                                    <h4>Timeline</h4>
-                                    <p>
-                                        Nov-Dec 2020
-                                        <br />4 weeks
-                                    </p>
-                                </div>
+                                <div className="col-12 col-md-10">
+                                    <div className="row mt-3 mt-md-5 project-overview-details">
+                                        <div className="col-md-3">
+                                            <h4>Timeline</h4>
+                                            <ul>
+                                                <li>Nov-Dec 2020</li>
+                                                <li>4 weeks</li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Role</h4>
-                                    <p>
-                                        UX Researcher and Designer
-                                        <br />
-                                        <em>Wrote interview guides and conducted initial research and prototype tests. Used findings to transform app's interface design.</em>
-                                    </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Role</h4>
+                                            <p>
+                                                UX Researcher and Designer
+                                                <br />
+                                                <em>Wrote interview guides and conducted initial research and prototype tests. Used findings to transform app's interface design.</em>
+                                            </p>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Teammates</h4>
-                                    <p>
-                                        Janelle Wen
-                                        <br />Yuwen Lu
-                                        <br />Shai Bhardwaj
-                                    </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Teammates</h4>
+                                            <ul>
+                                                <li>Janelle Wen</li>
+                                                <li>Yuwen Lu</li>
+                                                <li>Shai Bhardwaj</li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Research Methods</h4>
-                                    <p>
-                                        Pop-Up Research
-                                        <br />Directed Storytelling
-                                        <br />Customer Journey Mapping
-                                    </p>
+                                        <div className="col-md-3">
+                                            <h4>Research Methods</h4>
+                                            <ul>
+                                                <li>Pop-Up Research</li>
+                                                <li>Directed Storytelling</li>
+                                                <li>Customer Journey Mapping</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>

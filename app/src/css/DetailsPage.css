@@ -18,8 +18,18 @@ p.speech-bubble {
   padding: 2rem;
 }
 
-li {
-  margin-bottom: .7rem;
+.project-overview-details div{
+  line-height: auto;
+}
+
+.project-overview-details ul{
+  list-style: none;
+  padding: 0px;
+  line-height: 20px;
+}
+
+.project-overview-details ul li{
+  margin: 5px 0px;
 }
 
 li:last-child {
@@ -28,6 +38,48 @@ li:last-child {
 
 section {
   margin-bottom: 100px;
+}
+
+/* Sidebar */
+.sidecar {
+  border-left: solid #CDC9D8 4px;
+  padding-left: 15px;
+  z-index: 9;
+  bottom: 3rem;
+}
+
+.sidecar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.sidecar ul li {
+  margin: .5em 0rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sidecar ul li:first-child {
+  margin-top: 0px;
+}
+
+.sidecar ul li:hover {
+  color: #9087A8;
+  text-decoration: underline;
+}
+
+/* Nested links */
+.sidecar ul>ul li {
+  margin-left: 10px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.sidecar.sticky-top {
+  top: 5em;
 }
 
 @media (max-width: 767.98px) {

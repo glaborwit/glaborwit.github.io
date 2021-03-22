@@ -88,45 +88,47 @@ function BreakingtheIce() {
                                         With this in mind, our team spent two months <strong>researching ways to recreate the meaningful interactions</strong> that were once only experienced through in-person theater activities. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing. Our guidelines are highly customizable so theaters like the Kelly Strayhorn can host events that fit their ever-changing needs and budgets.
                                     </p>
                                 </div>
-                            </div>
+                            
+                                <div className="col-12 col-md-10">
+                                    <div className="row mt-3 mt-md-5 project-overview-details">
+                                        <div className="col-md-3">
+                                            <h4>Timeline</h4>
+                                            <ul>
+                                                <li>Oct–Dec 2020</li>
+                                                <li>2 months</li>
+                                            </ul>
+                                        </div>
 
-                            <div className="row mt-3 mt-md-5">
-                                <div className="col-md-3">
-                                    <h4>Timeline</h4>
-                                    <p>
-                                        Oct–Dec 2020
-                                        <br />2 months
-                            </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Role</h4>
+                                            <p>
+                                                Research Lead
+                                                <br />
+                                                <em>Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data</em>
+                                            </p>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Role</h4>
-                                    <p>
-                                        Research Lead
-                                <br />
-                                        <em>Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data</em>
-                                    </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Teammates</h4>
+                                            <ul>
+                                                <li>Meo Zhang</li>
+                                                <li>Wenqing Yin</li>
+                                                <li>Jenny Xin</li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Teammates</h4>
-                                    <p>
-                                        Meo Zhang
-                                        <br />Wenqing Yin
-                                        <br />Jenny Xin
-                                </p>
-                                </div>
-
-                                <div className="col-md-3">
-                                    <h4>Research Methods</h4>
-                                    <p>
-                                        Semi-Structured Interviews
-                                        <br />Contextual Inquiry
-                                        <br />Think Aloud Protocols
-                                        <br />Speed Dating
-                                        <br />Experience Prototypes
-                                        <br />Storyboarding
-                                    </p>
+                                        <div className="col-md-3">
+                                            <h4>Research Methods</h4>
+                                            <ul>
+                                                <li>Semi-Structured Interviews</li>
+                                                <li>Contextual Inquiry</li>
+                                                <li>Think Aloud Protocols</li>
+                                                <li>Speed Dating</li>
+                                                <li>Experience Prototypes</li>
+                                                <li>Storyboarding</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>

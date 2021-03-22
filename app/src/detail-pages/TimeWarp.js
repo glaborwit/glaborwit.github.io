@@ -72,42 +72,47 @@ function TimeWarp() {
                                         <a href="https://dl.acm.org/doi/10.1145/3384657.3384659" target="_blank" rel="noopener noreferrer">Altering the Speed of Reality?: Exploring Visual Slow-Motion to Amplify Human Perception using Augmented Reality</a>
                                     </p>
                                 </div>
-                            </div>
 
-                            <div className="row mt-3 mt-md-5">
-                                <div className="col-md-3">
-                                    <h4>Timeline</h4>
-                                    <p>
-                                        Jun-Jul 2018
-                                        <br />2 months
-                                    </p>
-                                </div>
+                                <div className="col-12 col-md-10">
+                                    <div className="row mt-3 mt-md-5 project-overview-details">
+                                        <div className="col-md-3">
+                                            <h4>Timeline</h4>
+                                            <ul>
+                                                <li>Jun-Jul 2018</li>
+                                                <li>2 months</li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Roles</h4>
-                                    <p>
-                                        Design Engineer, Software Engineer, Lead Researcher
-                                        <br />
-                                        <em>Designed interface, programmed application, wrote interview guides and conducted user research with prototype</em>
-                                    </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Roles</h4>
+                                            <ul>
+                                                <li>Design Engineer</li>
+                                                <li>Software Engineer</li>
+                                                <li>Lead Researcher</li>
+                                                <li>
+                                                    <em>Designed interface, programmed application, wrote interview guides and conducted user research with prototype</em>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Teammates</h4>
-                                    <p>
-                                        Pascal Knierim (Project Supervisor)
-                                        <br />Dr. Albrecht Schmidt (Lab Supervisor)
-                                    </p>
-                                </div>
+                                        <div className="col-md-3">
+                                            <h4>Teammates</h4>
+                                            <ul>
+                                                <li>Pascal Knierim (Project Supervisor)</li>
+                                                <li>Dr. Albrecht Schmidt (Lab Supervisor)</li>
+                                            </ul>
+                                        </div>
 
-                                <div className="col-md-3">
-                                    <h4>Technologies</h4>
-                                    <p>
-                                        Microsoft Hololens
-                                        <br />Unity
-                                        <br />C#
-                                        <br />Visual Studio
-                                    </p>
+                                        <div className="col-md-3">
+                                            <h4>Technologies</h4>
+                                            <ul>
+                                                Microsoft Hololens
+                                                <li>Unity</li>
+                                                <li>C#</li>
+                                                <li>Visual Studio</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>

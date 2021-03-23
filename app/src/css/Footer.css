@@ -4,5 +4,6 @@
 
 .social-link{
     margin-right: 12px;
+    background: none !important;
     padding: 4px;
 }

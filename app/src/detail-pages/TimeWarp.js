@@ -204,48 +204,44 @@ function TimeWarp() {
                         <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
-                                    <li>Overview</li>
+                                    <li><span>Overview</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#creating-the-software">
-                                    <li>Creating the Software</li>
+                                    <li><span>Creating the Software</span></li>
                                 </ScrollIntoView>
 
                                 <ul>
                                     <ScrollIntoView selector="#designing-slow-motion">
-                                        <li>Designing Slow Motion</li>
+                                        <li><span>Designing Slow Motion</span></li>
                                     </ScrollIntoView>
 
                                     <ScrollIntoView selector="#transition-effects">
-                                        <li>Transition Effects</li>
+                                        <li><span>Transition Effects</span></li>
                                     </ScrollIntoView>
                                     
                                     <ScrollIntoView selector="#indicators">
-                                        <li>Indicators</li>
+                                        <li><span>Indicators</span></li>
                                     </ScrollIntoView>
                                 </ul>
 
                                 <ScrollIntoView selector="#final-prototype">
-                                    <li>Final Prototype</li>
+                                    <li><span>Final Prototype</span></li>
                                 </ScrollIntoView>
 
                                 <ul>
                                     <ScrollIntoView selector="#demo">
-                                        <li>Demo</li>
+                                        <li><span>Demo</span></li>
                                     </ScrollIntoView>
 
                                     <ScrollIntoView selector="#user-study">
-                                        <li>User Study</li>
+                                        <li><span>User Study</span></li>
                                     </ScrollIntoView>
                                     
                                     <ScrollIntoView selector="#poster">
-                                        <li>Poster Presentation</li>
+                                        <li><span>Poster Presentation</span></li>
                                     </ScrollIntoView>
                                 </ul>
-
-                                <ScrollIntoView selector="#solution">
-                                    <li></li>
-                                </ScrollIntoView>
                             </ul>
                         </div>
                     </div>

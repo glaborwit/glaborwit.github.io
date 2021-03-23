@@ -66,9 +66,13 @@ section {
   margin-top: 0px;
 }
 
-.sidecar ul li:hover {
-  color: #9087A8;
-  text-decoration: underline;
+.sidecar ul span:hover {
+  /* background-color: #DEDBE6; */
+  text-decoration: none;
+  background: linear-gradient(90deg, #DEDBE6 0%, #DEDBE6 100%);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 38%; /*Thickness of line*/
 }
 
 /* Nested links */

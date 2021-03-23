@@ -190,19 +190,19 @@ function BudgetBuddy() {
                         <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
-                                    <li>Overview</li>
+                                    <li><span>Overview</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#research">
-                                    <li>Research</li>
+                                    <li><span>Research</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#solution">
-                                    <li>Solution</li>
+                                    <li><span>Solution</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#demos">
-                                    <li>Demos</li>
+                                    <li><span>Demos</span></li>
                                 </ScrollIntoView>
                             </ul>
                         </div>

@@ -43,17 +43,25 @@ strong {
     font-weight: 400;
 }
 
-a:not(.nav-link):not(.navbar-brand):not(.btn) {
+/* Link background highlight */
+a:not(.nav-link):not(.navbar-brand):not(.btn):not(.card-img-link) {
     color: #070707;
-    text-decoration: underline;
+    text-decoration: none;
+    background: linear-gradient(90deg, #DEDBE6 0%, #DEDBE6 100%);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 36%;
+    /*Thickness of line*/
+    transition: background-size .2s;
 }
 
-a:hover {
-    color: #9087A8;
-}
 
-a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
-    color: #9087A8;
+/* only do full highlight on hover on non-mobile devices */
+@media (min-width:481px) {
+    a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
+        /*Thickness of line*/
+        background-size: 100% 15%;
+    }
 }
 
 .blockquote {
@@ -114,4 +122,5 @@ a:hover:not(.nav-link):not(.navbar-brand):not(.btn) {
 
 .carousel .carousel-control-prev, .carousel .carousel-control-next {
     width: auto;
+    background: none !important;
 }

@@ -498,41 +498,41 @@ function BreakingtheIce() {
                         <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
-                                    <li>Overview</li>
+                                    <li><span>Overview</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#problemspace">
-                                    <li>Problem Space</li>
+                                    <li><span>Problem Space</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#research">
-                                    <li>Research</li>
+                                    <li><span>Research</span></li>
                                 </ScrollIntoView>
 
                                 <ul>
                                     <ScrollIntoView selector="#semi-structured-interviews">
-                                        <li>Semi-Structured Interviews</li>
+                                        <li><span>Semi-Structured Interviews</span></li>
                                     </ScrollIntoView>
 
                                     <ScrollIntoView selector="#think-aloud-protocol">
-                                        <li>Think Aloud</li>
+                                        <li><span>Think Aloud</span></li>
                                     </ScrollIntoView>
 
                                     <ScrollIntoView selector="#contextual-inquiry">
-                                        <li>Contextual Inquiry</li>
+                                        <li><span>Contextual Inquiry</span></li>
                                     </ScrollIntoView>
 
                                     <ScrollIntoView selector="#speed-dating">
-                                        <li>Speed Dating</li>
+                                        <li><span>Speed Dating</span></li>
                                     </ScrollIntoView>
 
                                     <ScrollIntoView selector="#experience-prototype">
-                                        <li>Experience Prototype</li>
+                                        <li><span>Experience Prototype</span></li>
                                     </ScrollIntoView>
                                 </ul>
 
                                 <ScrollIntoView selector="#solution">
-                                    <li>Solution</li>
+                                    <li><span>Solution</span></li>
                                 </ScrollIntoView>
                             </ul>
                         </div>

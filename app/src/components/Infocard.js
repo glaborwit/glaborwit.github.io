@@ -17,7 +17,7 @@ function Infocard(props) {
                             <Image width="100%" className="card-img" src={props.pic} />
                         )}
                         {!props.comingSoon && (
-                            <Link to={"/" + props.link}>
+                            <Link to={"/" + props.link} className="card-img-link">
                                 <Image width="100%" className="card-img" src={props.pic} />
                             </Link>
                         )}

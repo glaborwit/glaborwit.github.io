@@ -167,27 +167,27 @@ function Picnic() {
                         <div className="sidecar sticky-top ml-3 ml-lg-5">
                             <ul>
                                 <ScrollIntoView selector="#projectoverview">
-                                    <li>Overview</li>
+                                    <li><span>Overview</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#insights-evidence">
-                                    <li>Insights and Evidence</li>
+                                    <li><span>Insights and Evidence</span></li>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#solution">
-                                    <li>Solution</li>
+                                    <li><span>Solution</span></li>
                                 </ScrollIntoView>
                                 <ul>
                                     <ScrollIntoView selector="#app-overview">
-                                        <li>App Overview</li>
+                                        <li><span>App Overview</span></li>
                                     </ScrollIntoView>
 
                                     <ScrollIntoView selector="#psyc">
-                                        <li>The Psychology</li>
+                                        <li><span>The Psychology</span></li>
                                     </ScrollIntoView>
                                     
                                     <ScrollIntoView selector="#outcomes">
-                                        <li>Outcomes</li>
+                                        <li><span>Outcomes</span></li>
                                     </ScrollIntoView>
                                 </ul>
                             </ul>

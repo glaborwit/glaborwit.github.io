@@ -19,7 +19,7 @@ import { lightboxOptions } from '../SpecificComponents/Constants'; // image ligh
 
 // Images
 // import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
-import BreakingtheIceCover from '../assets/images/UCRE/SolutionCoverBorder.jpg';
+import BreakingtheIceCover from '../assets/images/UCRE/BreakingTheIceCover.png';
 import EvidenceSpeechBubbles from '../assets/images/UCRE/EvidenceSpeechBubbles.svg';
 import Solution from '../assets/images/UCRE/solution.png';
 import ReverseAssumptions from '../assets/images/UCRE/reverse-assumptions.jpg';
@@ -173,11 +173,6 @@ function BreakingtheIce() {
                                         Additional questions noted were how might we create a sense of community once only felt during a show? How might we foster and strengthen audience engagement that’s not in-person? Lastly, how might we redefine the “stage”?
                                     </p>
                                 </div>
-                                {/* <div className="col-12 col-lg-5 d-none d-lg-block">
-                                    <SRLWrapper options={lightboxOptions}>
-                                        <Image className="img-zoom" src={ReverseAssumptions} width="100%" alt="Reverse assumptions organized on sticky notes" />
-                                    </SRLWrapper>
-                                </div> */}
                             </div>
                         </section>
 

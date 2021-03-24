@@ -8,11 +8,10 @@ import './css/App.css';
 import './css/Main.css';
 
 // Images
-// import BreakingtheIceCover from './assets/images/UCRE/BreakingtheIceCover.png';
-import BreakingtheIceCover from './assets/images/UCRE/SolutionCoverBorder.jpg';
-import BudgetBuddyCover from './assets/images/budgetbuddy/mobileandwatchapps.png';
-import PicnicCover from './assets/images/picnic/PicnicCover.png';
-import TimeWarp from './assets/images/time-warp/transparenttimewarpcoverfull.png';
+import BreakingtheIceCover from './assets/images/UCRE/BreakingTheIceCover.png';
+import BudgetBuddyCover from './assets/images/budgetbuddy/BudgetBuddyCover.png';
+import PicnicCover from './assets/images/picnic/PicnicCover1.png';
+import TimeWarp from './assets/images/time-warp/TimeWarpCover.png';
 
 function App() {
 
@@ -46,14 +45,15 @@ function App() {
       </Helmet>
       <div className="container big-margin-top">
         <div className="row justify-content-center">
-          {/* <h1 className="name text-center col-12">GABRIELLE LABORWIT</h1> */}
-          {/* <h2 className="purple text-center">UX Researcher</h2> */}
-          <h3 className="name text-center col-12">
-            <span className="pr-1 wavingHand">{wavingHand}</span> Hello, I'm Gabrielle
-          </h3>
-          <h3 className="lighter text-left text-md-center col-12 col-sm-11 col-lg-9 col-xl-8">
-            Open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>
-          </h3>
+          <h1 className="col-12 col-lg-10">Hello, I'm Gabrielle <span className="pl-1 wavingHand">{wavingHand}</span></h1>
+
+          <h2 className="text-left col-12 col-lg-10 lighter">
+            An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>.
+          </h2>
+
+          {/* <h2 className="text-left col-12 col-lg-10 col-xl-8">
+            <span style={{fontWeight: "800"}}><span className="pr-1 wavingHand">{wavingHand}</span> Hello, I'm Gabrielle.</span> <span class="lighter">Open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>.</span>
+          </h2> */}
         </div>
         
         <div className="big-margin-top row justify-content-center">

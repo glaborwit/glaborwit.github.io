@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Infocard from './components/Infocard';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 
@@ -16,9 +16,28 @@ import TimeWarp from './assets/images/time-warp/transparenttimewarpcoverfull.png
 
 function App() {
 
+  const textArray = ['product', 'service', 'project'];
+
+  const [textArrayIndex, updateIndex] = useState(0);
+
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    // window.scrollTo(0, 0);
+
+    // Set interval for changing word in self tagline
+    const interval = setInterval(() => {
+      if(textArrayIndex === textArray.length-1){
+        updateIndex(0)
+      }
+      else{
+        updateIndex(textArrayIndex + 1)
+      }
+      console.log("Current index: ", textArrayIndex)
+    }, 1700);
+    return () => clearInterval(interval);
+
+  }, [textArray.length, textArrayIndex]);
+
+  let wavingHand = '👋'
 
   return (
     <div className="App">
@@ -26,8 +45,17 @@ function App() {
         <title>Gabrielle LaBorwit | UX Researcher</title>
       </Helmet>
       <div className="container big-margin-top">
-        <h1 className="name text-center">GABRIELLE LABORWIT</h1>
-        <h2 className="purple text-center">UX Researcher</h2>
+        <div className="row justify-content-center">
+          {/* <h1 className="name text-center col-12">GABRIELLE LABORWIT</h1> */}
+          {/* <h2 className="purple text-center">UX Researcher</h2> */}
+          <h3 className="name text-center col-12">
+            <span className="pr-1 wavingHand">{wavingHand}</span> Hello, I'm Gabrielle
+          </h3>
+          <h3 className="lighter text-left text-md-center col-12 col-sm-11 col-lg-9 col-xl-8">
+            Open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>
+          </h3>
+        </div>
+        
         <div className="big-margin-top row justify-content-center">
 
           <Infocard

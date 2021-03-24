@@ -7,13 +7,13 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size:36px;
     font-weight: 900;
 }
 
 h2 {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 h3 {
@@ -43,7 +43,12 @@ strong {
     font-weight: 400;
 }
 
+h3.lighter {
+    font-weight: 300;
+}
+
 /* Link background highlight */
+
 a:not(.nav-link):not(.navbar-brand):not(.btn):not(.card-img-link) {
     color: #070707;
     text-decoration: none;
@@ -55,8 +60,8 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.card-img-link) {
     transition: background-size .2s;
 }
 
-
 /* only do full highlight on hover on non-mobile devices */
+
 @media (min-width:481px) {
     a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
         /*Thickness of line*/

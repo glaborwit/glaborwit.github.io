@@ -18,7 +18,7 @@ function DetailsHeading(props) {
             <div className="row align-items-center">
                 <div className="col-md-5">
                     <h1 className="text-center text-md-left">{props.title}</h1>
-                    <h2 className="lighter purple mb-4 text-center text-md-left">{props.tagline}</h2>
+                    <h2 className="purple mb-4 text-center text-md-left">{props.tagline}</h2>
                 </div>
                 <div className="col-md-7">
                     <SRLWrapper options={lightboxOptions}>

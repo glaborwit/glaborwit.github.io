@@ -9,20 +9,20 @@ import '../css/Infocard.css'; // global styles
 
 function Infocard(props) {
     return (
-        <div className="d-flex align-items-stretch col-12 col-lg-5 mb-5">
-            <div className= {`card ${props.comingSoon ? "coming-soon" : ""}`}>
+        <div className="col-12 col-md-10 mb-5">
+            <div className={`card ${props.comingSoon ? "coming-soon" : ""}`}>
                 <div className="row align-items-center justify-content-center">
-                    <div className="col-12 d-flex card-img-top">
+                    <div className="col-12 col-lg-7 d-flex">
                         {props.comingSoon && (
-                            <Image height="100%" className="card-img" src={props.pic} />
+                            <Image width="100%" className="card-img" src={props.pic} />
                         )}
                         {!props.comingSoon && (
                             <Link to={"/" + props.link} className="card-img-link">
-                                <Image height="100%" className="card-img" src={props.pic} />
+                                <Image width="100%" className="card-img" src={props.pic} />
                             </Link>
                         )}
                     </div>
-                    <div className="col-12 card-body text-center">
+                    <div className="col-12 col-lg-5 card-body text-center text-lg-left">
 
                         <h3 className="card-title mb-1 mb-lg-2">{props.title}</h3>
 

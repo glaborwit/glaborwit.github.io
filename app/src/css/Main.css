@@ -2,7 +2,7 @@ body {
     margin: 0;
     color: #070707;
     font-family: "Lato";
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -23,7 +23,7 @@ h3 {
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     letter-spacing: 0em;
     margin-top: 4px;
@@ -43,7 +43,7 @@ strong {
     font-weight: 400;
 }
 
-h2.lighter {
+.lighter {
     font-weight: 300;
 }
 

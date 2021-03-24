@@ -45,11 +45,24 @@ function App() {
       </Helmet>
       <div className="container big-margin-top">
         <div className="row justify-content-center">
-          <h1 className="col-12 col-lg-10">Hello, I'm Gabrielle <span className="pl-1 wavingHand">{wavingHand}</span></h1>
 
-          <h2 className="text-left col-12 col-lg-10 lighter">
+          {/* Desc on md widths */}
+          <h1 className="col-12 col-md-10 d-none d-md-block">
+            Hello, I'm Gabrielle <span className="pl-1 wavingHand">{wavingHand}</span>
+          </h1>
+
+          <h2 className="d-none d-md-block text-left col-12 col-md-10 lighter">
             An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>.
           </h2>
+
+          {/* Desc on sm widths */}
+          <h2 style={{fontWeight:"600"}} className="col-12 col-md-10 d-block d-md-none">
+            Hello, I'm Gabrielle <span className="pl-1 wavingHand">{wavingHand}</span>
+          </h2>
+          
+          <h3 style={{lineHeight: "1.3em"}} className="d-block d-md-none text-left col-12 col-md-10 lighter">
+            An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>.
+          </h3>
 
           {/* <h2 className="text-left col-12 col-lg-10 col-xl-8">
             <span style={{fontWeight: "800"}}><span className="pr-1 wavingHand">{wavingHand}</span> Hello, I'm Gabrielle.</span> <span class="lighter">Open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>.</span>

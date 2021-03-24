@@ -18,21 +18,25 @@ import Resume from '../assets/GabrielleLaBorwit_Resume.pdf'
 class NavHam extends Component {
     render() {
         return (
-            <Navbar expand="sm" id="overrides" className="mx-sm-4">
-                {/* <Link className="navbar-brand py-2" to="/">
-                    <Image height="45" draggable={false} src={logo} />
-                </Link> */}
-                <Link className="navbar-brand py-2" to="/">GABRIELLE LABORWIT</Link>
+            <div className="container">
+                <div className="row justify-content-center">
+                    <Navbar expand="sm" id="overrides" className="col-12">
+                        {/* <Link className="navbar-brand py-2" to="/">
+                            <Image height="45" draggable={false} src={logo} />
+                        </Link> */}
+                        <Link className="navbar-brand py-2" to="/">GABRIELLE LABORWIT</Link>
 
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto">
-                        <NavLink exact={true} className="nav-link" to="/">PROJECTS</NavLink>
-                        <NavLink className="nav-link" replace to="/about">ABOUT</NavLink>
-                        <a className="nav-link" href={Resume}>RESUME</a>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="ml-auto">
+                                <NavLink exact={true} className="nav-link" to="/">PROJECTS</NavLink>
+                                <NavLink className="nav-link" replace to="/about">ABOUT</NavLink>
+                                <a className="nav-link" href={Resume}>RESUME</a>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+                </div>
+            </div>
         )
     }
 };

@@ -1,7 +1,7 @@
 .nav-link{
     margin-left: 15px;
 
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     color: #070707;
     letter-spacing: 0.06em;
@@ -14,7 +14,7 @@
 
 #overrides .navbar-brand{
     color: #070707;
-    font-size: 13.5px;
+    font-size: 15.5px;
     font-weight: 500;
     letter-spacing: 0.06em;
     text-align: center;

@@ -9,7 +9,7 @@ import '../css/Infocard.css'; // global styles
 
 function Infocard(props) {
     return (
-        <div className="d-flex align-items-stretch col-12 col-lg-5 mb-5">
+        <div className="d-flex align-items-stretch col-12 col-md-10 col-lg-5 mb-5">
             <div className= {`card ${props.comingSoon ? "coming-soon" : ""}`}>
                 <div className="row align-items-center justify-content-center">
                     <div className="col-12 d-flex card-img-top">

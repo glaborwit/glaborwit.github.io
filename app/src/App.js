@@ -11,7 +11,7 @@ import './css/Main.css';
 import BreakingtheIceCover from './assets/images/UCRE/BreakingTheIceCover.png';
 import BudgetBuddyCover from './assets/images/budgetbuddy/BudgetBuddyCover.png';
 import PicnicCover from './assets/images/picnic/PicnicCover1.png';
-import TimeWarp from './assets/images/time-warp/TimeWarpCover.png';
+import TimeWarp from './assets/images/time-warp/timewarpcover.png';
 
 function App() {
 

@@ -13,6 +13,8 @@ import BudgetBuddyCover from './assets/images/budgetbuddy/BudgetBuddyCover.png';
 import PicnicCover from './assets/images/picnic/PicnicCover1.png';
 import TimeWarp from './assets/images/time-warp/timewarpcover.png';
 
+import HammerGIF from './assets/images/UCRE/hammer.gif';
+
 function App() {
 
   const textArray = ['product', 'service', 'project'];
@@ -76,6 +78,7 @@ function App() {
             // appType="Research-Backed Guidelines"
             tagline="Research-backed guidelines for a virtual theater community experience"
             pic={BreakingtheIceCover}
+            onHover={HammerGIF}
             link="breaking-the-ice"
             comingSoon={false}
           />

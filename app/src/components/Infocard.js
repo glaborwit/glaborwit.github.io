@@ -19,14 +19,14 @@ function Infocard(props) {
                         onMouseLeave={() => setIsShown(false)}
                     >
                         {props.comingSoon && (
-                            <Image height="100%" className="card-img" src={props.pic} />
+                            <Image height="100%" draggable={false} className="card-img" src={props.pic} />
                         )}
                         {!props.comingSoon && (
                             <Link to={"/" + props.link} className="card-img-link">
-                                {isShown ?
-                                    <Image height="100%" className="card-img" src={props.onHover} />
+                                {isShown && props.onHover ?
+                                    <Image height="100%" draggable={false} className="card-img" src={props.onHover} />
                                     :
-                                    <Image height="100%" className="card-img" src={props.pic} />
+                                    <Image height="100%" draggable={false} className="card-img" src={props.pic} />
                                 }
                             </Link>
                         )}

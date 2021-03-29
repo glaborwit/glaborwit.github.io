@@ -14,6 +14,7 @@ import PicnicCover from './assets/images/picnic/PicnicCover1.png';
 import TimeWarp from './assets/images/time-warp/timewarpcover.png';
 
 import HammerGIF from './assets/images/UCRE/hammer.gif';
+import BudgetBuddyGIF from './assets/images/budgetbuddy/budgetbuddycover-watchsliding.gif';
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
       <Helmet>
         <title>Gabrielle LaBorwit | UX Researcher</title>
       </Helmet>
-      <div className="container big-margin-top">
+      <div className="container homepage big-margin-top">
         <div className="row justify-content-center">
 
           {/* Desc on md widths */}
@@ -71,7 +72,7 @@ function App() {
           </h2> */}
         </div>
         
-        <div className="big-margin-top row justify-content-center">
+        <div className="homepage big-margin-top row justify-content-center">
 
           <Infocard
             title="Breaking the Ice"
@@ -88,6 +89,7 @@ function App() {
             // appType="Cross-Platform App for Watch and Mobile"
             tagline="Cross-platform grocery budget assistant for money-conscious shoppers"
             pic={BudgetBuddyCover}
+            onHover={BudgetBuddyGIF}
             link="budget-buddy"
             comingSoon={false}
           />

@@ -29,9 +29,9 @@ class NavHam extends Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto">
-                                <NavLink exact={true} className="nav-link" to="/">PROJECTS</NavLink>
-                                <NavLink className="nav-link" replace to="/about">ABOUT</NavLink>
-                                <a className="nav-link" href={Resume}>RESUME</a>
+                                <NavLink exact={true} className="nav-link" to="/">Projects</NavLink>
+                                <NavLink className="nav-link" replace to="/about">About</NavLink>
+                                <a className="nav-link" href={Resume}>Resume</a>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>

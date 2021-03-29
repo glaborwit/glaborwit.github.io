@@ -10,11 +10,12 @@ import './css/Main.css';
 // Images
 import BreakingtheIceCover from './assets/images/UCRE/BreakingTheIceCover.png';
 import BudgetBuddyCover from './assets/images/budgetbuddy/BudgetBuddyCover.png';
-import PicnicCover from './assets/images/picnic/PicnicCover1.png';
+import PicnicCover from './assets/images/picnic/PicnicCover.png';
 import TimeWarp from './assets/images/time-warp/timewarpcover.png';
 
 import HammerGIF from './assets/images/UCRE/hammer.gif';
 import BudgetBuddyGIF from './assets/images/budgetbuddy/budgetbuddycover-watchsliding.gif';
+import PicnicGIF from './assets/images/picnic/picnicgif.gif';
 
 function App() {
 
@@ -99,6 +100,7 @@ function App() {
             // appType="Mindfulness Intervention Mobile App"
             tagline="Mobile app strengthening the boundary between work and life for remote working professionals and students"
             pic={PicnicCover}
+            onHover={PicnicGIF}
             link="picnic"
             comingSoon={false}
           />

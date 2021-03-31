@@ -16,8 +16,22 @@
     font-weight: 300;
 }
 
-.homepage.big-margin-top{
+.homepage.big-margin-top {
     margin-top: 40px;
+}
+
+.infocards.big-margin-top{
+    margin-top: 65px;
+}
+
+@media (max-width:575px) {
+    .homepage.big-margin-top{
+        margin-top: 20px;
+    }
+
+    .infocards.big-margin-top{
+        margin-top: 55px;
+    }
 }
 
 

@@ -27,9 +27,13 @@ function About() {
                     <div className="col-12 col-md-5">
                         <Image src={Me} style={{borderRadius:"10px"}} width="100%" alt="me" draggable={false} />
                     </div>
+
                     <div className="col-12 col-md-7 mt-3 mt-md-0">
-                    <h3 className="text-left mb-0">Gabrielle LaBorwit</h3>
-                    <h4 className="text-left purple">UX Researcher</h4>
+
+                        <h3 className="text-left mb-0">Gabrielle LaBorwit</h3>
+
+                        <h4 className="text-left purple mb-3">UX Researcher</h4>
+                    
                         <p>
                             Hello! I am a <a target="_blank" rel="noopener noreferrer" href="https://www.hcii.cmu.edu/academics/mhci">Master of Human-Computer Interaction</a> (HCI) student at Carnegie Mellon University.
                         </p>

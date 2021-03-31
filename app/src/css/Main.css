@@ -1,9 +1,10 @@
 body {
     margin: 0;
     color: #070707;
-    font-family: "Lato";
-    font-size: 16px;
+    font-family: "Poppins";
+    font-size: 17px;
     font-weight: 300;
+    line-height: 1.9em;
 }
 
 h1 {
@@ -18,20 +19,20 @@ h2 {
 
 h3 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0em;
 }
 
 h4 {
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0em;
     margin-top: 4px;
 }
 
 h5 {
     font-size: inherit;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 3px;
 }
 
@@ -40,32 +41,25 @@ li {
 }
 
 strong {
-    font-weight: 400;
-}
-
-.lighter {
     font-weight: 300;
+    font-style: italic;
 }
 
 /* Link background highlight */
-
 a:not(.nav-link):not(.navbar-brand):not(.btn):not(.card-img-link) {
-    color: #070707;
+    color: #9087A8;
     text-decoration: none;
     background: linear-gradient(90deg, #DEDBE6 0%, #DEDBE6 100%);
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 100% 36%;
-    /*Thickness of line*/
+    background-size: 0% 14%;
     transition: background-size .2s;
 }
 
 /* only do full highlight on hover on non-mobile devices */
-
 @media (min-width:481px) {
     a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
-        /*Thickness of line*/
-        background-size: 100% 15%;
+        background-size: 100% 14%;
     }
 }
 
@@ -79,7 +73,7 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.card-img-link) {
 }
 
 .blockquote:before {
-    color: #666;
+    color: #9087A8;
     content: open-quote;
     font-size: 3.2em;
     line-height: 0.1em;

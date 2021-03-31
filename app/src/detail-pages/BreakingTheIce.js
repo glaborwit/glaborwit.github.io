@@ -101,11 +101,16 @@ function BreakingtheIce() {
 
                                         <div className="col-md-3">
                                             <h4>Role</h4>
-                                            <p>
-                                                Research Lead
-                                                <br />
-                                                <em>Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data</em>
-                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Research Lead
+                                                </li>
+                                                <li>
+                                                    <em>
+                                                        Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data
+                                                    </em>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                         <div className="col-md-3">
@@ -263,10 +268,8 @@ function BreakingtheIce() {
                                 </div>
 
                                 <div className="col-12 col-md-10">
-                                    <p>
-                                        After the data was compiled, two things became clear:
-                                    </p>
-                                    <ul>
+                                    After the data was compiled, two things became clear:
+                                    <ul className="mt-1">
                                         <li>Live chat is not a feature people wanted to use</li>
                                         <li>Online productions can get a bit “boring”</li>
                                     </ul>
@@ -292,10 +295,8 @@ function BreakingtheIce() {
                                 </div>
 
                                 <div className="col-12 col-md-10">
-                                    <p>
-                                        The <strong>main insights</strong> we drew from our contextual inquiry were:
-                                    </p>
-                                    <ul>
+                                    The <strong>main insights</strong> we drew from our contextual inquiry were:
+                                    <ul className="mt-1">
                                         <li>Structured events can help increase comfort level</li>
 
                                         <li>People are most invested in conversations they feel personally connected to</li>
@@ -426,10 +427,8 @@ function BreakingtheIce() {
                                 </div>
 
                                 <div className="col-12 col-md-10">
-                                    <p>
-                                        Speed Dating further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. We learned:
-                                    </p>
-                                    <ul>
+                                    Speed Dating further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. We learned:
+                                    <ul className="mt-1">
                                         <li>People enjoy gamified social interactions, but not in a competitive nature.</li>
                                         <li>People want to attend events that require the least amount of physical (i.e. material) and mental (i.e. skills, knowledge) preparation.</li>
                                         <li>Activities should focus on fostering relationships and conversation over completing the activity</li>
@@ -457,9 +456,7 @@ function BreakingtheIce() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-12 col-md-10">
                                     <h3 className="mb-3" id="solution">SOLUTION</h3>
-                                    <p>
-                                        Using the data we collected, we know individual workshops are most successful when set up with the following structure:
-                                    </p>
+                                    Using the data we collected, we know individual workshops are most successful when set up with the following structure:
                                     <ol>
                                         <li>
                                             Workshops should start with a few rounds of well-structured, small-group icebreakers. To achieve this, hosts should create several ice breaker question card decks for groups to parse through.

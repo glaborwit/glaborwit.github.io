@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
 
@@ -11,43 +11,88 @@ function Infocard(props) {
     const [isShown, setIsShown] = useState(false);
 
     return (
-        <div className="d-flex align-items-stretch col-12 col-md-10 col-lg-5 mb-5">
-            <div className= {`card ${props.comingSoon ? "coming-soon" : ""}`}>
-                <div className="row align-items-center justify-content-center">
-                    <div className="col-12 d-flex card-img-top"
-                        onMouseEnter={() => setIsShown(true)}
-                        onMouseLeave={() => setIsShown(false)}
-                    >
-                        {props.comingSoon && (
-                            <Image height="100%" draggable={false} className="card-img" src={props.pic} />
-                        )}
-                        {!props.comingSoon && (
-                            <Link to={"/" + props.link} className="card-img-link">
-                                {isShown && props.onHover ?
-                                    <Image height="100%" draggable={false} className="card-img" src={props.onHover} />
-                                    :
-                                    <Image height="100%" draggable={false} className="card-img" src={props.pic} />
-                                }
-                            </Link>
-                        )}
-                    </div>
-                    <div className="col-12 card-body text-center">
+        <div className={`col-12 col-lg-10 overrides card ${props.comingSoon ? "coming-soon" : ""}`}>
 
-                        <h3 className="card-title mb-1 mb-lg-2">{props.title}</h3>
+            {/* 2 col text and img on medium+ devices */}
+            <div className="row align-items-center justify-content-center">
+                <div className="col-md-5 d-none d-md-block">
 
-                        <p className="card-text appType mb-2">{props.appType}</p>
+                    <h3 className="card-title mb-1 mb-lg-2">{props.title}</h3>
 
-                        <p className="card-text">{props.tagline}</p>
+                    <p className="card-text appType mb-2">{props.appType}</p>
 
-                        <Link
+                    <p className="card-text">{props.tagline}</p>
+
+                    {/* <Link
                             className={`btn ${props.comingSoon ? "disabled" : ""}`}
                             to={"/" + props.link}>
-                                See More
-                        </Link>
+                            See More
+                        </Link> */}
+                    <Link className="see-more" to={"/" + props.link}>
+                        See more {"→"}
+                    </Link>
+                </div>
 
-                    </div>
+
+                <div className="col-md-7 card-img-top d-none d-md-block"
+                    onMouseEnter={() => setIsShown(true)}
+                    onMouseLeave={() => setIsShown(false)}
+                >
+                    {props.comingSoon && (
+                        <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                    )}
+                    {!props.comingSoon && (
+                        <Link to={"/" + props.link} className="card-img-link">
+                            {isShown && props.onHover ?
+                                <Image height="100%" draggable={false} className="card-img" src={props.onHover} />
+                                :
+                                <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                            }
+                        </Link>
+                    )}
                 </div>
             </div>
+
+            {/* 1 row img + new row text on ≤small devices */}
+            <div className="row align-items-center justify-content-center">
+
+                <div className="col-12 card-img-top d-block d-md-none"
+                    onMouseEnter={() => setIsShown(true)}
+                    onMouseLeave={() => setIsShown(false)}
+                >
+                    {props.comingSoon && (
+                        <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                    )}
+                    {!props.comingSoon && (
+                        <Link to={"/" + props.link} className="card-img-link">
+                            {isShown && props.onHover ?
+                                <Image height="100%" draggable={false} className="card-img" src={props.onHover} />
+                                :
+                                <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                            }
+                        </Link>
+                    )}
+                </div>
+
+                <div className="col-12 d-block d-md-none mt-4">
+
+                    <h3 className="card-title mb-1 mb-lg-2">{props.title}</h3>
+
+                    <p className="card-text appType mb-2">{props.appType}</p>
+
+                    <p className="card-text">{props.tagline}</p>
+
+                    {/* <Link
+                            className={`btn ${props.comingSoon ? "disabled" : ""}`}
+                            to={"/" + props.link}>
+                            See More
+                        </Link> */}
+                    <Link className="see-more" to={"/" + props.link}>
+                        See more {"→"}
+                    </Link>
+                </div>
+            </div>
+
         </div>
     )
 }

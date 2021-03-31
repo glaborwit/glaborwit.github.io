@@ -24,10 +24,10 @@ function About() {
 
             <div className="container mt-2 mt-md-5">
                 <div className="row justify-content-center mt-5">
-                    <div className="col-12 col-md-6">
-                        <Image src={Me} width="100%" alt="me" draggable={false} />
+                    <div className="col-12 col-md-5">
+                        <Image src={Me} style={{borderRadius:"10px"}} width="100%" alt="me" draggable={false} />
                     </div>
-                    <div className="col-12 col-md-6 mt-3 mt-md-0">
+                    <div className="col-12 col-md-7 mt-3 mt-md-0">
                     <h3 className="text-left mb-0">Gabrielle LaBorwit</h3>
                     <h4 className="text-left purple">UX Researcher</h4>
                         <p>
@@ -44,15 +44,10 @@ function About() {
                         Signed,<br />
                         <Image src={signature} height="40" className="mt-2" draggable={false} />
                         
-                        <p className="mt-4">
-                            <strong>Want to say hi? Let’s connect!</strong>
-                            <br />
-                            Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
-                            <br />
-                            Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
-                        </p>
-
-                        
+                        <h5 className="mt-5">Want to say hi? Let’s connect!</h5>
+                        Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
+                        <br />
+                        Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
                     </div>
                 </div>
             </div>

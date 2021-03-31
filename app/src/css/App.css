@@ -11,11 +11,15 @@
     cursor: default;
 }
 
-@media (max-width:767px) {
-    .homepage.big-margin-top{
-        margin-top: 40px;
-    }
+.headline{
+    line-height: 2.25rem;
+    font-weight: 300;
 }
+
+.homepage.big-margin-top{
+    margin-top: 40px;
+}
+
 
 .wavingHand:hover {
     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */

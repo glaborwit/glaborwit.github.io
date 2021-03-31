@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Infocard from './components/Infocard';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 
@@ -19,26 +19,27 @@ import PicnicGIF from './assets/images/picnic/picnicgif.gif';
 
 function App() {
 
-  const textArray = ['product', 'service', 'project'];
+  // const textArray = ['product', 'service', 'project'];
 
-  const [textArrayIndex, updateIndex] = useState(0);
+  // const [textArrayIndex, updateIndex] = useState(0);
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     // Set interval for changing word in self tagline
-    const interval = setInterval(() => {
-      if(textArrayIndex === textArray.length-1){
-        updateIndex(0)
-      }
-      else{
-        updateIndex(textArrayIndex + 1)
-      }
-      console.log("Current index: ", textArrayIndex)
-    }, 1700);
-    return () => clearInterval(interval);
+  //   const interval = setInterval(() => {
+  //     if(textArrayIndex === textArray.length-1){
+  //       updateIndex(0)
+  //     }
+  //     else{
+  //       updateIndex(textArrayIndex + 1)
+  //     }
+  //     console.log("Current index: ", textArrayIndex)
+  //   }, 1700);
+  //   return () => clearInterval(interval);
 
-  }, [textArray.length, textArrayIndex]);
+  // }, [textArray.length, textArrayIndex]);
+  }, []);
 
   let wavingHand = '👋'
 
@@ -55,7 +56,9 @@ function App() {
           </h1>
 
           <h3 className="text-left col-12 col-lg-10 headline">
-            An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>.
+            {/* An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>. */}
+
+            An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>product</span>.
           </h3>
         </div>
 

@@ -13,7 +13,7 @@ import BudgetBuddyCover from './assets/images/budgetbuddy/BudgetBuddyCover.png';
 import PicnicCover from './assets/images/picnic/PicnicCover.png';
 import TimeWarp from './assets/images/time-warp/timewarpcover.png';
 
-import HammerGIF from './assets/images/UCRE/hammer.gif';
+import BreakingTheIceCoverGIF from './assets/images/UCRE/BreakingTheIceCoverGIF.gif';
 import BudgetBuddyGIF from './assets/images/budgetbuddy/budgetbuddycover-watchsliding.gif';
 import PicnicGIF from './assets/images/picnic/picnicgif.gif';
 
@@ -41,8 +41,6 @@ function App() {
   // }, [textArray.length, textArrayIndex]);
   }, []);
 
-  let wavingHand = '👋'
-
   return (
     <div className="App">
       <Helmet>
@@ -51,14 +49,14 @@ function App() {
       <div className="container homepage big-margin-top">
         <div className="row justify-content-center">
 
-          <h1 className="col-12 col-lg-10">
-            Hello, I'm Gabrielle <span className="pl-1 wavingHand">{wavingHand}</span>
+          <h1 className="col-12 col-lg-10 mb-1">
+            Gabrielle LaBorwit
           </h1>
 
-          <h3 className="text-left col-12 col-lg-10 headline">
-            {/* An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>{textArray[textArrayIndex % textArray.length]}</span>. */}
+          <h3 className="text-left col-12 col-lg-10 headline purple">
+            {/* An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>product</span>. */}
 
-            An open-minded <span className="purple" style={{fontWeight: 400}}>User Experience Researcher</span> testing more than just usability. Understanding the <span style={{fontWeight: 400, color: "#5D7DC0"}}>why</span> and <span style={{fontWeight: 400, color: "#E3B23C"}}>how</span> behind people’s behaviors to ensure the success of your <span style={{fontWeight: 400, color: "#188B6C"}}>product</span>.
+            User Experience Researcher
           </h3>
         </div>
 
@@ -67,9 +65,9 @@ function App() {
           <Infocard
             title="Breaking the Ice"
             // appType="Research-Backed Guidelines"
-            tagline="Research-backed guidelines for a virtual theater community experience"
+            tagline="Research-backed guidelines for hosting remote community experiences"
             pic={BreakingtheIceCover}
-            onHover={HammerGIF}
+            onHover={BreakingTheIceCoverGIF}
             link="breaking-the-ice"
             comingSoon={false}
           />

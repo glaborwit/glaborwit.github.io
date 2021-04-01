@@ -11,7 +11,8 @@ import Me from './assets/images/me.jpg';
 import signature from './assets/logos/names/signature3_bw.png'
 
 function About() {
-    
+    let wavingHand = '👋';
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -48,7 +49,7 @@ function About() {
                         Signed,<br />
                         <Image src={signature} height="40" className="mt-2" draggable={false} />
                         
-                        <h5 className="mt-5">Want to say hi? Let’s connect!</h5>
+                        <h5 className="mt-5">Want to say hi?<span className="pl-1 wavingHand">{wavingHand}</span> Let’s connect!</h5>
                         Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
                         <br />
                         Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>

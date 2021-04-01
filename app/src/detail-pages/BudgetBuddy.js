@@ -17,7 +17,7 @@ import '../css/DetailsPage.css'; // global styles
 import { lightboxOptions } from '../SpecificComponents/Constants' // image lightbox styles
 
 // Images
-import BudgetBuddyCover from '../assets/images/budgetbuddy/mobileandwatchapps.png';
+import BudgetBuddyCover from '../assets/images/budgetbuddy/BudgetBuddyCover.png';
 import JourneyMap from '../assets/images/budgetbuddy/model-journey-map.jpg';
 import MobileLists from '../assets/images/budgetbuddy/MobileAllLists.png';
 import WatchDecideLaterCartListsGif from '../assets/images/budgetbuddy/Watch-Cart-DecideLater.gif';

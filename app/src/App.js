@@ -49,7 +49,7 @@ function App() {
       <div className="container homepage big-margin-top">
         <div className="row justify-content-center">
 
-          <h1 className="col-12 col-lg-10 mb-1">
+          <h1 className="col-12 col-lg-10 title mb-0">
             Gabrielle LaBorwit
           </h1>
 

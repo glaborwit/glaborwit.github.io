@@ -33,7 +33,7 @@ function About() {
 
                         <h3 className="text-left mb-0">Gabrielle LaBorwit</h3>
 
-                        <h4 className="text-left purple mb-3">UX Researcher</h4>
+                        <h4 className="text-left purple mb-3">User Experience Researcher</h4>
                     
                         <p>
                             Hello! I am a <a target="_blank" rel="noopener noreferrer" href="https://www.hcii.cmu.edu/academics/mhci">Master of Human-Computer Interaction</a> (HCI) student at Carnegie Mellon University.

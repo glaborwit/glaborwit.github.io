@@ -76,11 +76,14 @@ function BudgetBuddy() {
 
                                         <div className="col-md-3">
                                             <h4>Role</h4>
-                                            <p>
-                                                UX Researcher and Designer
-                                                <br />
-                                                <em>Wrote interview guides and conducted initial research and prototype tests. Used findings to transform app's interface design.</em>
-                                            </p>
+                                            <ul>
+                                                <li>
+                                                    UX Researcher and Designer
+                                                </li>
+                                                <li>
+                                                    <em>Wrote interview guides and conducted initial research and prototype tests. Used findings to transform app's interface design.</em>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                         <div className="col-md-3">

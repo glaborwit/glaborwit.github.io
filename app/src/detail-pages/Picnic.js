@@ -69,11 +69,16 @@ function Picnic() {
 
                                         <div className="col-md-3">
                                             <h4>Role</h4>
-                                            <p>
-                                                UX Researcher
-                                                <br />
-                                                <em>Worked with team to write interview guides, conducted user research and prototype tests</em>
-                                            </p>
+                                            <ul>
+                                                <li>
+                                                    UX Researcher
+                                                </li>
+                                                <li>
+                                                    <em>
+                                                        Worked with team to write interview guides, conducted user research and prototype tests
+                                                    </em>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                         <div className="col-md-3">
@@ -136,7 +141,7 @@ function Picnic() {
                                     </p>
                                 </div>
 
-                                <div className="col-12 my-5">
+                                <div className="col-12 mt-4 mb-5">
                                     <SRLWrapper options={lightboxOptions}>
                                         <Image className="img-zoom" src={ActivityProcesss} alt="walkthrough images of Picnic app home screen, two example activities, and post-activity reflection screen." width="100%" />
                                     </SRLWrapper>
@@ -148,7 +153,7 @@ function Picnic() {
                                         At its core, our prototype utilizes <strong>embedded design</strong>. By intermixing relevant and irrelevant activities, this psychological method is used to promote subtle but deliberate change in users’ attitudes and mindsets. Picnic uses this technique by framing each mindfulness exercise as a quick and fun activity to complete at the end of the day.
                                     </p>
                                     
-                                    <h4 id="outcomes">Outcomes</h4>
+                                    <h4 id="outcomes" className="pt-5">Outcomes</h4>
                                     <p>
                                         During the final testing stage, users reported feeling calmer and more refreshed after completing their daily activity. They also felt it was easier to detach from their workday and transition into leisure time. Even participants who decided to go back to work after the activity reported feelings of mental clarity and increased productivity. In all, we found that our app beneficially disrupts workflows and successfully aids in the transition between work and life.
                                     </p>

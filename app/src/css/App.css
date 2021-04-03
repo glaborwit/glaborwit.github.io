@@ -29,6 +29,7 @@ h1.title{
 
 .infocards.big-margin-top{
     margin-top: 65px;
+    /* margin-top: 110px; */
 }
 
 @media (max-width:575px) {

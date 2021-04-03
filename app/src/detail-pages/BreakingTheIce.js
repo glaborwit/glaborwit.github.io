@@ -82,10 +82,10 @@ function BreakingtheIce() {
                                     <h3 className="mb-3" id="projectoverview">OVERVIEW</h3>
                                     <h4 className="d-none d-md-block">Summary</h4>
                                     <p>
-                                        The COVID-19 pandemic has affected both people and businesses in numerous ways. <strong>For theater venues in particular, the pandemic has made it increasingly difficult to connect with their local communities.</strong> Places like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, are no exception.
+                                        The COVID-19 pandemic has made it difficult for local theaters to connect with their communities. Theaters like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, is no exception.
                                     </p>
                                     <p>
-                                        With this in mind, our team spent two months <strong>researching ways to recreate the meaningful interactions</strong> that were once only experienced through in-person theater activities. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing. Our guidelines are highly customizable so theaters like the Kelly Strayhorn can host events that fit their ever-changing needs and budgets.
+                                        Our team spent two months researching ways to recreate the meaningful interactions that were once only experienced in-person. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing.
                                     </p>
                                 </div>
                             
@@ -143,13 +143,11 @@ function BreakingtheIce() {
                         <section>
                             <div className="row justify-content-center">
                                 <div className="col-12 col-md-10">
-                                    <h3 className="mb-3" id="problemspace">DEFINING THE PROBLEM SPACE</h3>
+                                    <h3 className="mb-3" id="problemspace">
+                                        DEFINING THE PROBLEM SPACE
+                                    </h3>
                                     <p>
-                                        In order to define our problem space, our team employed the <strong>Reverse Assumptions</strong> strategy. We wrote down all of our assumptions encompassing theater and the COVID-19 pandemic, then reversed them. This empowered us to <strong>challenge conventional thinking patterns</strong>, forcing us to re-evaluate current situations surrounding theater and COVID-19 from a completely new perspective.
-                                    </p>
-
-                                    <p>
-                                        Upon completion, we discovered several opportunities to break the existing rules of interaction between actors and audience members. For instance, promoting the usage of electronics for engagement during a show, actors treating the audience as fellow actors, etc.
+                                        Our team employed the Reverse Assumptions strategy to define our problem space. We wrote down all of our assumptions encompassing theater and the COVID-19 pandemic, then reversed them. This empowered us to challenge conventional thinking patterns, forcing us to take on a new perspective.
                                     </p>
                                 </div>
 
@@ -199,14 +197,22 @@ function BreakingtheIce() {
                                         Semi-Structured Interviews
                                     </h4>
                                     <p>
-                                        Once we defined the problem space, we conducted Semi-Structured Interviews to gain a better understanding of people’s needs and the ways in which they engage with theater. For this phase, I wrote an interview guide delving into people’s impressions of theater productions they’ve attended in the past, their theater-going process (from acquiring tickets to leaving the show), and thoughts on virtual theater performances.
+                                        Next, we conducted Semi-Structured Interviews to gain a better understanding of people’s needs and the ways in which they engage with theater.
+                                    </p>
+                                    
+                                    <p>
+                                        For this phase, I wrote an interview guide delving into people’s impressions of theater productions they’ve attended in the past, their theater-going process (from acquiring tickets to leaving the show), and thoughts on virtual theater performances.
                                     </p>
 
                                     <h4 className="mt-5" id="think-aloud-protocol">
                                         Think Aloud Protocol
                                     </h4>
                                     <p>
-                                        In order to uncover more about how people experience online theater, we conducted Think Aloud Protocol Research. We decided to use the platform YouTube Live to show users clips from theater productions as the site has a chat feature, something our group was considering pursuing in our final product. As a team, we wrote up three tasks for users to complete while watching the clips and thinking aloud, all with the underlying goal of seeing how users interact with and think about the chat. Then, we each led one interview, individually wrote up usability findings templates based on our participant’s interview (pictured below), and later came together and synthesized our findings.
+                                        In order to uncover more about how people experience online theater, we conducted Think Aloud research.
+                                    </p>
+
+                                    <p>
+                                        As a team, we wrote up three tasks for users to complete while watching the YouTube Live theater clips and thinking aloud, all with the underlying goal of seeing how users interact with and think about the chat feature. We each led one interview, individually wrote up usability finding templates (pictured below), and came together to synthesize our findings.
                                     </p>
                                 </div>
                                 <div className="col-12 my-5">
@@ -273,18 +279,16 @@ function BreakingtheIce() {
                                         <li>Live chat is not a feature people wanted to use</li>
                                         <li>Online productions can get a bit “boring”</li>
                                     </ul>
-                                    <p>
-                                        This led us to ideate on other ways online viewers could connect with other audience members online, and if while watching theater productions was even the right way of thinking about theater engagement.
-                                    </p>
 
                                     <h4 className="mt-5" id="contextual-inquiry">
                                         Contextual Inquiry
                                     </h4>
                                     <p>
-                                        Following some team discussion, we decided to start focusing on non-performance events. We used <strong>Contextual Inquiry</strong> to learn more about people’s experiences and expectations when interacting with others at community events. Since we couldn’t conduct these interviews in-person due to pandemic restrictions, we created our own context by hosting a virtual happy hour. To make sure participants felt comfortable and acted as they naturally would, we kept the happy hour as separate from the study as possible (i.e. no researchers observing or recording the sessions).
+                                        This led us to ideate on other ways online viewers could connect with other audience members online, and if while watching theater productions was even the right way of thinking about theater engagement.
                                     </p>
+
                                     <p>
-                                        Prior to the session, I set up the happy hour platform, and then as a team, we planned activities for it. We each conducted individual retrospective contextual inquiries immediately after the event, such that participants would have the experience fresh in their minds.
+                                        Given that we couldn’t conduct in-person interviews due to pandemic restrictions, we created our own context by hosting a participants-only, virtual happy hour. We each conducted individual retrospective contextual inquiries immediately after the event, such that participants would have the experience fresh in their minds.
                                     </p>
                                 </div>
 
@@ -309,7 +313,11 @@ function BreakingtheIce() {
 
                                     <h4 className="mt-5" id="speed-dating">Speed Dating</h4>
                                     <p>
-                                        Based on our earlier findings, we each designed a set of three storyboards, with each board increasing in risk and each set focused on different aspects of theater-related virtual events. In particular, we decided to address users’ needs for <strong>gamified experiences, community engagement, theater-specific engagement</strong>, and the need for <strong>the physical world to be replicated in an online setting</strong>. These boards were used in our Speed Dating research, the method in which users are shown quickly shown with storyboards and probed about their interest in the ideas demonstrated. Our storyboards can be found below.
+                                        Based on our earlier findings, we each designed a set of three storyboards, with each board increasing in risk and each set focused on different aspects of theater-related virtual events.
+                                    </p>
+
+                                    <p>
+                                        In particular, we decided to address users’ needs for <strong>gamified experiences, community engagement, theater-specific engagement</strong>, and the need for <strong>the physical world to be replicated in an online setting</strong>. These boards were used in our Speed Dating research, the method in which users are shown quickly shown with storyboards and probed about their interest in the ideas demonstrated. Our storyboards can be found below.
                                     </p>
                                 </div>
 
@@ -431,7 +439,7 @@ function BreakingtheIce() {
                                     <ul className="mt-1">
                                         <li>People enjoy gamified social interactions, but not in a competitive nature.</li>
                                         <li>People want to attend events that require the least amount of physical (i.e. material) and mental (i.e. skills, knowledge) preparation.</li>
-                                        <li>Activities should focus on fostering relationships and conversation over completing the activity</li>
+                                        <li>Activities should focus on fostering relationships and conversation over completing the activity.</li>
                                         <li>People are incentivized to partake in an event if they enjoy the others in attendance or if they are interested in the performer hosting.</li>
                                     </ul>
                                 </div>
@@ -444,8 +452,10 @@ function BreakingtheIce() {
                                 <div className="col-12 col-md-10">
                                     <h4 className="mt-5" id="experience-prototype">Experience Prototype</h4>
                                     <p>
-                                        Nearing the final stages of our research journey, we began ideating on concepts for our final prototype. After sketching out and discussing our ideas, we ultimately chose to develop an online theater workshop relating to a specific topic. To test the idea, we created an <strong>experience prototype</strong>: a Hamilton-themed workshop. Hamilton-loving participants would learn about scriptwriting techniques from an expert and then complete script-writing activities with fellow attendees.
+                                        After ideating and sketching out concepts for our final prototype, we chose to prototype an online, themed theater workshop. For user testing, we planned out a Hamilton-themed seminar. Participants would learn about scriptwriting techniques from an expert and then complete script-writing activities with fellow attendees.
+                                    </p>
 
+                                    <p>
                                         We ran the workshop on Zoom, with screen and video sharing tools as our friend, and interviewed participants immediately after. Testing our experience prototype with actual Hamilton-lovers helped us more accurately evaluate whether our engagement goal was achieved. Our data was incorporated into our final solution, detailed below.
                                     </p>
                                 </div>

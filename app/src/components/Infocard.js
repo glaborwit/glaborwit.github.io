@@ -43,11 +43,11 @@ function Infocard(props) {
                     )}
                     {!props.comingSoon && (
                         <Link to={"/" + props.link} className="card-img-link">
-                            {isShown && props.onHover ?
+                            {/* {isShown && props.onHover ?
                                 <Image height="100%" draggable={false} className="card-img" src={props.onHover} />
-                                :
+                                : */}
                                 <Image height="100%" draggable={false} className="card-img" src={props.pic} />
-                            }
+                            {/* } */}
                         </Link>
                     )}
                 </div>

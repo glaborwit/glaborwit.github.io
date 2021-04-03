@@ -25,10 +25,11 @@ hr {
 .card-img {
     transition: transform 0.15s ease-in-out; /* zoom in */
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .card-img:hover{
-    /* transform: translate3D(0,-1px,0) scale(1.02); */
+    transform: translate3D(0,-1px,0) scale(1.02);
 }
 
 /* .card-title {

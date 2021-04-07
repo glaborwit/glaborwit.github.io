@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
 import { SRLWrapper } from "simple-react-lightbox";

@@ -50,7 +50,7 @@ function App() {
         <div className="row justify-content-center">
 
           <h1 className="col-12 col-lg-10 title mb-0">
-            Gabrielle LaBorwit
+            Hello! I'm Gabrielle.
           </h1>
 
           <h3 className="text-left col-12 col-lg-10 headline purple">

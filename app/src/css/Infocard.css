@@ -23,7 +23,7 @@ hr {
 }
 
 .card-img {
-    transition: transform 0.15s ease-in-out; /* zoom in */
+    transition: transform 0.2s ease-in-out; /* zoom in */
     cursor: pointer;
     border-radius: 10px;
 }

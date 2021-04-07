@@ -7,7 +7,6 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 // Components
 import DetailsHeading from '../components/DetailsHeading';
-import UCRESolutionModal from '../SpecificComponents/UCRESolutionModal';
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
@@ -46,14 +45,8 @@ import UFT5 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT5.jpg';
 import UFT6 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT6.jpg';
 
 
-// import Stickies from '../assets/images/StickyNotes.svg';
-// import StickiesHighlighted from '../assets/images/StickyNotesHighlighted.svg';
-
-
 
 function BreakingtheIce() {
-    // const [isShown, setIsShown] = useState(false);
-    const [modalShow, setModalShow] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -488,12 +481,7 @@ function BreakingtheIce() {
                                     </SRLWrapper>
                                 </div>
                             </div>
-                            {/* <Image src={UCREPoster} className="col-lg-7 mt-5" width="100%" /> */}
                         </section>
-                        <UCRESolutionModal
-                            modalShowBool={modalShow}
-                            modalHide={() => setModalShow(false)}
-                        />
                     </div>
 
                     <div className="col-3 d-none d-md-block">

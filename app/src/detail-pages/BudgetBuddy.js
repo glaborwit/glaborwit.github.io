@@ -57,10 +57,10 @@ function BudgetBuddy() {
                                     <h3 className="mb-3" id="projectoverview">OVERVIEW</h3>
                                     <h4 className="d-none d-md-block">Summary</h4>
                                     <p>
-                                        Although many people don’t explicitly set a budget before shopping, anxiety around buying or spending “too much” can still exist in shoppers’ minds. This is especially true when shopping for food, as this type of spending occurs more frequently as it can be considered a necessity. As such, our team wanted to explore this area in the context of the COVID-19 pandemic, since spending constraints could only add to the stress shoppers face outside of the grocery store.
+                                        Although many people don’t explicitly set a budget before grocery shopping, anxiety around buying or spending “too much” can still exist in shoppers’ minds. Our team set out to explore this area in the context of the COVID-19 pandemic as spending constraints only add to the stress shoppers face outside of the grocery store.
                                     </p>
                                     <p>
-                                        Thus, we created Budget Buddy, an app for smartphones and smartwatches. Budget Buddy helps users stay within their grocery budgets while still giving them a sense of much-appreciated freedom in what they buy. In addition, the app was carefully designed to benefit grocery shoppers and the stores in which they shop.
+                                        Our app, Budget Buddy, helps users stay within their grocery budgets while still giving them a sense of freedom in what they buy. The app was carefully designed to benefit both grocery shoppers and the stores in which they shop.
                                     </p>
                                 </div>
 
@@ -114,9 +114,16 @@ function BudgetBuddy() {
                             <div className="row justify-content-center">
                                 <div className="col-12 col-md-10">
                                     <h3 className="mb-3" id="research">RESEARCH INSIGHTS</h3>
+                                    <h4 id="interviews">User Interviews</h4>
                                     <p>
-                                        Before ideating on possible solutions, our team conducted 12 user interviews through directed storytelling with participants between the ages of 20-30. We created journey maps chronicling each participant’s most recent grocery shopping experience, then used those to create one consolidated map modeling our overall target user’s experience.
+                                        Our team started by conducting 12 interviews with grocery shoppers between the ages of 20 to 30 through directed storytelling. We asked participants to walk us through their most recent shopping experience, in-person or online. Our follow-up questions aimed to better understand how shoppers decide what to buy, any interactions they have, and their process when shopping, from arrival to checkout.
                                     </p>
+
+                                    <h4 id="journey-mapping" className="mt-5">Customer Journey Mapping</h4>
+                                    <p>
+                                        After synthesizing our data, we created customer journey maps chronicling each participant’s most recent grocery shopping experience. We then used the individual maps to create one consolidated map modeling our overall target user’s experience.
+                                    </p>
+
                                 </div>
                                 
                                 <div className="col-12 my-4">
@@ -126,13 +133,23 @@ function BudgetBuddy() {
                                 </div>
 
                                 <div className="col-12 col-md-10">
+                                    <h4 id="insights" className="mt-4">Insights</h4>
                                     <p>
                                         After further analysis, we uncovered three key insights:
                                     </p>
+
                                     <ol>
-                                        <li>Participants enjoy the experience of grocery shopping in-store</li>
-                                        <li>Money-conscious shoppers are conflicted with how to stay within budget while also still buying the “nice-to-have” items that they randomly discovered during the trip</li>
-                                        <li>Shoppers try not to touch their phone, belongings, and objects as much as possible for safety precautions</li>
+                                        <li>
+                                            Participants enjoy the experience of grocery shopping in-store
+                                        </li>
+
+                                        <li>
+                                            Money-conscious shoppers are conflicted with how to stay within budget while also still buying the “nice-to-have” items that they randomly discovered during the trip
+                                        </li>
+
+                                        <li>
+                                            Shoppers try not to touch their phone, belongings, and objects as much as possible for safety precautions
+                                        </li>
                                     </ol>
                                 </div>
                             </div>
@@ -199,7 +216,19 @@ function BudgetBuddy() {
                                 <ScrollIntoView selector="#research">
                                     <li><span>Research</span></li>
                                 </ScrollIntoView>
+                                <ul>
+                                    <ScrollIntoView selector="#interviews">
+                                        <li><span>User Interviews</span></li>
+                                    </ScrollIntoView>
 
+                                    <ScrollIntoView selector="#journey-mapping">
+                                        <li><span>Journey Mapping</span></li>
+                                    </ScrollIntoView>
+
+                                    <ScrollIntoView selector="#insights">
+                                        <li><span>Insights</span></li>
+                                    </ScrollIntoView>
+                                </ul>
                                 <ScrollIntoView selector="#solution">
                                     <li><span>Solution</span></li>
                                 </ScrollIntoView>

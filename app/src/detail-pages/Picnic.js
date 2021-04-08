@@ -53,7 +53,7 @@ function Picnic() {
                                     </p>
 
                                     <p>
-                                        Our app, Picnic, combats this problem by helping better-define users’ boundaries between their work and home space, in addition to reframing the perception of productivity. In particular, our app strengthens users’ boundaries and feelings of productivity through subtle mindfulness activities called Picnics.
+                                        Our app, Picnic, combats this problem by helping better define users’ boundaries between their work and home space, in addition to reframing the perception of productivity. In particular, our app strengthens users’ boundaries and feelings of productivity through subtle mindfulness activities called Picnics.
                                     </p>
                                 </div>
                                     

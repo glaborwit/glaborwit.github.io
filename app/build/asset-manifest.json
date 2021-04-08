@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.6446ba67.chunk.css",
-    "main.js": "/static/js/main.4f4f9a4d.chunk.js",
-    "main.js.map": "/static/js/main.4f4f9a4d.chunk.js.map",
+    "main.js": "/static/js/main.c379bf35.chunk.js",
+    "main.js.map": "/static/js/main.c379bf35.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.02b0d242.js",
     "runtime-main.js.map": "/static/js/runtime-main.02b0d242.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
-    "static/js/2.daf0ba26.chunk.js": "/static/js/2.daf0ba26.chunk.js",
-    "static/js/2.daf0ba26.chunk.js.map": "/static/js/2.daf0ba26.chunk.js.map",
+    "static/js/2.86da44d1.chunk.js": "/static/js/2.86da44d1.chunk.js",
+    "static/js/2.86da44d1.chunk.js.map": "/static/js/2.86da44d1.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/static/css/2.ef9168ec.chunk.css.map",
     "static/css/main.6446ba67.chunk.css.map": "/static/css/main.6446ba67.chunk.css.map",
-    "static/js/2.daf0ba26.chunk.js.LICENSE.txt": "/static/js/2.daf0ba26.chunk.js.LICENSE.txt",
+    "static/js/2.86da44d1.chunk.js.LICENSE.txt": "/static/js/2.86da44d1.chunk.js.LICENSE.txt",
     "static/media/AffinityDiagramPicnic.6e02892b.jpg": "/static/media/AffinityDiagramPicnic.6e02892b.jpg",
     "static/media/BreakingTheIceCover.e5aa704c.png": "/static/media/BreakingTheIceCover.e5aa704c.png",
     "static/media/BreakingTheIceCoverGIF.ebd66cec.gif": "/static/media/BreakingTheIceCoverGIF.ebd66cec.gif",
@@ -33,8 +33,6 @@
     "static/media/Set4_Board1.cd6af61b.png": "/static/media/Set4_Board1.cd6af61b.png",
     "static/media/Set4_Board2.be96c359.png": "/static/media/Set4_Board2.be96c359.png",
     "static/media/Set4_Board3.0b5e2af4.png": "/static/media/Set4_Board3.0b5e2af4.png",
-    "static/media/SpeedDating_Ideas.63572b15.png": "/static/media/SpeedDating_Ideas.63572b15.png",
-    "static/media/Stakeholder_Map_JennyXin.f833b10b.jpg": "/static/media/Stakeholder_Map_JennyXin.f833b10b.jpg",
     "static/media/UFT1.67b4257f.jpg": "/static/media/UFT1.67b4257f.jpg",
     "static/media/UFT2.ee6039d9.jpg": "/static/media/UFT2.ee6039d9.jpg",
     "static/media/UFT3.117fc176.jpg": "/static/media/UFT3.117fc176.jpg",
@@ -65,8 +63,8 @@
   "entrypoints": [
     "static/js/runtime-main.02b0d242.js",
     "static/css/2.ef9168ec.chunk.css",
-    "static/js/2.daf0ba26.chunk.js",
+    "static/js/2.86da44d1.chunk.js",
     "static/css/main.6446ba67.chunk.css",
-    "static/js/main.4f4f9a4d.chunk.js"
+    "static/js/main.c379bf35.chunk.js"
   ]
 }

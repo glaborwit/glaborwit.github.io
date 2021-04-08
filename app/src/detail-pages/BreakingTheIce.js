@@ -158,7 +158,7 @@ function BreakingtheIce() {
                                     </p>
                                 </div>
 
-                                <div className="col-12 px-0">
+                                <div className="col-12 px-0 mb-3">
                                     <p className="blockquote">
                                         How might we make people feel connected to the theatre amidst the COVID-19 pandemic without the traditional in-person venue/experience?
                                     </p>

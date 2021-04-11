@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './css/Main.css';
 
 // Images
-import Me from './assets/images/me.jpg';
+import Me from './assets/images/about/me.jpg';
 import signature from './assets/logos/names/signature3_bw.png'
 
 function About() {

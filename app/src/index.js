@@ -31,7 +31,9 @@ ReactDOM.render(
 
         <Switch>
           <Route exactly path="/about">
-            <About />
+            <SimpleReactLightbox>
+              <About />
+            </SimpleReactLightbox>
           </Route>
 
           <Route exactly path="/picnic">

@@ -44,11 +44,6 @@ function About() {
                         <h2 style={{lineHeight: "2.5rem"}}>
                             Welcome! I'm Gabrielle, a creative <span className="purple">UX Researcher</span> with a technical background.
                         </h2>
-
-                        <h5 className="mt-4 mt-lg-5">Want to say hi?<span className="pl-1 wavingHand">{wavingHand}</span> Let’s connect!</h5>
-                        Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
-                        <br />
-                        Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
                     </div>
                 </div>
 
@@ -68,14 +63,11 @@ function About() {
                         <Image src={signature} height="40" className="mt-2" draggable={false} />
 
 
-                        {/* Show on MD and smaller screens */}
-                        <div className="d-block d-lg-none mt-5">
-                            <h5 className="mt-5">Want to say hi?<span className="pl-1 wavingHand">{wavingHand}</span> Let’s connect!</h5>
-                            
-                            Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
-                            <br />
-                            Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
-                        </div>
+                        <h5 className="mt-5">Want to say hi?<span className="pl-1 wavingHand">{wavingHand}</span> Let’s connect!</h5>
+                        
+                        Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
+                        <br />
+                        Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
 
                     </div>
                 </div>

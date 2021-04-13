@@ -1,0 +1,10 @@
+h2.about{
+    line-height: 2.7rem;
+}
+
+/* On sm sceens and smaller */
+@media (max-width:575px) {
+    h2.about {
+        line-height: 2.2rem;
+    }
+}

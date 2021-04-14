@@ -83,7 +83,7 @@ function App() {
           />
 
           <Infocard
-            title="Picnic"
+            title="Reinforcing Boundaries"
             // appType="Mindfulness Intervention Mobile App"
             tagline="Mobile app strengthening the boundary between work and life for remote working professionals and students"
             pic={PicnicCover}

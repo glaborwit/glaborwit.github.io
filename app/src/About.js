@@ -9,7 +9,7 @@ import './css/about.css';
 
 // Images
 import Me from './assets/images/about/me-long.jpg';
-import signature from './assets/logos/names/signature3_bw.png'
+import signature from './assets/logos/names/signature3_bw.png';
 
 import PlantSticker from './assets/images/about/plant-sticker.png';
 import BikeSticker from './assets/images/about/bike-sticker.png';
@@ -17,7 +17,7 @@ import BikeSticker from './assets/images/about/bike-sticker.png';
 
 function About() {
     let wavingHand = '👋';
-
+    let compy = '👩🏻‍💻';
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -36,17 +36,16 @@ function About() {
                     <div className="col-12 col-md-10 col-lg-5">
                         {/* Show headline on md and smaller screens */}
                         <h2 className="d-block d-lg-none mb-4 about">
-                            I'm Gabrielle– A creative <span className="purple"><b>UX&nbsp;Researcher</b></span> with a technical background.
+                            I'm Gabrielle, a creative <span className="purple">UX&nbsp;Researcher</span> with a technical background {compy}
                         </h2>
-
 
                         <Image src={Me} width="100%" alt="me" draggable={false} />
                     </div>
 
                     {/* TL;DR Text and healine on LG + screens */}
-                    <div className="col-12 col-md-10 col-lg-5 mt-3 mt-md-0 align-self-center d-none d-lg-block">
+                    <div className="col-lg-5 mt-3 mt-md-0 align-self-center d-none d-lg-block">
                         <h2 className="about">
-                            I'm Gabrielle, a creative <span className="purple"><b>UX&nbsp;Researcher</b></span> with a technical background.
+                            I'm Gabrielle, a creative <span className="purple">UX&nbsp;Researcher</span> with a technical background {compy}
                         </h2>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ function Picnic() {
     return (
         <div className="Picnic">
             <Helmet>
-                <title>Gabrielle LaBorwit | Picnic</title>
+                <title>Gabrielle LaBorwit | Reinforcing Boundaries</title>
             </Helmet>
             <div className="container mt-2 mt-md-5">
                 <div className="row justify-content-center">
@@ -38,7 +38,7 @@ function Picnic() {
 
                         <div className="row justify-content-center">
                             <div class="col-12">
-                                <DetailsHeading title="Picnic" tagline="Strengthening the boundary between work and life for remote working professionals and students" image={PicnicCover} alt="Screen images of Picnic app home screen, post-activity reflection screen, and social screen" />
+                                <DetailsHeading title="Reinforcing Boundaries" tagline="Strengthening work-life boundaries for remote working professionals and students" image={PicnicCover} alt="Screen images of Picnic app home screen, post-activity reflection screen, and social screen" />
                             </div>
                         </div>
 

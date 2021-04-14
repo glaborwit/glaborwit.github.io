@@ -113,7 +113,7 @@ function BudgetBuddy() {
                         <section>
                             <div className="row justify-content-center">
                                 <div className="col-12 col-md-10">
-                                    <h3 className="mb-3" id="research">RESEARCH INSIGHTS</h3>
+                                    <h3 className="mb-3" id="research">RESEARCH</h3>
                                     <h4 id="interviews">User Interviews</h4>
                                     <p>
                                         Our team started by conducting 12 interviews with grocery shoppers between the ages of 20 to 30 through directed storytelling. We asked participants to walk us through their most recent shopping experience, in-person or online. Our follow-up questions aimed to better understand how shoppers decide what to buy, any interactions they have, and their process when shopping, from arrival to checkout.

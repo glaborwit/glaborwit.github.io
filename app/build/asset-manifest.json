@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6446ba67.chunk.css",
-    "main.js": "/static/js/main.b11690ff.chunk.js",
-    "main.js.map": "/static/js/main.b11690ff.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.02b0d242.js",
-    "runtime-main.js.map": "/static/js/runtime-main.02b0d242.js.map",
+    "main.css": "/static/css/main.68488428.chunk.css",
+    "main.js": "/static/js/main.177aaae4.chunk.js",
+    "main.js.map": "/static/js/main.177aaae4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d20d844e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d20d844e.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
-    "static/js/2.86da44d1.chunk.js": "/static/js/2.86da44d1.chunk.js",
-    "static/js/2.86da44d1.chunk.js.map": "/static/js/2.86da44d1.chunk.js.map",
+    "static/js/2.5aca68d0.chunk.js": "/static/js/2.5aca68d0.chunk.js",
+    "static/js/2.5aca68d0.chunk.js.map": "/static/js/2.5aca68d0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/static/css/2.ef9168ec.chunk.css.map",
-    "static/css/main.6446ba67.chunk.css.map": "/static/css/main.6446ba67.chunk.css.map",
-    "static/js/2.86da44d1.chunk.js.LICENSE.txt": "/static/js/2.86da44d1.chunk.js.LICENSE.txt",
+    "static/css/main.68488428.chunk.css.map": "/static/css/main.68488428.chunk.css.map",
+    "static/js/2.5aca68d0.chunk.js.LICENSE.txt": "/static/js/2.5aca68d0.chunk.js.LICENSE.txt",
     "static/media/AffinityDiagramPicnic.6e02892b.jpg": "/static/media/AffinityDiagramPicnic.6e02892b.jpg",
     "static/media/BreakingTheIceCover.e5aa704c.png": "/static/media/BreakingTheIceCover.e5aa704c.png",
     "static/media/BreakingTheIceCoverGIF.ebd66cec.gif": "/static/media/BreakingTheIceCoverGIF.ebd66cec.gif",
@@ -42,13 +42,15 @@
     "static/media/Watch-Cart-DecideLater.fcab2b55.gif": "/static/media/Watch-Cart-DecideLater.fcab2b55.gif",
     "static/media/activity-processs.02d8a215.png": "/static/media/activity-processs.02d8a215.png",
     "static/media/betty-storyboard.9fbc6be0.png": "/static/media/betty-storyboard.9fbc6be0.png",
+    "static/media/bike-sticker.8dfbc709.png": "/static/media/bike-sticker.8dfbc709.png",
     "static/media/budgetbuddycover-watchsliding.25f3ec62.gif": "/static/media/budgetbuddycover-watchsliding.25f3ec62.gif",
     "static/media/cowboy-flushed-emoji.71cf72c4.jpg": "/static/media/cowboy-flushed-emoji.71cf72c4.jpg",
     "static/media/linkedin_black.87e1ea2a.png": "/static/media/linkedin_black.87e1ea2a.png",
-    "static/media/me.43be9e51.jpg": "/static/media/me.43be9e51.jpg",
+    "static/media/me-long.bbe3f602.jpg": "/static/media/me-long.bbe3f602.jpg",
     "static/media/medium_icon_black.1c62ec78.svg": "/static/media/medium_icon_black.1c62ec78.svg",
     "static/media/model-journey-map.feba450a.jpg": "/static/media/model-journey-map.feba450a.jpg",
     "static/media/picnicgif.17202a99.gif": "/static/media/picnicgif.17202a99.gif",
+    "static/media/plant-sticker.65f5437d.png": "/static/media/plant-sticker.65f5437d.png",
     "static/media/poster.d9891c0d.jpeg": "/static/media/poster.d9891c0d.jpeg",
     "static/media/reverse-assumptions.3685813a.jpg": "/static/media/reverse-assumptions.3685813a.jpg",
     "static/media/signature3_bw.1aaa09c7.png": "/static/media/signature3_bw.1aaa09c7.png",
@@ -61,10 +63,10 @@
     "static/media/twitter_black.42db8eab.png": "/static/media/twitter_black.42db8eab.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.02b0d242.js",
+    "static/js/runtime-main.d20d844e.js",
     "static/css/2.ef9168ec.chunk.css",
-    "static/js/2.86da44d1.chunk.js",
-    "static/css/main.6446ba67.chunk.css",
-    "static/js/main.b11690ff.chunk.js"
+    "static/js/2.5aca68d0.chunk.js",
+    "static/css/main.68488428.chunk.css",
+    "static/js/main.177aaae4.chunk.js"
   ]
 }

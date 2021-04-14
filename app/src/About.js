@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Helmet } from 'react-helmet'; // changes <title> tags for dynamic tab titles
+import Footer from './components/Footer'; 
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
@@ -24,7 +25,7 @@ function About() {
     }, [])
 
     return (
-        <div className="About pb-2 pb-sm-5">
+        <div className="About">
             <Helmet>
                 <title>Gabrielle LaBorwit | About</title>
             </Helmet>
@@ -67,47 +68,56 @@ function About() {
 
 
                         <h5 className="mt-5">Want to say hi?<span className="pl-1 wavingHand">{wavingHand}</span> Let’s connect!</h5>
-                        
+
                         Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
                         <br />
                         Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
 
                     </div>
                 </div>
+            </div>
 
-                {/* Extras Section */}
-
-                {/* Headline */}
-                <div className="row justify-content-center align-items-center big-margin-top">
-                    <div className="col-12 col-md-10">
-                        <h2 className="about">What I'm Up To</h2>
-                    </div>
-                </div>
-
-                {/* Content */}
-                <div className="row justify-content-center align-items-center mt-3">
-                    {/* Item 1: Pothos */}
-                    <div className="col-5 col-md-4 col-lg-2">
-                        <Image src={PlantSticker} width="100%" />
+            {/* Extras Section */}
+            <div className="container fun fullwidth bg-purple">
+                <div className="container pb-2 pb-sm-5">
+                    {/* Headline */}
+                    <div className="row my-auto justify-content-center align-items-center big-margin-top">
+                        <div className="col-12 col-md-10">
+                            <h2 className="about">
+                                What I'm Up To
+                            </h2>
+                        </div>
                     </div>
 
-                    <div className="col-7 col-md-6 col-lg-3">
-                        <i>April 2021 </i>
-                        <br />
+                    {/* Content */}
+                    <div className="row justify-content-center align-items-center mt-3">
+                        {/* Item 1: Pothos */}
+                        <div className="col-5 col-md-4 col-lg-2">
+                            <Image src={PlantSticker} width="100%" />
+                        </div>
+
+                        <div className="col-7 col-md-6 col-lg-3">
+                            <i>April 2021 </i>
+                            <br />
                         Bought an indoor plant– meet my marble queen pothos!
                     </div>
 
-                    {/* Item 2: Bike */}
-                    <div className="col-5 col-md-4 col-lg-2 mt-5 mt-lg-0">
-                        <Image src={BikeSticker} width="100%" alt="New bike" />
-                    </div>
+                        {/* Item 2: Bike */}
+                        <div className="col-5 col-md-4 col-lg-2 mt-5 mt-lg-0">
+                            <Image src={BikeSticker} width="100%" alt="New bike" />
+                        </div>
 
-                    <div className="col-7 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                        <i>March 2021 </i>
-                        <br />
-                        Got a bike after 7 months of waiting due to the bike shortage.
+                        <div className="col-7 col-md-6 col-lg-3 mt-5 mt-lg-0">
+                            <i>March 2021 </i>
+                            <br />
+                            Got a bike after 7 months of waiting due to the bike shortage.
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="container fullwidth bg-purple px-0">
+                <Footer className="footer-overrides" />
             </div>
         </div>
     );

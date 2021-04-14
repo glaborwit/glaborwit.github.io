@@ -7,3 +7,14 @@
     background: none !important;
     padding: 4px;
 }
+
+/* On sm sceens and smaller */
+@media (max-width:575px) {
+    .social-link{
+        margin-right: 2px;
+    }
+}
+
+.social-link:last-child{
+    margin-right: 0px;
+}

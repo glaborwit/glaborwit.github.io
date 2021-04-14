@@ -10,9 +10,9 @@ import LinkedInIcon from "../assets/logos/linkedin_black.png";
 import MediumIcon from "../assets/logos/medium_icon_black.svg";
 import TwitterIcon from "../assets/logos/twitter_black.png";
 
-function Footer() {
+function Footer(props) {
     return (
-        <div className="footer mb-3 mb-sm-2 mx-2 mx-sm-4 mt-3 d-flex justify-content-between">
+        <div className={`footer mb-3 mb-sm-2 mx-2 mx-sm-4 mt-3 d-flex justify-content-between ${props.className}`}>
             <div>
                 {/* LinkedIn Social Icon */}
                 <a target="_blank" className="social-link" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit-357783142/">

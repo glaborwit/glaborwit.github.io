@@ -93,18 +93,18 @@ function About() {
                     <div className="row justify-content-center align-items-center mt-3">
                         {/* Item 1: Pothos */}
                         <div className="col-5 col-md-4 col-lg-2">
-                            <Image src={PlantSticker} width="100%" />
+                            <Image src={PlantSticker} className="sticker" width="100%" alt="Plant sticker" />
                         </div>
 
                         <div className="col-7 col-md-6 col-lg-3">
                             <i>April 2021 </i>
                             <br />
-                        Bought an indoor plant– meet my marble queen pothos!
+                            Bought an indoor plant– meet my marble queen pothos!
                     </div>
 
                         {/* Item 2: Bike */}
                         <div className="col-5 col-md-4 col-lg-2 mt-5 mt-lg-0">
-                            <Image src={BikeSticker} width="100%" alt="New bike" />
+                            <Image src={BikeSticker} className="sticker" width="100%" alt="New bike" />
                         </div>
 
                         <div className="col-7 col-md-6 col-lg-3 mt-5 mt-lg-0">

@@ -108,7 +108,7 @@ function About() {
                         </div>
 
                         <div className="col-7 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                            <i>March 2021 </i>
+                            <i>March 2021</i>
                             <br />
                             Got a bike after 7 months of waiting due to the bike shortage.
                         </div>

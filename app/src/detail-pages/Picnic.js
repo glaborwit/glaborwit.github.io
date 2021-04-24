@@ -82,7 +82,9 @@ function Picnic() {
                                         </div>
 
                                         <div className="col-md-3">
-                                            <h4>Teammates</h4>
+                                        <h4 className="d-block d-md-none d-lg-block">Teammates</h4>
+
+                                        <h4 className="d-none d-md-block d-lg-none">Team-mates</h4>
                                             <ul>
                                                 <li>Cam Davison</li>
                                                 <li>Nitya Devireddy</li>

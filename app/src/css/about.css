@@ -8,13 +8,17 @@ h2.about{
     max-width: 100%;
 }
 
+.bg-light-purple{
+    background-color: #efeef2;
+}
+
 .bg-purple{
     background-color: #DEDBE6;
 }
 
-.container.fun{
-    margin-top: 90px;
+.container.padding-top-bottom{
     padding-top: 30px;
+    padding-bottom:30px;
 }
 
 .footer-overrides{

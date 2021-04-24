@@ -30,10 +30,10 @@ function About() {
                 <title>Gabrielle LaBorwit | About</title>
             </Helmet>
 
-            <div className="container mt-2 mt-md-3 mt-lg-5">
+            <div className="container full-height">
 
                 {/* TL;DR about desc and picture */}
-                <div className="row justify-content-center">
+                <div className="row h-100 justify-content-center align-items-center">
                     <div className="col-12 col-md-10 col-lg-5">
                         {/* Show headline on md and smaller screens */}
                         <h2 className="d-block d-lg-none mb-4 about">
@@ -44,41 +44,45 @@ function About() {
                     </div>
 
                     {/* TL;DR Text and healine on LG + screens */}
-                    <div className="col-lg-5 mt-3 mt-md-0 align-self-center d-none d-lg-block">
+                    <div className="col-lg-5 mt-3 mt-md-0 d-none d-lg-block">
                         <h2 className="about">
                             I'm Gabrielle, a creative <span className="purple">UX&nbsp;Researcher</span> with a technical background {compy}
                         </h2>
                     </div>
                 </div>
+            </div>
 
+            <div className="container padding-top-bottom fullwidth full-height bg-light-purple">
                 {/* About me: detailed */}
-                <div className="row justify-content-center mt-5">
-                    <div className="col-12 col-md-10">
-                        <p>
-                            I'm currently getting my <a target="_blank" rel="noopener noreferrer" href="https://www.hcii.cmu.edu/academics/mhci">Master of Human-Computer Interaction</a> (HCI) degree at Carnegie Mellon University. Although my focus is in HCI, I'm equipped with an undergraduate degree in Computer Science and Cognitive Psychology. This provides me with the unique benefit of understanding the actions and motivations of the programmer as well as the needs and desires of the user.
-                        </p>
+                <div className="container h-100"> 
+                    <div className="row h-100 justify-content-center align-items-center">
+                        <div className="col-12 col-md-10">
+                            <p>
+                                I'm currently getting my <a target="_blank" rel="noopener noreferrer" href="https://www.hcii.cmu.edu/academics/mhci">Master of Human-Computer Interaction</a> (HCI) degree at Carnegie Mellon University. Although my focus is in HCI, I'm equipped with an undergraduate degree in Computer Science and Cognitive Psychology. This provides me with the unique benefit of understanding the actions and motivations of the programmer as well as the needs and desires of the user.
+                            </p>
 
-                        <p>
-                            When I'm not studying, I enjoy taking pictures, browsing through <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@gabbi">Medium</a> articles, and cooking.
-                        </p>
+                            <p>
+                                When I'm not studying, I enjoy taking pictures, browsing through <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@gabbi">Medium</a> articles, and cooking.
+                            </p>
 
-                        Signed,
-                        <br />
-                        <Image src={signature} height="40" className="mt-2" draggable={false} />
+                            Signed,
+                            <br />
+                            <Image src={signature} height="40" className="mt-2" draggable={false} />
 
 
-                        <h5 className="mt-5">Want to say hi?<span className="pl-1 wavingHand">{wavingHand}</span> Let’s connect!</h5>
+                            <h5 className="mt-5">Want to say hi?<span className="pl-1 wavingHand">{wavingHand}</span> Let’s connect!</h5>
 
-                        Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
-                        <br />
-                        Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
+                            Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
+                            <br />
+                            Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
 
+                        </div>
                     </div>
                 </div>
             </div>
 
             {/* Extras Section */}
-            <div className="container fun fullwidth bg-purple">
+            <div className="container padding-top-bottom fullwidth bg-purple">
                 <div className="container pb-2 pb-sm-5">
                     {/* Headline */}
                     <div className="row my-auto justify-content-center align-items-center big-margin-top">

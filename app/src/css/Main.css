@@ -61,11 +61,6 @@ h5 {
     }
 }
 
-.bg-purple{
-    background-color: #efeef4;
-}
-
-
 li {
     margin-bottom: .2rem;
 }
@@ -91,6 +86,11 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.card-img-link) {
     a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
         background-size: 100% 14%;
     }
+}
+
+.full-height{
+    height: 85vh;
+    width: 100vw;
 }
 
 .blockquote {

@@ -58,7 +58,7 @@ function BreakingtheIce() {
                 <title>Gabrielle LaBorwit | Breaking the Ice</title>
             </Helmet>
 
-            <div className="container mt-2 mt-md-5">
+            <div className="container padding-top-bottom fullwidth bg-light-purple mt-2 mt-md-5">
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-9">
 
@@ -130,8 +130,14 @@ function BreakingtheIce() {
                                 </div>
                             </div>
                         </section>
+                    </div>
+                </div>
+            </div>
 
-
+            
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-12 col-md-9">
                         {/* The Problem Space */}
                         <section>
                             <div className="row justify-content-center">

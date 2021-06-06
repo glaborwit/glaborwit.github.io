@@ -13,9 +13,7 @@ import BudgetBuddyCover from './assets/images/budgetbuddy/BudgetBuddyCover.png';
 import PicnicCover from './assets/images/picnic/PicnicCover.png';
 import TimeWarp from './assets/images/time-warp/timewarpcover.png';
 
-import BreakingTheIceCoverGIF from './assets/images/UCRE/BreakingTheIceCoverGIF.gif';
-import BudgetBuddyGIF from './assets/images/budgetbuddy/budgetbuddycover-watchsliding.gif';
-import PicnicGIF from './assets/images/picnic/picnicgif.gif';
+import MicrosoftwARroom from './assets/images/microsoft-warroom/microsoft-cover.png';
 
 function App() {
 
@@ -67,7 +65,6 @@ function App() {
             // appType="Research-Backed Guidelines"
             tagline="Research-backed guidelines for hosting remote community experiences"
             pic={BreakingtheIceCover}
-            onHover={BreakingTheIceCoverGIF}
             link="breaking-the-ice"
             comingSoon={false}
           />
@@ -77,7 +74,6 @@ function App() {
             // appType="Cross-Platform App for Watch and Mobile"
             tagline="Cross-platform grocery budget assistant for money-conscious shoppers"
             pic={BudgetBuddyCover}
-            onHover={BudgetBuddyGIF}
             link="budget-buddy"
             comingSoon={false}
           />
@@ -87,7 +83,6 @@ function App() {
             // appType="Mindfulness Intervention Mobile App"
             tagline="Mobile app strengthening the boundary between work and life for remote working professionals and students"
             pic={PicnicCover}
-            onHover={PicnicGIF}
             link="picnic"
             comingSoon={false}
           />
@@ -100,10 +95,18 @@ function App() {
             link="time-warp"
             comingSoon={false}
           />
-
-        {/* <div className="big-margin-top row justify-content-center">
+        </div>
+        {/* COMING SOON- Section */}
+        <div className="big-margin-top row justify-content-center">
           <h2 className="col-12 col-md-10 text-center" style={{fontWeight:"400", fontStyle:"italic"}}>Coming Soon</h2>
-        </div> */}
+
+        <Infocard
+            title="wARroom"
+            tagline="Augmented reality program to foster workplace collaboration"
+            pic={MicrosoftwARroom}
+            link="microsoft-wARroom"
+            comingSoon={true}
+          />
 
         </div>
       </div>

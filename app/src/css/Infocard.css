@@ -32,6 +32,11 @@ hr {
     transform: translate3D(0,-1px,0) scale(1.02);
 }
 
+.no-hover.card-img{
+    transform: none;
+    cursor: default;
+}
+
 /* .card-title {
     font-size: 24px;
     font-weight: 600;

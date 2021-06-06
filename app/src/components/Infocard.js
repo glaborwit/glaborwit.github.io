@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +8,6 @@ import '../css/Main.css'; // global styles
 import '../css/Infocard.css'; // global styles
 
 function Infocard(props) {
-    const [isShown, setIsShown] = useState(false);
 
     return (
         <div className={`col-12 col-lg-10 overrides card ${props.comingSoon ? "coming-soon" : ""}`}>
@@ -23,31 +22,21 @@ function Infocard(props) {
 
                     <p className="card-text">{props.tagline}</p>
 
-                    {/* <Link
-                            className={`btn ${props.comingSoon ? "disabled" : ""}`}
-                            to={"/" + props.link}>
-                            See More
-                        </Link> */}
-                    <Link className="see-more" to={"/" + props.link}>
-                        See more {"→"}
-                    </Link>
+                    {!props.comingSoon && (
+                        <Link className="see-more" to={"/" + props.link}>
+                            See more {"→"}
+                        </Link>
+                    )}
                 </div>
 
 
-                <div className="col-md-7 card-img-top d-none d-md-block"
-                    onMouseEnter={() => setIsShown(true)}
-                    onMouseLeave={() => setIsShown(false)}
-                >
+                <div className="col-md-7 card-img-top d-none d-md-block">
                     {props.comingSoon && (
-                        <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                        <Image height="100%" draggable={false} className="card-img no-hover" src={props.pic} />
                     )}
                     {!props.comingSoon && (
                         <Link to={"/" + props.link} className="card-img-link">
-                            {/* {isShown && props.onHover ?
-                                <Image height="100%" draggable={false} className="card-img" src={props.onHover} />
-                                : */}
-                                <Image height="100%" draggable={false} className="card-img" src={props.pic} />
-                            {/* } */}
+                            <Image height="100%" draggable={false} className="card-img" src={props.pic} />
                         </Link>
                     )}
                 </div>
@@ -56,20 +45,13 @@ function Infocard(props) {
             {/* 1 row img + new row text on ≤small devices */}
             <div className="row align-items-center justify-content-center">
 
-                <div className="col-12 card-img-top d-block d-md-none"
-                    onMouseEnter={() => setIsShown(true)}
-                    onMouseLeave={() => setIsShown(false)}
-                >
+                <div className="col-12 card-img-top d-block d-md-none">
                     {props.comingSoon && (
-                        <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                        <Image height="100%" draggable={false} className="card-img no-hover" src={props.pic} />
                     )}
                     {!props.comingSoon && (
                         <Link to={"/" + props.link} className="card-img-link">
-                            {isShown && props.onHover ?
-                                <Image height="100%" draggable={false} className="card-img" src={props.onHover} />
-                                :
-                                <Image height="100%" draggable={false} className="card-img" src={props.pic} />
-                            }
+                            <Image height="100%" draggable={false} className="card-img" src={props.pic} />
                         </Link>
                     )}
                 </div>
@@ -82,14 +64,11 @@ function Infocard(props) {
 
                     <p className="card-text">{props.tagline}</p>
 
-                    {/* <Link
-                            className={`btn ${props.comingSoon ? "disabled" : ""}`}
-                            to={"/" + props.link}>
-                            See More
-                        </Link> */}
-                    <Link className="see-more" to={"/" + props.link}>
-                        See more {"→"}
-                    </Link>
+                    {!props.comingSoon && (
+                        <Link className="see-more" to={"/" + props.link}>
+                            See more {"→"}
+                        </Link>
+                    )}
                 </div>
             </div>
 

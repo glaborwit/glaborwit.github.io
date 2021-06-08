@@ -17,26 +17,8 @@ import MicrosoftwARroom from './assets/images/microsoft-warroom/microsoft-cover.
 
 function App() {
 
-  // const textArray = ['product', 'service', 'project'];
-
-  // const [textArrayIndex, updateIndex] = useState(0);
-
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    // Set interval for changing word in self tagline
-  //   const interval = setInterval(() => {
-  //     if(textArrayIndex === textArray.length-1){
-  //       updateIndex(0)
-  //     }
-  //     else{
-  //       updateIndex(textArrayIndex + 1)
-  //     }
-  //     console.log("Current index: ", textArrayIndex)
-  //   }, 1700);
-  //   return () => clearInterval(interval);
-
-  // }, [textArray.length, textArrayIndex]);
   }, []);
 
   return (
@@ -98,7 +80,12 @@ function App() {
         </div>
         {/* COMING SOON- Section */}
         <div className="big-margin-top row justify-content-center">
-          <h2 className="col-12 col-md-10 text-center" style={{fontWeight:"400", fontStyle:"italic"}}>Coming Soon</h2>
+          <h2
+            className="col-12 col-lg-10 text-left mb-3"
+            style={{fontWeight:"400", fontStyle:"italic"}}
+          >
+            Under Construction
+          </h2>
 
         <Infocard
             title="wARroom"

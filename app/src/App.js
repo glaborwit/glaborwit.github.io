@@ -89,7 +89,7 @@ function App() {
 
         <Infocard
             title="wARroom"
-            tagline="Augmented reality program to foster workplace collaboration"
+            tagline="Mixed reality program to foster workplace collaboration"
             pic={MicrosoftwARroom}
             link="microsoft-wARroom"
             comingSoon={true}

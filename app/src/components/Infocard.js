@@ -27,6 +27,9 @@ function Infocard(props) {
                             See more {"→"}
                         </Link>
                     )}
+                    {props.comingSoon && (
+                        <span className="see-more"><em>Coming Soon</em></span>
+                    )}
                 </div>
 
 

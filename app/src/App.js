@@ -77,15 +77,15 @@ function App() {
             link="time-warp"
             comingSoon={false}
           />
-        </div>
+        {/* </div> */}
         {/* COMING SOON- Section */}
-        <div className="big-margin-top row justify-content-center">
-          <h2
+        {/* <div className="big-margin-top row justify-content-center"> */}
+          {/* <h2
             className="col-12 col-lg-10 text-left mb-3"
             style={{fontWeight:"400", fontStyle:"italic"}}
           >
             Under Construction
-          </h2>
+          </h2> */}
 
         <Infocard
             title="wARroom"

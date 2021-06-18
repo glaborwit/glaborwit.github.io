@@ -17,32 +17,11 @@ import '../css/DetailsPage.css'; // global styles
 import { lightboxOptions } from '../SpecificComponents/Constants'; // image lightbox styles
 
 // Images
-// import BreakingtheIceCover from '../assets/images/UCRE/BreakingtheIceCover.png';
-import BreakingtheIceCover from '../assets/images/UCRE/BreakingTheIceCover.png';
-import EvidenceSpeechBubbles from '../assets/images/UCRE/EvidenceSpeechBubbles.svg';
-import Solution from '../assets/images/UCRE/solution.png';
-import ReverseAssumptions from '../assets/images/UCRE/reverse-assumptions.jpg';
-import IcebreakerDemo from '../assets/images/UCRE/Icebreaker-Demo-pic.jpg';
-//speed dating images
-import SpeedDatingBoard2 from '../assets/images/UCRE/speeddatingphotos/Set1_Board2.png';
-import SpeedDatingBoard3 from '../assets/images/UCRE/speeddatingphotos/Set1_Board3.png';
-import SpeedDatingBoard1 from '../assets/images/UCRE/speeddatingphotos/Set1_Board1.png';
-import SpeedDatingBoard4 from '../assets/images/UCRE/speeddatingphotos/Set2_Board1.png';
-import SpeedDatingBoard5 from '../assets/images/UCRE/speeddatingphotos/Set2_Board2.png';
-import SpeedDatingBoard6 from '../assets/images/UCRE/speeddatingphotos/Set2_Board3.png';
-import SpeedDatingBoard7 from '../assets/images/UCRE/speeddatingphotos/Set3_Board1.png';
-import SpeedDatingBoard8 from '../assets/images/UCRE/speeddatingphotos/Set3_Board2.png';
-import SpeedDatingBoard9 from '../assets/images/UCRE/speeddatingphotos/Set3_Board3.png';
-import SpeedDatingBoard10 from '../assets/images/UCRE/speeddatingphotos/Set4_Board1.png';
-import SpeedDatingBoard11 from '../assets/images/UCRE/speeddatingphotos/Set4_Board2.png';
-import SpeedDatingBoard12 from '../assets/images/UCRE/speeddatingphotos/Set4_Board3.png';
-//UFT images
-import UFT1 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT1.jpg';
-import UFT2 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT2.jpg';
-import UFT3 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT3.jpg';
-import UFT4 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT4.jpg';
-import UFT5 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT5.jpg';
-import UFT6 from '../assets/images/UCRE/ThinkAloud-UFTs/UFT6.jpg';
+import MicrosoftwARroomCover from './assets/images/microsoft-warroom/microsoft-cover.png';
+import ParticipantStats from './assets/images/microsoft-warroom/participant-stats.png';
+import AffinityDiagram from './assets/images/microsoft-warroom/DiaryStudyNotes.jpg';
+import SeverityScale from './assets/images/microsoft-warroom/severity-scale.jpg';
+
 
 
 
@@ -53,9 +32,9 @@ function BreakingtheIce() {
     }, [])
 
     return (
-        <div className="BreakingtheIce">
+        <div className="MicrosoftWarroom">
             <Helmet>
-                <title>Gabrielle LaBorwit | Breaking the Ice</title>
+                <title>Gabrielle LaBorwit | Microsoft wARroom</title>
             </Helmet>
 
             <div className="container mt-2 mt-md-5">
@@ -64,7 +43,7 @@ function BreakingtheIce() {
 
                         <div className="row justify-content-center">
                             <div className="col-12">
-                                <DetailsHeading title="Breaking the Ice" tagline="A Virtual Theater Community Experience" image={BreakingtheIceCover} alt="Guidelines for hosting an online theater community experience" />
+                                <DetailsHeading title="Microsoft wARroom" tagline="Investigating the role of mixed reality in the future of workplace collaboration" image={MicrosoftwARroomCover} alt="Hololens with excel sheet and sticky notes hanging virtually" />
                             </div>
                         </div>
 
@@ -75,10 +54,14 @@ function BreakingtheIce() {
                                     <h3 className="mb-3" id="projectoverview">OVERVIEW</h3>
                                     <h4 className="d-none d-md-block">Summary</h4>
                                     <p>
-                                        The COVID-19 pandemic has made it difficult for local theaters to connect with their communities. Theaters like the Kelly Strayhorn Theater, a performing arts theater local to Pittsburgh, PA, is no exception.
+                                        With the power of mixed reality in our hands, we initiated our project by asking a central question: how might we support 3D collaboration between information workers?
+
                                     </p>
                                     <p>
-                                        Our team spent two months researching ways to recreate the meaningful interactions that were once only experienced in-person. The result of our research efforts is a set of guidelines for hosting a series of workshops related to a theme of the theater’s choosing.
+                                        Information workers, also called knowledge workers, are people whose jobs revolve around handling information. They include programmers, engineers, designers, accountants, and a plethora of other professions.
+                                    </p>
+                                    <p>
+                                        wARroom is a mixed reality program for the Microsoft Hololens. It enables teams around the world to share their ideas with one another in a 3D space in ways that can’t be replicated on traditional 2D platforms.
                                     </p>
                                 </div>
                             
@@ -87,8 +70,8 @@ function BreakingtheIce() {
                                         <div className="col-md-3">
                                             <h4>Timeline</h4>
                                             <ul>
-                                                <li>Oct–Dec 2020</li>
-                                                <li>2 months</li>
+                                                <li>Feb–May 2021</li>
+                                                <li>5 months</li>
                                             </ul>
                                         </div>
 
@@ -100,7 +83,10 @@ function BreakingtheIce() {
                                                 </li>
                                                 <li>
                                                     <em>
-                                                        Led user research efforts: helped create interview guides, conducted interviews, tested prototypes, analyzed research data
+                                                        Guided team through user interview process. Led decisions on methodology decisions, interview guide creation, and data synthesis and analysis.
+                                                        <br />
+                                                        Applied business principles learned in class towards product development.
+
                                                     </em>
                                                 </li>
                                             </ul>
@@ -112,21 +98,23 @@ function BreakingtheIce() {
                                             <h4 className="d-none d-md-block d-lg-none">Team-mates</h4>
 
                                             <ul>
-                                                <li>Meo Zhang</li>
-                                                <li>Wenqing Yin</li>
-                                                <li>Jenny Xin</li>
+                                                <li>John Plunkett</li>
+                                                <li>Steven Orchosky</li>
+                                                <li>Uma Arunachalam</li>
+                                                <li>Nobu Morikawa</li>
+                                                <li>Tarang Shah</li>
+                                                <li>Guanzhao Li</li>
                                             </ul>
                                         </div>
 
                                         <div className="col-md-3">
                                             <h4>Research Methods</h4>
                                             <ul>
+                                                <li>Diary Study</li>
                                                 <li>Semi-Structured Interviews</li>
-                                                <li>Contextual Inquiry</li>
-                                                <li>Think Aloud Protocols</li>
-                                                <li>Speed Dating</li>
-                                                <li>Experience Prototypes</li>
+                                                <li>Pop-Up Research</li>
                                                 <li>Storyboarding</li>
+                                                <li>Affinity Diagramming</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -135,31 +123,87 @@ function BreakingtheIce() {
                         </section>
 
 
-                        {/* The Problem Space */}
+                        {/* Research */}
                         <section>
                             <div className="row justify-content-center">
                                 <div className="col-12 col-md-10">
-                                    <h3 className="mb-3" id="problemspace">
-                                        DEFINING THE PROBLEM SPACE
+                                    <h3 className="mb-3" id="research">
+                                        RESEARCH
                                     </h3>
+                                    <h4 id="initial-explorations">
+                                        Initial Explorations
+                                    </h4>
                                     <p>
-                                        Our team employed the Reverse Assumptions strategy to define our problem space. We wrote down all of our assumptions encompassing theater and the COVID-19 pandemic, then reversed them. This empowered us to challenge conventional thinking patterns, forcing us to take on a new perspective.
+                                        Before diving into interviews, we conducted background research on the tools information workers use most and a competitive landscape on other 3D and mixed reality collaboration tools. We then held informational interviews with information workers to get a feel for their day-to-day work experiences. Following these conversations, we conducted a diary study with seven more information workers.
                                     </p>
+
+                                    <h4 id="diary-study">
+                                        Diary Study
+                                    </h4>
                                 </div>
 
                                 <div className="col-12">
                                     <div className="row justify-content-center align-items-center my-4">
                                         <SRLWrapper options={lightboxOptions}>
-                                            <Image className="img-zoom" src={ReverseAssumptions} width="100%" alt="Reverse assumptions organized on sticky notes" />
+                                            <Image className="img-zoom" src={ParticipantStats} width="100%" alt="Recruited 7 information workers from 3 different countries and 5 unique industries" />
                                         </SRLWrapper>
                                     </div>
                                 </div>
 
                                 <div className="col-12 col-md-10">
                                     <p>
-                                        This activity led us to <strong>reframe</strong> the space we were working in by posing a simple, yet intricate question:
+                                        For the diary study, we asked participants to write notes down each time they collaborated for their job over the course of a workweek. Specifically, we asked them to write down:
+                                    </p>
+                                    <ul>
+                                        <li>What the collaboration/meeting was about</li>
+                                        <li>Tools and equipment (e.g., computer, tablet) used</li>
+                                        <li>Highlights and painpoints</li>
+                                        <ul>
+                                            <li>Frustrations, positive interactions</li>
+                                        </ul>
+                                    </ul>
+
+                                    <p>
+                                        After they finished journalling, we scheduled an hour-long follow-up interview with each participant to go over their notes and ask any remaining questions.
                                     </p>
                                 </div>
+
+                                <div className="col-12">
+                                    <div className="row justify-content-center align-items-center my-4">
+                                        <SRLWrapper options={lightboxOptions}>
+                                            <Image className="img-zoom" src={AffinityDiagram} width="100%" alt="Affinity diagrammed interview notes on Miro" />
+                                        </SRLWrapper>
+                                    </div>
+                                </div>
+
+                                <div className="col-12 col-md-10">
+                                    <h4 id="findings">
+                                        findings
+                                    </h4>
+                                    <p>
+                                        We sorted the findings from our affinity diagram into insights onto a severity scale measuring much each finding affected an information workers’ ability to efficiently complete tasks. We also affixed a sticker to the edge of each insight based on whether the insight could be more easily or better addressed in 2D (red square sticker), 3D (green sticker), or both (yellow sticker).
+                                    </p>
+                                </div>
+
+                                <div className="col-12">
+                                    <div className="row justify-content-center align-items-center my-4">
+                                        <SRLWrapper options={lightboxOptions}>
+                                            <Image className="img-zoom" src={SeverityScale} width="100%" alt="Insights sorted onto a severity scale as either critical, severe, major, or minor problems" />
+                                        </SRLWrapper>
+                                    </div>
+                                </div>
+
+                                <div className="col-12 col-md-10">
+                                    <p>
+                                        We decided to focus on three insights moving forward, realizing that a successful collaboration program would need to keep each in mind.
+                                    </p>
+                                    <ol>
+                                        <li>It’s easy to assume that everyone is always on the same page</li>
+                                        <li>Non-verbal cues such as facial expression and body movement are crucial when it comes to communication</li>
+                                        <li>Each communication platform serves a different purpose</li>
+                                    </ol>
+                                </div>
+
 
                                 <div className="col-12 px-0 mb-3">
                                     <p className="blockquote">

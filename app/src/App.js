@@ -41,6 +41,14 @@ function App() {
         </div>
 
         <div className="row justify-content-center infocards big-margin-top">
+
+          <Infocard
+            title="Microsoft wARroom"
+            tagline="Investigating the role of mixed reality in the future of workplace collaboration"
+            pic={MicrosoftwARroom}
+            link="microsoft-warroom"
+            comingSoon={false}
+          />
         
           <Infocard
             title="Breaking the Ice"
@@ -76,23 +84,6 @@ function App() {
             pic={TimeWarp}
             link="time-warp"
             comingSoon={false}
-          />
-        {/* </div> */}
-        {/* COMING SOON- Section */}
-        {/* <div className="big-margin-top row justify-content-center"> */}
-          {/* <h2
-            className="col-12 col-lg-10 text-left mb-3"
-            style={{fontWeight:"400", fontStyle:"italic"}}
-          >
-            Under Construction
-          </h2> */}
-
-        <Infocard
-            title="wARroom"
-            tagline="Mixed reality program to foster workplace collaboration"
-            pic={MicrosoftwARroom}
-            link="microsoft-wARroom"
-            comingSoon={true}
           />
 
         </div>

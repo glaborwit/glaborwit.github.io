@@ -15,6 +15,7 @@ import TimeWarp from "./detail-pages/TimeWarp";
 import Picnic from "./detail-pages/Picnic";
 import BudgetBuddy from "./detail-pages/BudgetBuddy";
 import BreakingTheIce from "./detail-pages/BreakingTheIce";
+import MicrosoftWarroom from "./detail-pages/MicrosoftWarroom";
 import Footer from './components/Footer';
 import FourOhFour from './FourOhFour'; // 404 pages
 
@@ -34,16 +35,16 @@ ReactDOM.render(
             <About />
           </Route>
 
-          <Route exactly path="/picnic">
+          <Route exactly path="/time-warp">
             <SimpleReactLightbox>
-              <Picnic />
+              <TimeWarp />
             </SimpleReactLightbox>
             <Footer />
           </Route>
 
-          <Route exactly path="/time-warp">
+          <Route exactly path="/picnic">
             <SimpleReactLightbox>
-              <TimeWarp />
+              <Picnic />
             </SimpleReactLightbox>
             <Footer />
           </Route>
@@ -58,6 +59,13 @@ ReactDOM.render(
           <Route exactly path="/breaking-the-ice">
             <SimpleReactLightbox>
               <BreakingTheIce />
+            </SimpleReactLightbox>
+            <Footer />
+          </Route>
+
+          <Route exactly path="/microsoft-warroom">
+            <SimpleReactLightbox>
+              <MicrosoftWarroom />
             </SimpleReactLightbox>
             <Footer />
           </Route>

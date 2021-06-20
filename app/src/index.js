@@ -20,7 +20,6 @@ import Footer from './components/Footer';
 import FourOhFour from './FourOhFour'; // 404 pages
 
 // CSS
-import './css/index.css';
 import './css/Main.css';
 
 ReactDOM.render(

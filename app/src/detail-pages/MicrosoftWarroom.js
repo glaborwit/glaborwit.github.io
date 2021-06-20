@@ -17,15 +17,24 @@ import '../css/DetailsPage.css'; // global styles
 import { lightboxOptions } from '../SpecificComponents/Constants'; // image lightbox styles
 
 // Images
-import MicrosoftwARroomCover from './assets/images/microsoft-warroom/microsoft-cover.png';
-import ParticipantStats from './assets/images/microsoft-warroom/participant-stats.png';
-import AffinityDiagram from './assets/images/microsoft-warroom/DiaryStudyNotes.jpg';
-import SeverityScale from './assets/images/microsoft-warroom/severity-scale.jpg';
+import MicrosoftwARroomCover from '../assets/images/microsoft-warroom/microsoft-cover.png';
+import ParticipantStats from '../assets/images/microsoft-warroom/participant-stats.png';
+import AffinityDiagram from '../assets/images/microsoft-warroom/DiaryStudyNotes.jpg';
+import SeverityScale from '../assets/images/microsoft-warroom/severity-scale.jpg';
+
+// storyboards
+import Storyboard1 from '../assets/images/microsoft-warroom/storyboards/creators-whiteboarding1.png';
+import Storyboard2 from '../assets/images/microsoft-warroom/storyboards/crunchers-whiteboarding2.png';
+import Storyboard3 from '../assets/images/microsoft-warroom/storyboards/curators-wARroom3.png';
+import Storyboard4 from '../assets/images/microsoft-warroom/storyboards/coaches-training4.png';
+
+// final product photos
+import FinalProduct1 from '../assets/images/microsoft-warroom/final-product/product-image1.png';
+import FinalProduct2 from '../assets/images/microsoft-warroom/final-product/product-image2.png';
+import FinalProduct3 from '../assets/images/microsoft-warroom/final-product/product-image3.png';
 
 
-
-
-function BreakingtheIce() {
+function MicrosoftWarroom() {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -61,7 +70,7 @@ function BreakingtheIce() {
                                         Information workers, also called knowledge workers, are people whose jobs revolve around handling information. They include programmers, engineers, designers, accountants, and a plethora of other professions.
                                     </p>
                                     <p>
-                                        wARroom is a mixed reality program for the Microsoft Hololens. It enables teams around the world to share their ideas with one another in a 3D space in ways that can’t be replicated on traditional 2D platforms.
+                                        wARroom is a mixed reality program for the Microsoft Hololens. It enables teams around the world to <b>share their ideas with one another in a 3D space</b> in ways that can’t be replicated on traditional 2D platforms.
                                     </p>
                                 </div>
                             
@@ -73,6 +82,11 @@ function BreakingtheIce() {
                                                 <li>Feb–May 2021</li>
                                                 <li>5 months</li>
                                             </ul>
+
+                                            <h4 className="mt-0 mt-md-5">Client</h4>
+                                            <ul>
+                                                <li>Microsoft</li>
+                                            </ul>
                                         </div>
 
                                         <div className="col-md-3">
@@ -83,7 +97,7 @@ function BreakingtheIce() {
                                                 </li>
                                                 <li>
                                                     <em>
-                                                        Guided team through user interview process. Led decisions on methodology decisions, interview guide creation, and data synthesis and analysis.
+                                                        Guided team through user interview process. Led decisions on method<span class="d-none d-md-inline d-lg-none">-</span>ology decisions, interview guide creation, and data synthesis and analysis.
                                                         <br />
                                                         Applied business principles learned in class towards product development.
 
@@ -100,7 +114,7 @@ function BreakingtheIce() {
                                             <ul>
                                                 <li>John Plunkett</li>
                                                 <li>Steven Orchosky</li>
-                                                <li>Uma Arunachalam</li>
+                                                <li>Uma Aruna<span class="d-none d-md-inline d-lg-none">-</span>chalam</li>
                                                 <li>Nobu Morikawa</li>
                                                 <li>Tarang Shah</li>
                                                 <li>Guanzhao Li</li>
@@ -137,16 +151,18 @@ function BreakingtheIce() {
                                         Before diving into interviews, we conducted background research on the tools information workers use most and a competitive landscape on other 3D and mixed reality collaboration tools. We then held informational interviews with information workers to get a feel for their day-to-day work experiences. Following these conversations, we conducted a diary study with seven more information workers.
                                     </p>
 
-                                    <h4 id="diary-study">
+                                    <h4 id="diary-study" className="mt-5">
                                         Diary Study
                                     </h4>
                                 </div>
 
                                 <div className="col-12">
                                     <div className="row justify-content-center align-items-center my-4">
-                                        <SRLWrapper options={lightboxOptions}>
-                                            <Image className="img-zoom" src={ParticipantStats} width="100%" alt="Recruited 7 information workers from 3 different countries and 5 unique industries" />
-                                        </SRLWrapper>
+                                        <div className="col-12">
+                                            <SRLWrapper options={lightboxOptions}>
+                                                <Image className="img-zoom" src={ParticipantStats} width="100%" alt="Recruited 7 information workers from 3 different countries and 5 unique industries" />
+                                            </SRLWrapper>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -156,7 +172,7 @@ function BreakingtheIce() {
                                     </p>
                                     <ul>
                                         <li>What the collaboration/meeting was about</li>
-                                        <li>Tools and equipment (e.g., computer, tablet) used</li>
+                                        <li>Tools and equipment (e.g. computer, tablet) used</li>
                                         <li>Highlights and painpoints</li>
                                         <ul>
                                             <li>Frustrations, positive interactions</li>
@@ -170,15 +186,17 @@ function BreakingtheIce() {
 
                                 <div className="col-12">
                                     <div className="row justify-content-center align-items-center my-4">
-                                        <SRLWrapper options={lightboxOptions}>
-                                            <Image className="img-zoom" src={AffinityDiagram} width="100%" alt="Affinity diagrammed interview notes on Miro" />
-                                        </SRLWrapper>
+                                        <div className="col-12">
+                                            <SRLWrapper options={lightboxOptions}>
+                                                <Image className="img-zoom" src={AffinityDiagram} width="100%" alt="Affinity diagrammed interview notes on Miro" />
+                                            </SRLWrapper>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div className="col-12 col-md-10">
-                                    <h4 id="findings">
-                                        findings
+                                    <h4 id="findings" className="mt-5">
+                                        Findings
                                     </h4>
                                     <p>
                                         We sorted the findings from our affinity diagram into insights onto a severity scale measuring much each finding affected an information workers’ ability to efficiently complete tasks. We also affixed a sticker to the edge of each insight based on whether the insight could be more easily or better addressed in 2D (red square sticker), 3D (green sticker), or both (yellow sticker).
@@ -187,9 +205,11 @@ function BreakingtheIce() {
 
                                 <div className="col-12">
                                     <div className="row justify-content-center align-items-center my-4">
-                                        <SRLWrapper options={lightboxOptions}>
-                                            <Image className="img-zoom" src={SeverityScale} width="100%" alt="Insights sorted onto a severity scale as either critical, severe, major, or minor problems" />
-                                        </SRLWrapper>
+                                        <div className="col-12">
+                                            <SRLWrapper options={lightboxOptions}>
+                                                <Image className="img-zoom" src={SeverityScale} width="100%" alt="Insights sorted onto a severity scale as either critical, severe, major, or minor problems" />
+                                            </SRLWrapper>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -203,329 +223,175 @@ function BreakingtheIce() {
                                         <li>Each communication platform serves a different purpose</li>
                                     </ol>
                                 </div>
+                            </div>
+                        </section>
 
 
-                                <div className="col-12 px-0 mb-3">
-                                    <p className="blockquote">
-                                        How might we make people feel connected to the theatre amidst the COVID-19 pandemic without the traditional in-person venue/experience?
+                        {/* Storyboards */}
+                        <section>
+                            <div className="row justify-content-center">
+                                <div className="col-12 col-md-10">
+                                    <h3 className="mb-3" id="storyboards">
+                                        STORYBOARDS
+                                    </h3>
+                                    <p>
+                                        Next, our team created storyboards of the ideas we came up with to address the insights we drew. Below is a sample of a few of the boards we drew. Each board solves a problem for a different market segment of information workers.
                                     </p>
                                 </div>
 
+                                <div className="col-12 my-5">
+                                    <Carousel className="pb-2" style={{ boxShadow: "0px 0px 5px #cdcdcd" }} interval={null}>
+                                        <Carousel.Item>
+                                            <Image
+                                                className="d-block w-100"
+                                                src={Storyboard1}
+                                                alt="Storyboard 1- whiteboarding idea for creators"
+                                                draggable={false}
+                                            />
+                                        </Carousel.Item>
+
+                                        <Carousel.Item>
+                                            <Image
+                                                className="d-block w-100"
+                                                src={Storyboard2}
+                                                alt="Storyboard 2- whiteboarding idea for crunchers"
+                                                draggable={false}
+                                            />
+                                        </Carousel.Item>
+
+                                        <Carousel.Item>
+                                            <Image
+                                                className="d-block w-100"
+                                                src={Storyboard3}
+                                                alt="Storyboard 3- wARroom for curators"
+                                                draggable={false}
+                                            />
+                                        </Carousel.Item>
+
+                                        <Carousel.Item>
+                                            <Image
+                                                className="d-block w-100"
+                                                src={Storyboard4}
+                                                alt="Storyboard 4- training for coaches"
+                                                draggable={false}
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                </div>
+
                                 <div className="col-12 col-md-10">
-                                    <p>
-                                        Additional questions noted were how might we create a sense of community once only felt during a show? How might we foster and strengthen audience engagement that’s not in-person? Lastly, how might we redefine the “stage”?
+                                    After showcasing our boards to our project sponsor, we collectively decided to proceed with the wARroom concept. Both our team and sponsor wanted us to design a future-thinking product that could address needs of various information worker market segments. Our wARroom idea met this request.
+                                </div>
+
+                                <div className="col-12 mb-3">
+                                    <p className="blockquote">
+                                        <b>War Room:</b> a shared space where entire teams can come together to solve a complex problem and collaborate on long-term projects.
                                     </p>
                                 </div>
                             </div>
                         </section>
 
-                        {/* Insights and Evidence */}
+                        {/* Final Product */}
                         <section>
                             <div className="row justify-content-center align-items-center">
                                 <div className="col-12 col-md-10">
-                                    <h3 className="mb-3" id="research">RESEARCH
-                                    {/* <span className="stickies" onClick={() => setModalShow(true)} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-                                        {isShown ?
-                                            <Image className="ml-4 mouse-pointer" src={StickiesHighlighted} width="77.6" alt="Sticky notes" />
-                                            :
-                                            <Image className="ml-4 mouse-pointer" src={Stickies} width="77.6" alt="Glowing sticky notes" />
-                                        }
-                                    </span> */}
+                                    <h3 className="mb-3" id="final-product">
+                                        FINAL PRODUCT
                                     </h3>
-
-                                    <h4 id="semi-structured-interviews">
-                                        Semi-Structured Interviews
-                                    </h4>
                                     <p>
-                                        Next, we conducted Semi-Structured Interviews to gain a better understanding of people’s needs and the ways in which they engage with theater.
-                                    </p>
-                                    
-                                    <p>
-                                        For this phase, I wrote an interview guide delving into people’s impressions of theater productions they’ve attended in the past, their theater-going process (from acquiring tickets to leaving the show), and thoughts on virtual theater performances.
-                                    </p>
-
-                                    <h4 className="mt-5" id="think-aloud-protocol">
-                                        Think Aloud Protocol
-                                    </h4>
-                                    <p>
-                                        In order to uncover more about how people experience online theater, we conducted Think Aloud research.
+                                        Our final product, wARroom, is a program for the Microsoft Hololens where teams across the world can come together in a mixed reality setting to both showcase their work and create.
                                     </p>
 
                                     <p>
-                                        As a team, we wrote up three tasks for users to complete while watching the YouTube Live theater clips and thinking aloud, all with the underlying goal of seeing how users interact with and think about the chat feature. We each led one interview, individually wrote up usability finding templates (pictured below), and came together to synthesize our findings.
+                                        Our final product, wARroom, is a program for the Microsoft Hololens where teams across the world can come together in a mixed reality setting to both showcase their work and create.
+                                    </p>
+
+                                    <p>
+                                        The sketches below show our wARroom concept used by a team of creators and controllers in the fashion industry.
                                     </p>
                                 </div>
-                                <div className="col-12 my-5">
-                                    <Carousel className="pb-2" style={{ boxShadow: "0px 0px 5px #cdcdcd" }} interval={null}>
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={UFT1}
-                                                alt="Usability Finding Template 1"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
 
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={UFT2}
-                                                alt="Usability Finding Template 2"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
+                                <div className="col-12">
+                                    <div className="row justify-content-center align-items-center mt-4">
+                                        <div className="col-12">
+                                            <SRLWrapper options={lightboxOptions}>
+                                                <Image className="img-zoom" src={FinalProduct1} width="100%" alt="Product use case sketch 1" />
+                                            </SRLWrapper>
 
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={UFT3}
-                                                alt="Usability Finding Template 3"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
+                                            <p className="credit mb-2">
+                                                Illustrated by <a href="http://steveorchosky.com/" target="_blank" rel="noopener noreferrer">Steve Orchosky</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={UFT4}
-                                                alt="Usability Finding Template 4"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
+                                <div className="col-12 col-md-10 mb-5">
+                                    <p>
+                                        In the first image, fashion designers stand in the main lobby, looking at still previews of different wARrooms enlarged on the wall. There is a 3D model of a new sweater in the center of the room.
+                                    </p>
+                                </div>
 
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={UFT5}
-                                                alt="Usability Finding Template 5"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
 
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={UFT6}
-                                                alt="Usability Finding Template 6"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-                                    </Carousel>
+
+                                <div className="col-12">
+                                    <div className="row justify-content-center align-items-center mt-4">
+                                        <div className="col-12">
+                                            <SRLWrapper options={lightboxOptions}>
+                                                <Image className="img-zoom" src={FinalProduct2} width="100%" alt="Product use case sketch 2" />
+                                            </SRLWrapper>
+
+                                            <p className="credit mb-2">
+                                                Illustrated by <a href="http://steveorchosky.com/" target="_blank" rel="noopener noreferrer">Steve Orchosky</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className="col-12 col-md-10 mb-5">
+                                    <p>
+                                        The creators on the right decide to enter the rightmost wARroom to check out the new sweater in an immersive customer persona environment.
+                                    </p>
+                                </div>
+
+
+
+                                <div className="col-12">
+                                    <div className="row justify-content-center align-items-center mt-4">
+                                        <div className="col-12">
+                                            <SRLWrapper options={lightboxOptions}>
+                                                <Image className="img-zoom mt-4" src={FinalProduct3} width="100%" alt="Product use case sketch 3" />
+                                            </SRLWrapper>
+
+                                            <p className="credit mb-2">
+                                                Illustrated by <a href="http://steveorchosky.com/" target="_blank" rel="noopener noreferrer">Steve Orchosky</a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="col-12 col-md-10">
-                                    After the data was compiled, two things became clear:
-                                    <ul className="mt-1">
-                                        <li>Live chat is not a feature people wanted to use</li>
-                                        <li>Online productions can get a bit “boring”</li>
-                                    </ul>
-
-                                    <h4 className="mt-5" id="contextual-inquiry">
-                                        Contextual Inquiry
-                                    </h4>
                                     <p>
-                                        This led us to ideate on other ways online viewers could connect with other audience members online, and if while watching theater productions was even the right way of thinking about theater engagement.
-                                    </p>
-
-                                    <p>
-                                        Given that we couldn’t conduct in-person interviews due to pandemic restrictions, we created our own context by hosting a participants-only, virtual happy hour. We each conducted individual retrospective contextual inquiries immediately after the event, such that participants would have the experience fresh in their minds.
+                                        Back in the main lobby, a designer is playing around with the color of the sweater. Given the mixed reality nature, the 3D item is lifesize and true-to-fit for the most realistic design experience.
                                     </p>
                                 </div>
 
-                                <div className="col-12 my-5">
-                                    <SRLWrapper options={lightboxOptions}>
-                                        <Image className="img-zoom" style={{ boxShadow: "0px 0px 8px #cdcdcd" }} src={IcebreakerDemo} width="100%" alt="Icebreaker Demo of woman laughing at card prompt 'What's the first theater performance you ever saw?'" />
-                                    </SRLWrapper>
-                                </div>
-
-                                <div className="col-12 col-md-10">
-                                    The <strong>main insights</strong> we drew from our contextual inquiry were:
-                                    <ul className="mt-1">
-                                        <li>Structured events can help increase comfort level</li>
-
-                                        <li>People are most invested in conversations they feel personally connected to</li>
-
-                                        <li>People enjoy conversations and topics that don’t require any specific background knowledge</li>
-
-                                        <li>Activities should facilitate meaningful conversation rather than being a distraction that generates superficial interaction</li>
-                                    </ul>
-
-
-                                    <h4 className="mt-5" id="speed-dating">Speed Dating</h4>
-                                    <p>
-                                        Based on our earlier findings, we each designed a set of three storyboards, with each board increasing in risk and each set focused on different aspects of theater-related virtual events.
-                                    </p>
-
-                                    <p>
-                                        In particular, we decided to address users’ needs for <strong>gamified experiences, community engagement, theater-specific engagement</strong>, and the need for <strong>the physical world to be replicated in an online setting</strong>. These boards were used in our Speed Dating research, the method in which users are shown quickly shown with storyboards and probed about their interest in the ideas demonstrated. Our storyboards can be found below.
-                                    </p>
-                                </div>
-
-                                <div className="col-12 my-5">
-                                    <Carousel className="pb-2" style={{ boxShadow: "0px 0px 5px #cdcdcd" }} interval={null}>
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard1}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard2}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard3}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard4}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard5}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard6}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard7}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard8}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard9}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard10}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard11}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-
-                                        <Carousel.Item>
-                                            <Image
-                                                className="d-block w-100"
-                                                src={SpeedDatingBoard12}
-                                                alt="Speed dating storyboard"
-                                                draggable={false}
-                                            />
-                                        </Carousel.Item>
-                                    </Carousel>
-
-                                </div>
-
-                                <div className="col-12 col-md-10">
-                                    Speed Dating further validated the goals and user needs we had uncovered, and supported us in generating potential design directions. We learned:
-                                    <ul className="mt-1">
-                                        <li>People enjoy gamified social interactions, but not in a competitive nature.</li>
-                                        <li>People want to attend events that require the least amount of physical (i.e. material) and mental (i.e. skills, knowledge) preparation.</li>
-                                        <li>Activities should focus on fostering relationships and conversation over completing the activity.</li>
-                                        <li>People are incentivized to partake in an event if they enjoy the others in attendance or if they are interested in the performer hosting.</li>
-                                    </ul>
-                                </div>
-                                <div className="col-12 col-md-12 col-lg-9 mx-auto my-5">
-                                    <SRLWrapper options={lightboxOptions}>
-                                        <Image className="img-zoom" src={EvidenceSpeechBubbles} width="100%" alt="Quotes from interviews" />
-                                    </SRLWrapper>
-                                </div>
-
-                                <div className="col-12 col-md-10">
-                                    <h4 className="mt-5" id="experience-prototype">Experience Prototype</h4>
-                                    <p>
-                                        After ideating and sketching out concepts for our final prototype, we chose to prototype an online, themed theater workshop. For user testing, we planned out a Hamilton-themed seminar. Participants would learn about scriptwriting techniques from an expert and then complete script-writing activities with fellow attendees.
-                                    </p>
-
-                                    <p>
-                                        We ran the workshop on Zoom, with screen and video sharing tools as our friend, and interviewed participants immediately after. Testing our experience prototype with actual Hamilton-lovers helped us more accurately evaluate whether our engagement goal was achieved. Our data was incorporated into our final solution, detailed below.
-                                    </p>
-                                </div>
                             </div>
                         </section>
 
+                        {/* Reflection */}
                         <section>
-                            <div className="row align-items-center justify-content-center">
+                            <div className="row justify-content-center align-items-center">
                                 <div className="col-12 col-md-10">
-                                    <h3 className="mb-3" id="solution">SOLUTION</h3>
-                                    Using the data we collected, we know individual workshops are most successful when set up with the following structure:
-                                    <ol>
-                                        <li>
-                                            Workshops should start with a few rounds of well-structured, small-group icebreakers. To achieve this, hosts should create several ice breaker question card decks for groups to parse through.
-                                        </li>
-                                        <li>
-                                            Next, participants should all meet together again to learn about the workshop’s topic from an expert on the subject (e.g. performer teaches about acting). It’s essential for the expert to encourage audience interaction here to continue fostering the relationships being formed.
-                                        </li>
-                                        <li>
-                                            Lastly, participants should break into groups again to do some fun hands-on activities to put what they learned into practice.
-                                        </li>
-                                    </ol>
+                                    <h3 className="mb-3" id="reflection">
+                                        REFLECTION
+                                    </h3>
+                                    <h4 id="leadership-experience">
+                                        Leadership Experience in Research
+                                    </h4>
                                     <p>
-                                        Together, these guidelines can help focus events on creating meaningful interactions rather than completing the actual activity, allowing communities to stay connected both during and after the COVID-19 pandemic.
+                                        Given the interdisciplinary nature of our team, many of my peers weren’t familiar with qualitative research methods. I gained leadership experience by taking charge and guiding my team through tasks such as writing interview guides, participant recruitment, and deciding on research methods to use. I was also able to practice explaining core research concepts to team members from engineering and business backgrounds, all while including everyone in the research process from start to finish.
                                     </p>
-                                </div>
-                                <div className="col-sm-10 col-md-10 col-lg-8 mt-4">
-                                    <SRLWrapper options={lightboxOptions}>
-                                        <Image className="img-zoom" src={Solution} width="100%" alt="The guidelines for a successful theater-hosted community event" />
-                                    </SRLWrapper>
                                 </div>
                             </div>
                         </section>
@@ -538,39 +404,42 @@ function BreakingtheIce() {
                                     <li><span>Overview</span></li>
                                 </ScrollIntoView>
 
-                                <ScrollIntoView selector="#problemspace">
-                                    <li><span>Problem Space</span></li>
-                                </ScrollIntoView>
-
                                 <ScrollIntoView selector="#research">
                                     <li><span>Research</span></li>
                                 </ScrollIntoView>
 
                                 <ul>
-                                    <ScrollIntoView selector="#semi-structured-interviews">
-                                        <li><span>Semi-Structured Interviews</span></li>
+                                    <ScrollIntoView selector="#initial-explorations">
+                                        <li><span>Initial Explorations</span></li>
                                     </ScrollIntoView>
 
-                                    <ScrollIntoView selector="#think-aloud-protocol">
-                                        <li><span>Think Aloud</span></li>
+                                    <ScrollIntoView selector="#diary-study">
+                                        <li><span>Diary Study</span></li>
                                     </ScrollIntoView>
 
-                                    <ScrollIntoView selector="#contextual-inquiry">
-                                        <li><span>Contextual Inquiry</span></li>
-                                    </ScrollIntoView>
-
-                                    <ScrollIntoView selector="#speed-dating">
-                                        <li><span>Speed Dating</span></li>
-                                    </ScrollIntoView>
-
-                                    <ScrollIntoView selector="#experience-prototype">
-                                        <li><span>Experience Prototype</span></li>
+                                    <ScrollIntoView selector="#findings">
+                                        <li><span>Findings</span></li>
                                     </ScrollIntoView>
                                 </ul>
 
-                                <ScrollIntoView selector="#solution">
-                                    <li><span>Solution</span></li>
+                                {/* <ScrollIntoView selector="#final-product">
+                                    <li><span>Final Product</span></li>
+                                </ScrollIntoView> */}
+
+                                {/* <ul> */}
+                                    <ScrollIntoView selector="#storyboards">
+                                        <li><span>Storyboards</span></li>
+                                    </ScrollIntoView>
+
+                                    <ScrollIntoView selector="#final-product">
+                                        <li><span>Final Product</span></li>
+                                    </ScrollIntoView>
+                                {/* </ul> */}
+
+                                <ScrollIntoView selector="#reflection">
+                                    <li><span>Reflection</span></li>
                                 </ScrollIntoView>
+
                             </ul>
                         </div>
                     </div>
@@ -580,4 +449,4 @@ function BreakingtheIce() {
     )
 }
 
-export default BreakingtheIce;
+export default MicrosoftWarroom;

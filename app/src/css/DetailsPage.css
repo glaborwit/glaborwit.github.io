@@ -40,6 +40,17 @@ section {
   margin-bottom: 100px;
 }
 
+.credit{
+  text-align: right;
+  font-size: 14px;
+  font-style: italic;
+}
+@media (max-width:575px) {
+ .credit{
+      font-size: 12px;
+  }
+}
+
 /* Sidebar */
 .sidecar {
   border-left: solid #CDC9D8 4px;

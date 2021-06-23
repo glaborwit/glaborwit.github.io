@@ -97,7 +97,7 @@ function MicrosoftWarroom() {
                                                 </li>
                                                 <li>
                                                     <em>
-                                                        Guided team through user interview process. Led decisions on method<span class="d-none d-md-inline d-lg-none">-</span>ology decisions, interview guide creation, and data synthesis and analysis.
+                                                        Guided team through user interview process. Led decisions on method<span class="d-none d-md-inline d-lg-none">-</span>ology, interview guide creation, and data synthesis and analysis.
                                                         <br />
                                                         Applied business principles learned in class towards product development.
 

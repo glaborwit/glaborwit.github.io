@@ -199,7 +199,7 @@ function MicrosoftWarroom() {
                                         Findings
                                     </h4>
                                     <p>
-                                        We sorted the findings from our affinity diagram into insights onto a severity scale measuring much each finding affected an information workers’ ability to efficiently complete tasks. We also affixed a sticker to the edge of each insight based on whether the insight could be more easily or better addressed in 2D (red square sticker), 3D (green sticker), or both (yellow sticker).
+                                        We sorted the findings from our affinity diagram into insights onto a severity scale measuring how much each finding affected an information workers’ ability to efficiently complete tasks. We also affixed a sticker to the edge of each insight based on whether the insight could be more easily or better addressed in 2D (red square sticker), 3D (green sticker), or both (yellow sticker).
                                     </p>
                                 </div>
 

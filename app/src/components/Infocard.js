@@ -22,11 +22,18 @@ function Infocard(props) {
 
                     <p className="card-text">{props.tagline}</p>
 
-                    {!props.comingSoon && (
+                    {!props.comingSoon && !props.customLink && (
                         <Link className="see-more" to={"/" + props.link}>
-                            See more {"→"}
+                            See more {'→'}
                         </Link>
                     )}
+
+                    {!props.comingSoon && props.customLink && (
+                        <a className="see-more" href={props.link} target="_blank" rel="noreferrer">
+                            Read more {'→'}
+                        </a>
+                    )}
+                    
                     {props.comingSoon && (
                         <span className="see-more"><em>Coming Soon</em></span>
                     )}
@@ -67,11 +74,18 @@ function Infocard(props) {
 
                     <p className="card-text">{props.tagline}</p>
 
-                    {!props.comingSoon && (
+                    {!props.comingSoon && !props.customLink && (
                         <Link className="see-more" to={"/" + props.link}>
-                            See more {"→"}
+                            See more {'→'}
                         </Link>
                     )}
+
+                    {!props.comingSoon && props.customLink && (
+                        <a className="see-more" href={props.link} target="_blank" rel="noreferrer">
+                            Read more {'→'}
+                        </a>
+                    )}
+
                     {props.comingSoon && (
                         <span className="see-more"><em>Coming Soon</em></span>
                     )}

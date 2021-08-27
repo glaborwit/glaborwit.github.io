@@ -8,12 +8,12 @@ import './css/App.css';
 import './css/Main.css';
 
 // Images
+import CarDashboard from './assets/images/car-study/car-dashboard.png';
+import MicrosoftwARroom from './assets/images/microsoft-warroom/microsoft-cover.png';
 import BreakingtheIceCover from './assets/images/UCRE/BreakingTheIceCover.png';
 import BudgetBuddyCover from './assets/images/budgetbuddy/BudgetBuddyCover.png';
 import PicnicCover from './assets/images/picnic/PicnicCover.png';
 import TimeWarp from './assets/images/time-warp/timewarpcover.png';
-
-import MicrosoftwARroom from './assets/images/microsoft-warroom/microsoft-cover.png';
 
 function App() {
 
@@ -41,6 +41,14 @@ function App() {
         </div>
 
         <div className="row justify-content-center infocards big-margin-top">
+          <Infocard
+            title="Driver Trust"
+            tagline="Exploring drivers’ understanding of and trust towards advanced technology in cars"
+            pic={CarDashboard}
+            link="https://bootcamp.uxdesign.cc/why-im-driven-to-optimize-in-car-experiences-b69518460a41"
+            comingSoon={false}
+            customLink={true}
+          />
 
           <Infocard
             title="Microsoft wARroom"

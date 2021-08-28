@@ -55,11 +55,11 @@ function About() {
                 <div className="row justify-content-center mt-5">
                     <div className="col-12 col-md-10">
                         <p>
-                            I'm currently getting my <a target="_blank" rel="noopener noreferrer" href="https://www.hcii.cmu.edu/academics/mhci">Master of Human-Computer Interaction</a> (HCI) degree at Carnegie Mellon University. Although my focus is in HCI, I'm equipped with an undergraduate degree in Computer Science and Cognitive Psychology. This provides me with the unique benefit of understanding the actions and motivations of the programmer as well as the needs and desires of the user.
+                            I'm a recent <a target="_blank" rel="noopener noreferrer" href="https://www.hcii.cmu.edu/academics/mhci">Master of Human-Computer Interaction</a> (HCI) graduate from Carnegie Mellon University. Although my focus is in HCI, I'm equipped with an undergraduate degree in Computer Science and Cognitive Psychology. This provides me with the unique benefit of understanding the actions and motivations of the programmer as well as the needs and desires of the user.
                         </p>
 
                         <p>
-                            When I'm not studying, I enjoy taking pictures, browsing through <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@gabbi">Medium</a> articles, and cooking.
+                            Outside of work, I enjoy taking pictures, browsing through <a target="_blank" rel="noopener noreferrer" href="https://gabbi.medium.com/">Medium</a> articles, and cooking.
                         </p>
 
                         Signed,

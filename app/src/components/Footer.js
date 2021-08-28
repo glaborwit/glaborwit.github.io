@@ -20,7 +20,7 @@ function Footer(props) {
                 </a>
 
                 {/* Medium Social Icon */}
-                <a target="_blank" className="social-link" rel="noopener noreferrer" href="https://medium.com/@gabbi">
+                <a target="_blank" className="social-link" rel="noopener noreferrer" href="https://gabbi.medium.com/">
                     <img height="20px" src={MediumIcon} alt="Medium" />
                 </a>
 

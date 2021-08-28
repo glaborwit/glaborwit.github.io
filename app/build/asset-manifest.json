@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b7a98f2e.chunk.css",
-    "main.js": "/static/js/main.f80cc35c.chunk.js",
-    "main.js.map": "/static/js/main.f80cc35c.chunk.js.map",
+    "main.js": "/static/js/main.134587f7.chunk.js",
+    "main.js.map": "/static/js/main.134587f7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d20d844e.js",
     "runtime-main.js.map": "/static/js/runtime-main.d20d844e.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
@@ -43,6 +43,7 @@
     "static/media/activity-processs.02d8a215.png": "/static/media/activity-processs.02d8a215.png",
     "static/media/betty-storyboard.9fbc6be0.png": "/static/media/betty-storyboard.9fbc6be0.png",
     "static/media/bike-sticker.8dfbc709.png": "/static/media/bike-sticker.8dfbc709.png",
+    "static/media/car-dashboard.c2cf9ad4.png": "/static/media/car-dashboard.c2cf9ad4.png",
     "static/media/coaches-training4.3a485acf.png": "/static/media/coaches-training4.3a485acf.png",
     "static/media/cowboy-flushed-emoji.71cf72c4.jpg": "/static/media/cowboy-flushed-emoji.71cf72c4.jpg",
     "static/media/creators-whiteboarding1.458caa8a.png": "/static/media/creators-whiteboarding1.458caa8a.png",
@@ -75,6 +76,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.ae340a7d.chunk.js",
     "static/css/main.b7a98f2e.chunk.css",
-    "static/js/main.f80cc35c.chunk.js"
+    "static/js/main.134587f7.chunk.js"
   ]
 }

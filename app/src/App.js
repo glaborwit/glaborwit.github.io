@@ -42,20 +42,20 @@ function App() {
 
         <div className="row justify-content-center infocards big-margin-top">
           <Infocard
+            title="Microsoft wARroom"
+            tagline="Investigating the role of mixed reality in the future of workplace collaboration"
+            pic={MicrosoftwARroom}
+            link="microsoft-warroom"
+            comingSoon={false}
+          />
+
+          <Infocard
             title="Driver Trust"
             tagline="Exploring drivers’ understanding of and trust towards advanced technology in cars"
             pic={CarDashboard}
             link="https://bootcamp.uxdesign.cc/why-im-driven-to-optimize-in-car-experiences-b69518460a41"
             comingSoon={false}
             customLink={true}
-          />
-
-          <Infocard
-            title="Microsoft wARroom"
-            tagline="Investigating the role of mixed reality in the future of workplace collaboration"
-            pic={MicrosoftwARroom}
-            link="microsoft-warroom"
-            comingSoon={false}
           />
         
           <Infocard

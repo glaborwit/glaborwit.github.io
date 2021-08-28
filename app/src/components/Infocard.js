@@ -30,10 +30,10 @@ function Infocard(props) {
 
                     {!props.comingSoon && props.customLink && (
                         <a className="see-more" href={props.link} target="_blank" rel="noreferrer">
-                            Read more {'→'}
+                            Read article {'→'}
                         </a>
                     )}
-                    
+
                     {props.comingSoon && (
                         <span className="see-more"><em>Coming Soon</em></span>
                     )}
@@ -44,10 +44,16 @@ function Infocard(props) {
                     {props.comingSoon && (
                         <Image height="100%" draggable={false} className="card-img no-hover" src={props.pic} />
                     )}
-                    {!props.comingSoon && (
+                    {!props.comingSoon && !props.customLink && (
                         <Link to={"/" + props.link} className="card-img-link">
                             <Image height="100%" draggable={false} className="card-img" src={props.pic} />
                         </Link>
+                    )}
+
+                    {!props.comingSoon && props.customLink && (
+                        <a href={props.link} target="_blank" rel="noreferrer" className="card-img-link">
+                            <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                        </a>
                     )}
                 </div>
             </div>
@@ -59,10 +65,16 @@ function Infocard(props) {
                     {props.comingSoon && (
                         <Image height="100%" draggable={false} className="card-img no-hover" src={props.pic} />
                     )}
-                    {!props.comingSoon && (
+                    {!props.comingSoon && !props.customLink && (
                         <Link to={"/" + props.link} className="card-img-link">
                             <Image height="100%" draggable={false} className="card-img" src={props.pic} />
                         </Link>
+                    )}
+
+                    {!props.comingSoon && props.customLink && (
+                        <a href={props.link} target="_blank" rel="noreferrer" className="card-img-link">
+                            <Image height="100%" draggable={false} className="card-img" src={props.pic} />
+                        </a>
                     )}
                 </div>
 
@@ -82,7 +94,7 @@ function Infocard(props) {
 
                     {!props.comingSoon && props.customLink && (
                         <a className="see-more" href={props.link} target="_blank" rel="noreferrer">
-                            Read more {'→'}
+                            Read article {'→'}
                         </a>
                     )}
 

@@ -3,51 +3,13 @@ h2.about{
     line-height: 2.7rem;
 }
 
-.container.fullwidth{
-    margin: 0px;
-    max-width: 100%;
-}
-
-.bg-purple{
-    background-color: #DEDBE6;
-}
-
-.container.fun{
-    margin-top: 90px;
-    padding-top: 30px;
-}
-
-.footer-overrides{
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    padding-bottom: 8px;
-    padding-top: 20px !important;
-}
-
-.sticker{
-    transition: transform 0.2s ease-in-out; /* zoom in */
-}
-
-.sticker:hover{
-    transform: translate3D(0,-1px,0) scale(1.02);
+h5.about{
+    line-height: 1.9em;
 }
 
 /* On sm sceens and smaller */
 @media (max-width: 575px) {
     h2.about {
         line-height: 2.2rem;
-    }
-
-    .footer-overrides{
-        margin-bottom: 0px !important;
-        padding-bottom: 8px;
-        padding-top: 54px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .container.fun{
-        margin-top: 50px;
-        padding-top: 30px;
     }
 }

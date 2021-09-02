@@ -38,48 +38,43 @@ ReactDOM.render(
             <SimpleReactLightbox>
               <TimeWarp />
             </SimpleReactLightbox>
-            <Footer />
           </Route>
 
           <Route exactly path="/picnic">
             <SimpleReactLightbox>
               <Picnic />
             </SimpleReactLightbox>
-            <Footer />
           </Route>
 
           <Route exactly path="/budget-buddy">
             <SimpleReactLightbox>
               <BudgetBuddy />
             </SimpleReactLightbox>
-            <Footer />
           </Route>
 
           <Route exactly path="/breaking-the-ice">
             <SimpleReactLightbox>
               <BreakingTheIce />
             </SimpleReactLightbox>
-            <Footer />
           </Route>
 
           <Route exactly path="/microsoft-warroom">
             <SimpleReactLightbox>
               <MicrosoftWarroom />
             </SimpleReactLightbox>
-            <Footer />
           </Route>
 
           <Route path="/404">
             <FourOhFour />
-            <Footer />
           </Route>
 
           <Route exactly path="/">
             <App />
-            <Footer />
           </Route>
-
         </Switch>
+
+        <Footer />
+      
       </HashRouter>
 
     </div>

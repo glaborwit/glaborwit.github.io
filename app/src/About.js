@@ -10,14 +10,14 @@ import './css/about.css';
 
 // Images
 import Me from './assets/images/about/me-long.jpg';
-import signature from './assets/logos/names/signature3_bw.png';
-
-import PlantSticker from './assets/images/about/plant-sticker.png';
-import BikeSticker from './assets/images/about/bike-sticker.png';
+// import signature from './assets/logos/names/signature3_bw.png';
 
 
 function About() {
     let compy = '👩🏻‍💻';
+    let PlantEmoji = "🪴";
+    let BikeEmoji = "🚴‍♀️";
+    let GradCapEmoji = "🎓";
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -32,34 +32,30 @@ function About() {
             <div className="container mt-2 mt-md-3 mt-lg-5">
                 {/* TL;DR about desc and picture */}
                 <div className="row justify-content-center">
-                    <div className="col-12 col-md-10 col-lg-2">
-                        <h4 className="text-lg-right">
-                            About
-                        </h4>
+                    
+                    {/* TL;DR Text and healine on LG + screens */}
+                    <div className="col-lg-5 mt-3 mt-md-0 align-self-center d-none d-lg-block">
+                        <h2 className="about">
+                            I'm Gabrielle, a creative <span className="purple">UX&nbsp;Researcher</span> with a technical background {compy}
+                        </h2>
                     </div>
+
                     <div className="col-12 col-md-10 col-lg-4">
                         {/* Show headline on md and smaller screens */}
-                        <h2 className="d-block d-lg-none mb-4 about">
+                        <h2 className="d-block d-lg-none mt-0 mt-sm-2 mt-md-0 mb-4 about">
                             I'm Gabrielle, a creative <span className="purple">UX&nbsp;Researcher</span> with a technical background {compy}
                         </h2>
 
                         <Image src={Me} width="100%" alt="me" draggable={false} />
-                    </div>
-
-                    {/* TL;DR Text and healine on LG + screens */}
-                    <div className="col-lg-4 mt-3 mt-md-0 align-self-center d-none d-lg-block">
-                        <h2 className="about">
-                            I'm Gabrielle, a creative <span className="purple">UX&nbsp;Researcher</span> with a technical background {compy}
-                        </h2>
                     </div>
                 </div>
 
                 {/* About me: detailed */}
                 <div className="row justify-content-center mt-5">
                     <div className="col-12 col-md-10 col-lg-2">
-                        <h4 className="text-lg-right">
+                        <h5 className="about text-lg-right">
                             Background
-                        </h4>
+                        </h5>
                     </div>
                     <div className="col-12 col-md-10 col-lg-8">
                         <p>
@@ -70,9 +66,9 @@ function About() {
 
                 <div className="row justify-content-center mt-5">
                     <div className="col-12 col-md-10 col-lg-2">
-                        <h4 className="text-lg-right">
+                        <h5 className="about text-lg-right">
                             Hobbies
-                        </h4>
+                        </h5>
                     </div>
                     <div className="col-12 col-md-10 col-lg-8">
                         <p>
@@ -83,14 +79,56 @@ function About() {
 
                 <div className="row justify-content-center mt-5">
                     <div className="col-12 col-md-10 col-lg-2">
-                        <h4 className="text-lg-right">
+                        <h5 className="about text-lg-right">
                             Connect
-                        </h4>
+                        </h5>
                     </div>
                     <div className="col-12 col-md-10 col-lg-8">
                         Email: <a href="mailto: gabriellelaborwit@gmail.com">gabriellelaborwit@gmail.com</a>
                         <br />
                         Linkedin: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit/">linkedin.com/in/gabrielle-laborwit</a>
+                    </div>
+                </div>
+
+                <div className="row justify-content-center mt-5">
+                    <div className="col-12 col-md-10 col-lg-2">
+                        <h5 className="about text-lg-right">
+                            What I'm Up To
+                        </h5>
+                    </div>
+
+                    <div className="col-12 col-md-10 col-lg-8">
+
+                        {/* Item 3: CMU Graduation */}
+                        <div className="row justify-content-center mb-3">
+                            <div className="col-12 col-sm-3 col-lg-2">
+                                Aug 2021
+                            </div>
+                            <div className="col-12 col-sm-9 col-lg-10">
+                                Graudated from CMU with my Master's in HCI {GradCapEmoji}
+                            </div>
+                        </div>
+
+                        {/* Item 2: Pothos */}
+                        <div className="row justify-content-center mb-3">
+                            <div className="col-12 col-sm-3 col-lg-2">
+                                Apr 2021
+                            </div>
+                            <div className="col-12 col-sm-9 col-lg-10">
+                                Bought my first houseplant, a marble queen pothos {PlantEmoji}
+                            </div>
+                        </div>
+
+                        {/* Item 1: Bike */}
+                        <div className="row justify-content-center mb-3">
+                            <div className="col-12 col-sm-3 col-lg-2">
+                                Mar 2021
+                            </div>
+                            <div className="col-12 col-sm-9 col-lg-10">
+                                Got a bike after 7 months of waiting due to the bike shortage {BikeEmoji}
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -101,49 +139,6 @@ function About() {
                         <Image src={signature} height="40" className="mt-2" draggable={false} />
                     </p>
                 </div> */}
-            </div>
-
-            {/* Extras Section */}
-            <div className="container fun fullwidth bg-purple">
-                <div className="container pb-2 pb-sm-5">
-                    {/* Headline */}
-                    <div className="row my-auto justify-content-center align-items-center big-margin-top">
-                        <div className="col-12 col-md-10">
-                            <h2 className="about">
-                                What I'm Up To
-                            </h2>
-                        </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="row justify-content-center align-items-center mt-3">
-                        {/* Item 1: Pothos */}
-                        <div className="col-5 col-md-4 col-lg-2">
-                            <Image src={PlantSticker} className="sticker" width="100%" alt="Plant sticker" />
-                        </div>
-
-                        <div className="col-7 col-md-6 col-lg-3">
-                            <i>April 2021 </i>
-                            <br />
-                            Bought an indoor plant– meet my marble queen pothos!
-                    </div>
-
-                        {/* Item 2: Bike */}
-                        <div className="col-5 col-md-4 col-lg-2 mt-5 mt-lg-0">
-                            <Image src={BikeSticker} className="sticker" width="100%" alt="New bike" />
-                        </div>
-
-                        <div className="col-7 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                            <i>March 2021</i>
-                            <br />
-                            Got a bike after 7 months of waiting due to the bike shortage.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container fullwidth bg-purple px-0">
-                <Footer className="footer-overrides" />
             </div>
         </div>
     );

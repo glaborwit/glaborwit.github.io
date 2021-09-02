@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7a98f2e.chunk.css",
-    "main.js": "/static/js/main.1a35909d.chunk.js",
-    "main.js.map": "/static/js/main.1a35909d.chunk.js.map",
+    "main.css": "/static/css/main.73c55ad6.chunk.css",
+    "main.js": "/static/js/main.fcf2e9d0.chunk.js",
+    "main.js.map": "/static/js/main.fcf2e9d0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d20d844e.js",
     "runtime-main.js.map": "/static/js/runtime-main.d20d844e.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.ae340a7d.chunk.js.map": "/static/js/2.ae340a7d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/static/css/2.ef9168ec.chunk.css.map",
-    "static/css/main.b7a98f2e.chunk.css.map": "/static/css/main.b7a98f2e.chunk.css.map",
+    "static/css/main.73c55ad6.chunk.css.map": "/static/css/main.73c55ad6.chunk.css.map",
     "static/js/2.ae340a7d.chunk.js.LICENSE.txt": "/static/js/2.ae340a7d.chunk.js.LICENSE.txt",
     "static/media/AffinityDiagramPicnic.6e02892b.jpg": "/static/media/AffinityDiagramPicnic.6e02892b.jpg",
     "static/media/BreakingTheIceCover.e5aa704c.png": "/static/media/BreakingTheIceCover.e5aa704c.png",
@@ -42,7 +42,6 @@
     "static/media/Watch-Cart-DecideLater.fcab2b55.gif": "/static/media/Watch-Cart-DecideLater.fcab2b55.gif",
     "static/media/activity-processs.02d8a215.png": "/static/media/activity-processs.02d8a215.png",
     "static/media/betty-storyboard.9fbc6be0.png": "/static/media/betty-storyboard.9fbc6be0.png",
-    "static/media/bike-sticker.8dfbc709.png": "/static/media/bike-sticker.8dfbc709.png",
     "static/media/car-dashboard.c2cf9ad4.png": "/static/media/car-dashboard.c2cf9ad4.png",
     "static/media/coaches-training4.3a485acf.png": "/static/media/coaches-training4.3a485acf.png",
     "static/media/cowboy-flushed-emoji.71cf72c4.jpg": "/static/media/cowboy-flushed-emoji.71cf72c4.jpg",
@@ -55,14 +54,12 @@
     "static/media/microsoft-cover.d7425ee9.png": "/static/media/microsoft-cover.d7425ee9.png",
     "static/media/model-journey-map.feba450a.jpg": "/static/media/model-journey-map.feba450a.jpg",
     "static/media/participant-stats.269b2213.png": "/static/media/participant-stats.269b2213.png",
-    "static/media/plant-sticker.30159815.png": "/static/media/plant-sticker.30159815.png",
     "static/media/poster.d9891c0d.jpeg": "/static/media/poster.d9891c0d.jpeg",
     "static/media/product-image1.55ff37a4.png": "/static/media/product-image1.55ff37a4.png",
     "static/media/product-image2.d401bfc2.png": "/static/media/product-image2.d401bfc2.png",
     "static/media/product-image3.371bd27c.png": "/static/media/product-image3.371bd27c.png",
     "static/media/reverse-assumptions.3685813a.jpg": "/static/media/reverse-assumptions.3685813a.jpg",
     "static/media/severity-scale.9a37c915.jpg": "/static/media/severity-scale.9a37c915.jpg",
-    "static/media/signature3_bw.1aaa09c7.png": "/static/media/signature3_bw.1aaa09c7.png",
     "static/media/slow_mo_transition_notes.55a634dd.jpg": "/static/media/slow_mo_transition_notes.55a634dd.jpg",
     "static/media/slowmotrial1.0edbf481.mp4": "/static/media/slowmotrial1.0edbf481.mp4",
     "static/media/solution.d7378157.png": "/static/media/solution.d7378157.png",
@@ -75,7 +72,7 @@
     "static/js/runtime-main.d20d844e.js",
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.ae340a7d.chunk.js",
-    "static/css/main.b7a98f2e.chunk.css",
-    "static/js/main.1a35909d.chunk.js"
+    "static/css/main.73c55ad6.chunk.css",
+    "static/js/main.fcf2e9d0.chunk.js"
   ]
 }

@@ -125,7 +125,7 @@ function MicrosoftWarroom() {
                                             <h4>Research Methods</h4>
                                             <ul>
                                                 <li>Diary Study</li>
-                                                <li>Semi-Structured Interviews</li>
+                                                <li>User Interviews</li>
                                                 <li>Pop-Up Research</li>
                                                 <li>Storyboarding</li>
                                                 <li>Affinity Diagramming</li>

@@ -121,7 +121,7 @@ function BreakingtheIce() {
                                         <div className="col-md-3">
                                             <h4>Research Methods</h4>
                                             <ul>
-                                                <li>Semi-Structured Interviews</li>
+                                                <li>User Interviews</li>
                                                 <li>Contextual Inquiry</li>
                                                 <li>Think Aloud Protocols</li>
                                                 <li>Speed Dating</li>

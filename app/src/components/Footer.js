@@ -15,7 +15,7 @@ function Footer(props) {
         <div className={`footer mb-3 mb-sm-2 mx-2 mx-sm-4 mt-3 d-flex justify-content-between ${props.className}`}>
             <div>
                 {/* LinkedIn Social Icon */}
-                <a target="_blank" className="social-link" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-laborwit-357783142/">
+                <a target="_blank" className="social-link" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabbi-laborwit">
                     <img height="15px" src={LinkedInIcon} alt="LinkedIn" />
                 </a>
 
@@ -29,7 +29,7 @@ function Footer(props) {
                     <img height="12px" src={TwitterIcon} alt="Twitter" />
                 </a>
             </div>
-            <div>Created with React by Gabrielle LaBorwit 2021</div>
+            <div>Created with React by Gabbi LaBorwit 2023</div>
         </div>
     )
 };

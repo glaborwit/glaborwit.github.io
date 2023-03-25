@@ -24,7 +24,7 @@ class NavHam extends Component {
                         {/* <Link className="navbar-brand py-2" to="/">
                             <Image height="45" draggable={false} src={logo} />
                         </Link> */}
-                        <Link className="navbar-brand py-2" to="/">GABRIELLE LABORWIT</Link>
+                        <Link className="navbar-brand py-2" to="/">GABBI LABORWIT</Link>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">

@@ -24,13 +24,13 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>Gabrielle LaBorwit | UX Researcher</title>
+        <title>Gabbi LaBorwit | UX Researcher</title>
       </Helmet>
       <div className="container homepage big-margin-top">
         <div className="row justify-content-center">
 
           <h1 className="col-12 col-lg-10 title mb-0">
-            Hello! I'm Gabrielle.
+            Hello! I'm Gabbi.
           </h1>
 
           <h3 className="text-left col-12 col-lg-10 headline purple">
